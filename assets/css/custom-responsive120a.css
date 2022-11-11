@@ -1,0 +1,427 @@
+@media only screen and (max-width: 640px) and ( min-width: 320px)
+{
+	.m-margin-tb{margin-top:5px;}
+	.ml{margin-left:0px !important;}
+	.m-padding-lr{padding-left: 0px !important; padding-right: 0px !important; }
+	.m-padding-l{padding-left: 4px;}
+	.m-padding-r{padding-right: 0px }
+
+	.row{margin: 0px }	
+
+	.content-section{min-height: 78vh}
+
+	.banner-section{ padding: 58px 0px 30px;}
+	.banner-text h1 {font-size: 24px;}
+	.banner-text h2 {font-size: 22px;}
+	.btn-grp{margin-top: 22px; text-align: center;}
+	.get-stared {margin: 20px 5px; padding: 10px 20px;font-size: 0.8rem;}
+
+
+	.banner-bottom {display: flex;  margin: 0px auto; width: 100%; margin-top: 40px;}
+	.banner-bottom h6{text-align: center;}
+	.banner-bottom i { float: none; font-size: 22px;}	
+	.banner-bottom span { float: left; padding-left: 0px; font-size: 14px; margin-top: 5px;}
+
+	.service-three-points .banner-bottom { width: 100%;}
+
+	/********************our services****************************/
+	.service-section{}
+	.service-section h1{font-size: 24px; margin-bottom: 10px;}
+	.service-section .service-box{ min-height: auto; padding-bottom: 10px; margin: 3px; 
+	   box-shadow: 0px 0px 10px #ccc;}
+	.service-section .service-box img {width: 30px;}
+	/********************our services end************************/
+
+	/**********************trained-box**************************/
+	.trained-box-section{ padding: 0px 0px }
+	.trained-box{ width: 100%; min-height: 100px; padding: 10px 0px; margin-bottom: 10px;}
+	.trained-box .circle{ width: 100px; height: 100px;
+	  position: absolute;
+	  top: -30%;
+	  left: -8%;
+	  opacity: 0.5; 
+	  border-radius: 50%}
+	/**********************trained-box end**************************/
+
+	.why-choose-us{padding: 20px 0px 10px; min-height: 520px;}
+	.why-choose-us h3{font-size: 26px; text-align: center; margin-bottom: 15px;}
+
+	
+	.why-choose-icon li{padding: 5px 10px !important; float: left; font-size: 14px; width: 100%;
+	 margin-bottom: 15px;}
+	.why-choose-icon li strong{ font-size: 16px;} 
+	
+	.why-choose-us .image-column{position: relative; display: none;}
+	.why-choose-us .image-column:before {
+	    position: absolute;
+	    right: 20px;
+	    top: 0;
+	    height: 430px;
+	    width: 250px;
+	    border: 10px solid #f1f1f2;
+	    content: "";
+	}
+	.why-choose-us figure{position: absolute; z-index: 1; display: inline-table; 
+	  border:10px solid #fff; box-shadow: 0px 1px 20px #ccc;}
+	.why-choose-us figure img{width:100%;}
+	.why-choose-us .img-1{width:60%; height: 100%; left: 15%; top: 50px;}
+	.why-choose-us .img-2{width:200px; height: 120px; left: 5%; top:300px; border-width: 7px;}
+	.why-choose-us .img-3{width:200px; height: 120px; right: 0%; top:100px; border-width: 7px;}
+	.why-choose-us .img-2 img, .why-choose-us .img-3 img{width:200px; height: 120px;}
+	/********************Why Company end****************************/
+
+	/********************how it work************************/
+	.how-it-work-section{ position: relative;}
+
+	.how-it-work-section h3{font-size: 24px; text-align: center;}
+	
+	.hiw-content {position: relative; height: auto;}
+	.hiw-content .icon-box{ position: relative;  width: 30%; height: 100px; float: left; top: 8px;}
+	.hiw-content .icon-box img{width: 40px; height: 40px}
+
+	.inner-hiw{position: relative;}
+
+	.inner-hiw .line{width: 5px; height: 100%; border-radius: 10px;
+	position: absolute; top: 0%}
+
+	.circle{
+	    width: 11%;
+	    display: inline-flex;
+	    text-align: left;
+	    padding: 0px 0px;
+	    position: absolute;
+	    top: 20px;
+    	left: -27px;
+	}
+	.circle span{height: 30px;
+	    width: 30px;
+	    border-radius: 50%;
+	    text-align: center;
+	    background-color: #118da0;
+	    display: inline-block;}
+
+	.hiw-content .hiw-text {position: relative; height: 100px; font-size: 14px; font-weight: 500;
+	    color: #000; text-align: left;}
+	.hiw-content .hiw-text h4{ font-size: 18px; font-weight: 600;}
+	.icon-float{margin-top: -90px;}
+	.text-float{padding-left: 30%;}
+	/********************how it work end************************/
+
+	/********************Appointment section-box************************/
+	.appointment-section{width: 100%; padding: 50px 0px;}
+	.appointment-section figure{}
+	.appointment-section figure img{width: 100%}
+
+	.appointment-text{ margin-top: 30px; }
+	.appointment-section h3{font-size: 26px;}
+	.appointment-section h2{ font-size: 26px;}
+
+	/********************apointment section end************************/
+
+	/******************our-latest-work page*************/
+	.our-latest-work-section{margin-top: 30px; display: none;}
+	.our-latest-work-section h3{font-size: 24px;}
+	.our-latest-work-tab{width: 100%; margin-bottom: 20px;}
+	.our-latest-work-tab ul li{ padding: 0px 2px;}
+	
+	.our-latest-work{ width: 100%; height: 150px;}
+	.our-latest-work-img{width:100%; height:150px;}
+	.our-latest-work-img img{width:100%; height:150px;}
+
+	.our-latest-work .hover-effects{ width: 100%; height: 100%; position: absolute; top: -100%; 
+	  left: 0; background-color: rgb(255 255 255 / 73%); transition: 0.3s; padding-top: 5%; 
+	  text-align: center;}
+	 .our-latest-work:hover .hover-effects{top: 0; left: 0;}
+
+	/************************ our-latest-work End************************/
+	
+	.app {padding: 50px 0 50px 0;}
+	.app p.h2 { font-size: 30px;} 
+	.app p.h6 {
+	    font-size: 14px;
+	    font-weight: 600;
+	    text-transform: uppercase;
+	    padding-bottom: 0;
+	    padding-left: 5px;
+	    padding-top: 10px;
+	}
+	.app form.form-inline {position: relative; padding-left: 5px;}
+	.app .form-group {width: 50%;}
+	.app .form-inline input#mobile2 {padding: 0 20px 0 55px; height: 46px; width: 100%;}
+	.app button#submit_link {
+	    padding: 0 15px;
+	    border-radius: 0;
+	    height: 45px;
+	    margin-top: -17px;
+	    font-size: 12px;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    color: #fff;
+	    letter-spacing: 1px;
+	    margin-left: 0;
+	}
+	.app .img-app { width: 100%;  margin-top: 26px;}
+	/********************* download app end***************************/
+
+	.testimonial-section{padding: 30px 0px; margin-bottom:30px;}
+	.testimonial-section h3{font-size: 16px;}
+
+	.testimonial-slide{padding:0px 10px; max-width: 100%; margin: 0px auto}
+	/*.testimonial-section h4{margin-top: 20px;}*/
+	.testimonial-section .slide-box{position: relative;
+    		border-radius: 0px;
+    		padding: 0px 0px;
+    		margin: 0px 5px;
+    		margin-bottom: 10px;
+   		 box-shadow: 0px 0px 0px #c5d0de;
+    		transition: 0.5s;
+	}
+
+
+	.testimonial-section .slide-box .fdb-cont .fdb-icon{ width: 100%; padding-left: 0%;}
+	.testimonial-section .slide-box .fdb-cont .fdb-icon img{width: 15%;
+    		float: left;
+    		margin-right: 12px;margin-top: 14px;}
+
+	.testimonial-section .slide-box .fdb-cont{
+    		width: 100%;
+    		padding: 0px;    
+    		font-style: italic;}
+
+	.testimonial-section .slide-box .fdb-cont::after {
+   		font-size: 26px;
+    		top: -8px;
+    		left: -3px;
+	}
+	.testimonial-section .slide-box .fdb-cont h4{margin:0px;padding-top: 7px;}
+	.testimonial-section .slide-box .fdb-cont h4 a{font-weight: 600; font-size: 18px;}
+	.testimonial-section .slide-box .fdb-cont h5{margin:0px;}
+	.testimonial-section .slide-box .fdb-cont h5 a{font-size: 14px;}
+	.testimonial-section .slide-box .fdb-cont p{padding: 0px 0px; text-align: justify;font-size: 16px; margin-bottom: 0px;}
+
+	/************************ TESTIMONIALS End************************/
+
+	/************************ footer************************/
+	footer .footerplus{ position: absolute; display: block; left: 48%; top: 10px; font-size: 16px;}
+	.m-footer{ display: none; }
+	footer .all-right { margin: 20px auto 0px;}
+	/************************ footer end************************/
+
+	/********************services list page*********************/		
+	.service-list-banner{background-size: 100% 40%; background-position: bottom; padding: 40px 0px 35px;
+	background-image: none; height: auto;}
+	
+	.service-list-banner .banner-image { margin-top: 82px;}
+	.service-list-banner .banner-image .banner-text{ margin-top: 50px;}
+	.service-list-banner .banner-image .banner-text h2{ font-size: 18px;}
+	
+	.serv-cont-section{} 
+	.serv-cont-section h3{margin-bottom: 10px; font-size: 20px; font-weight: 600; text-align:left}
+	.serv-cont-section p{ text-align:justify}
+	
+	.filter-section{padding: 0px 0px; padding-top: 10px !important;}
+	.filter-grp{padding: 20px 0px;}	
+
+	/* search show hide for mobile */
+	.show-filter-section{display: none;}
+	.btn-edit{display: none;}
+	.show-btn-edit{background-color: #117728;padding: 3px 10px; border-radius: 3px; color: #fff; margin: 10px 5px;
+    display:block;}
+	/* end */
+	aside .filter {position: relative; top: 0px; padding: 6px 10px 0px;}
+	aside .filter h5{ padding:10px 10px; font-size: 16px;}
+
+	aside .filter-box{overflow: scroll; width: 100%; border: 0px solid #f5f5f5; 
+		padding: 0px 5px 0px; margin-bottom: 0px;}
+	aside .filter-box .filter-heading {display: none;}
+	aside .filter ul{width: max-content; padding: 0px; max-height: 50px; overflow-y: hidden;}
+	aside .filter ul li {font-size: 14px; float: left; border-bottom: 0px solid #e8e7e7;  
+		padding: 0px; margin-right: 10px; border-right: 1px solid #ccc;}
+	aside .filter ul li a{background-color: #f1f1f1; padding: 5px;}
+	aside .filter ul li a span {font-size: 13px;}
+	aside .filter ul li:last-child{border-bottom: none; padding:0px;}
+	aside .filter ul li img{width: 20px;}
+
+
+	.service-list-section{padding: 20px 0px;}
+	.service-list-section h2{font-size: 18px; padding-left: 0px; margin-top: 50px;}
+	.service-list-group{padding:10px 0px;}
+	.service-list-section .service-details-box{ min-height: 150px; margin: 10px 0px; padding: 10px;}
+	
+	.service-list-section .service-details-box figure{ width: 35%; float: left;}
+	.service-list-section .service-details-box figure img{width: 100%; height: 100px;}
+
+	.service-list-section .service-details-box .serv-cont{width: 65%; }
+	.service-list-section .service-details-box .serv-cont h4 a{padding-bottom: 10px; font-size: 16px;}
+	.service-list-section .service-details-box .serv-cont h4 {margin: 0px; padding-top: 0px;}
+	
+	.service-list-section .service-details-box ul li {width: auto; margin-right: 15px;}
+	
+	.checkout-btn-section {padding: 43px 14px 14px; display: inherit;
+	/*position: sticky; */
+    /* top: 25px; */
+    /* z-index: 99;*/}
+	.btn-checkout {position: relative;right: -11px;top: 5px; border-radius: 30px;}
+
+	/********************services list page end*********************/
+	/********************videos section*********************/
+	.service-videos-section{}
+	.service-videos-section .service-videos{padding: 10px; width: 100%; margin: 0px auto;
+ 		display: block;	border-radius: 10px; box-shadow: 0px 0px 4px #ccc;}
+	.service-videos h2{ margin-top: 10px; padding-left: 0%;font-size: 20px;}
+	.service-videos h2 small{ display: block; font-size: 15px;}
+	.service-videos .video-box{box-shadow: 0px 3px 4px #978e8e;}
+	.service-videos .video-box img{ width: 100%; height: 180px;}
+	/********************videos section end*********************/
+
+	/*******************--faq section page--****************************/
+	
+	.faq h3 span {padding-bottom: 6px;}
+	.faq h3 span:first-child {border-bottom: 2px solid #140059;}
+	.faq .card-header a span{padding: 8px 10px 8px;}
+	.faq .card a h5{padding: 12px 10px 12px 45px;}
+
+	/********************faq section end*********************/
+
+	/********************checkout page*********************/
+  	.summary-section{padding: 80px 0px 50px;}
+  	.bealing-details{padding: 10px;}
+
+  	.billing-details{margin-top: 15px;}
+  	.billing-details h4{ font-size: 22px;}
+
+  	fieldset.scheduler-border {padding: 15px;}
+  	fieldset.scheduler-border .input{width:100%;}
+	
+	.submit-verify{margin-top: 12px; text-align: left; /*margin-bottom: 10px;*/}
+	.submit-verify a{text-decoration: none; padding: 11px 32px;}
+	
+	.re-send-otp{ text-align: right;}
+    .re-send-otp span{ display: inline-block;}
+	/********************checkout page end*********************/
+
+	/************************ thanks page************************/
+	.enquire-details{ width: 100%; margin: 0px auto;}	
+	.thanks-service{padding: 20px 0px; margin-bottom:0px}
+
+	/************************ thanks page end************************/
+
+	/************************ About Us page************************/	
+	.about-banner-text{ position: relative; }
+	.about-banner-text h3{padding-top: 30%;}
+
+	.tick-50pr li{float: none; width: 100%;}
+	/************************ About Us page End************************/
+
+	/************************ contact Us page************************/
+	.contactus-banner{background-size: 100% 250px  !important;
+	  height: 250px !important;
+	  background-position:top !important;}
+	.contactus-banner-text{ position: relative; }
+	.contactus-banner-text h3{padding-top: 40%; font-weight: 600; color: #fff;}
+	/************************ contact Us page End************************/
+
+
+
+
+
+	/********************Common css****************************/
+	.allpage-banner{
+	  background-size: 100% auto;
+	  height: 300px;
+	  background-position: bottom;
+	}
+
+	.container-fluid {width: 100%;}
+	.m-mtb-15{margin-top: 15px; margin-bottom: 15px}
+	.mt-50{margin-top: 50px}
+	.mt-60{margin-top: 60px}
+	.mt-70{margin-top: 70px}
+	.mt-80{margin-top: 80px}
+	.mt-100{margin-top: 100px}
+
+	.pt-50{padding-top: 50px}
+	.pt-60{padding-top: 60px}
+	.pt-70{padding-top: 70px}
+	.pt-80{padding-top: 80px}
+	.pt-100{padding-top: 100px}
+
+
+	.scroll::-webkit-scrollbar{width:2px; background-color: #50c77c;}
+
+	.horizontal-scroll{overflow: scroll;}
+	.horizontal-scroll .inner-scroll-width{width: max-content}
+
+
+	.heading { font-size: 28px; margin-bottom: 0px; color: #114683;font-weight: 600;}
+	.heading .border-b { width: 100%; height: 40px;}
+
+	.text-success{color: #05ff3e ! important;}
+	.text-primary{color: #1684e2 ! important;}
+
+	
+	.tick{padding: 5px 0px; list-style: none;}
+	.tick li{padding: 5px 0px !important; cursor: pointer; font-size: 14px; list-style: none;}
+	.tick li:before{  
+	    font-family: "Font Awesome 5 Free";
+	   content: "\f00c";
+	   display: inline-block;
+	   padding-right: 10px;
+	   font-size: 12px;
+	   float: left;
+	   color: #117dd2;
+	   vertical-align: middle;
+	   font-weight: 900; }
+
+
+	.textstyl {height: 40px; width: 100%; padding: 7px 14px 7px 40px; font-size: 14px; border-radius: 4px; margin-bottom: 10px}
+	.select1 {height: 46px; width: 100%; padding: 7px 14px 7px; font-size: 14px; border-radius: 4px; margin-bottom: 10px}
+	.textarea1{min-height: 45px; max-height: 100px; width: 100%; padding: 7px 14px;font-size: 13px;
+	        background-color:#fff; color:#000; border-radius: 24px;}
+	.textstyl:focus, .select1:focus { outline: -webkit-focus-ring-color auto 0px; border-color: #124584;}
+
+	/********************Common css end****************************/
+/*******************--bolg page--*****************************/
+.blog-banner{padding-top: 40px; width: 100%; height: 200px; background-size: 100% 100%;}
+
+.blog{padding:10px 0px; overflow: visible;}
+.blog h3{font-size: 18px; margin: 18px 0px;}
+
+.blog-box .img-circle{ width: 100%; margin-right: 0%; text-align: center; }
+.blog-box .img-circle img{ width: 250px; max-height: 160px;}
+
+.blog-box-list {width: 100%; float: left; font-size: 14px; margin-top: 15px;}
+.blog-box-list h4{font-size: 16px;}
+.blog-box-list {margin-bottom: 5px; font-size: 14px;}
+.blog-box-list button{font-size: 13px;}
+
+/*******************--bolg page end--*****************************/
+/*******************--bolg details page--*****************************/
+.blog-details {padding: 0px 0px 20px;}
+.blog-details h3 { font-size: 18px; margin: 18px 0px;}
+
+.blog-details-box .blog-img { margin-right: 0%;}
+.blog-details-box h4 {font-size: 14px;}
+.blog-details-box h5 { font-size: 14px;}
+
+.icons{width: 100%}
+.icons a{font-size: 9px;}
+.comment-icon {font-size: 9px;}
+
+.recent-update { padding: 8px 15px 5px;  margin-top: 15px; box-shadow: 0px 1px 6px #b5b3b3;}
+.recent-update h4 { font-size: 16px;}
+.recent-update ul li span { width: 85%; padding: 5px 10px; font-size: 12px;}
+.recent-update ul li span:first-child { font-size: 22px; width: 15%; padding: 14px 10px 0px 0px;}
+
+.aside-section{ padding:15px 15px 5px; margin-top: 20px; box-shadow: 0px 1px 6px #b5b3b3;}
+.aside-section h4{font-size: 16px;}
+/*******************--bolg details page end--*****************************/
+
+.other-service-section { padding: 10px 0px;}
+    .other-service-section ul li {padding: 5px 5px; margin: 5px 5px 0px 0px;}
+    .other-service-section ul li a{font-size: 12px;}
+}
+
+
+	
+	

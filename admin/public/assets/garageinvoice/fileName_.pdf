@@ -1,0 +1,923 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="https://www.garage.movemycar.in/assets/images/logo2.png" sizes="32x32" type="image/png">
+<!---font css-->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- <link href="css/custom-common.css" rel="stylesheet" type="text/css"> -->
+<link href="https://www.garage.movemycar.in/assets/css/nav.css?v=4.5" rel="stylesheet" type="text/css">
+<link href="https://www.garage.movemycar.in/assets/css/custom.css?v=6.1" rel="stylesheet" type="text/css">
+<link href="https://www.garage.movemycar.in/assets/css/custom-responsive.css?v=6.1" rel="stylesheet" type="text/css">
+<link href="https://www.garage.movemycar.in/assets/css/popup.css?v=4.6" rel="stylesheet" type="text/css">
+
+
+
+<link rel="stylesheet" type="text/css" href="https://www.garage.movemycar.in/assets/css/marq-style.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.garage.movemycar.in/assets/css/custom-animation.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.garage.movemycar.in/assets/css/animations.css"/>
+
+<link href="https://www.garage.movemycar.in/assets/css/port-tab.css" rel="stylesheet" type="text/css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PCPDR39');</script>
+<!-- End Google Tag Manager -->
+<!-- <meta name="robots" content="noindex, nofollow"> -->
+
+		
+	<title></title>
+	<meta name="description" content=""/>
+	<meta name="keywords" content="" />
+
+	</head>
+<body>	
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCPDR39"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div class="head">
+		<div class="container-fluid">
+			<header>							
+				<div id="sideNav" href="#" class="toggle">
+					<i class="fa fa-bars"></i> 
+				</div>
+				<div class="">
+					<div class="col-md-12 col-sm-12 col-12 px-0">
+						<div class="logo-section">
+							<a id="flip" class="logo" href="https://www.garage.movemycar.in/">
+								<img src="https://www.garage.movemycar.in/assets/images/logo2.png" alt="Logo">
+							</a>							
+						</div>
+						<!-- for mobile login -->
+						<span class="m-contact-no">
+					        <a href="tel:8800538189">
+				          		<span>
+				            		<img src="https://www.garage.movemycar.in/assets/images/phone_menu.gif" alt="call-icon"> 
+				          		</span> 880-053-8189
+					        </a> 
+				      	</span>
+						<!-- for mobile login end -->
+						<div class="menu">
+							<ul class="topnav" id="myTopnav">							
+								<li><a href="https://www.garage.movemycar.in/">Home</a></li>
+								<!-- <li class="dpd-menu">
+									<a class="drop-menu" href="#">Service Type</a>
+									<ul class="dropdown-content">
+										<li><a href="#">Delhi 2</a></li>
+										<li><a href="#">Banglore 2</a></li>
+										<li><a href="#">Mumbai 2</a></li>
+										<li><a href="#">Hyderabad 2</a></li>
+										<li><a href="#">Chennai 2</a></li>
+									</ul>
+								</li> -->
+								<!-- <li><a href="#">Blog</a></li> -->
+								<li><a href="https://www.garage.movemycar.in/contact-us">Contact Us</a></li>
+								<li><a href="https://www.garage.movemycar.in/login">Login</a></li>								<li>
+									<span class="contact_no">
+								        <a href="tel:8800538189">
+							          		<span class="m-display">
+							            		<img src="https://www.garage.movemycar.in/assets/images/phone_menu.gif" alt="call-icon"> 
+							          		</span> 880-053-8189
+								        </a> 
+							      	</span>
+								</li>
+								<!-- <a href="javascript:void(0)" class="app-download">
+									<img src="https://www.garage.movemycar.in/assets/images/android-app-store.png"></a> -->
+							</ul>
+						</div>	
+					</div>
+				</div>								
+			</header>
+		</div>		
+	</div>
+	<div  class="content-section top-scroll">
+<style>
+.active, .btn:hover {
+  background-color: #f7f7f7;
+  color: white;
+}
+</style>
+<section class="banner-section service-list-banner ">
+	<div class="container">
+		<div class="form-position">
+			<div class="row">
+				<div class="col-md-5 col-sm-5 col-12 px-0">
+					<div class="banner-image">
+						<div class="banner-text">
+												<h2><strong>Car repair & Maintenance full services</strong></h2>
+
+				  			<p>We offer customized options for your car services around your nearby area with affordable charges and with experienced vehicle technician for instant booking option.</p> 
+							  		
+					  		<!-- <h1><strong>Car repair & Maintenance full services</strong></h1>
+				  			<p>We offer customized options for your car services around your nearby area with affordable charges and with experienced vehicle technician for instant booking option.</p> 	  		 -->
+					  	</div>
+					  	<div class="btn-grp wow fadeInLeft" data-wow-delay=".2s">
+					  		 <a href="javascript:void(0)" onclick="document.getElementById('pop_service_form').style.display='block'" class="get-stared btn-color-primary">Book an Appointment</a>					  		 
+					  	</div>
+					</div>
+				</div>
+				<div class="col-md-7 col-sm-7 col-12"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- form section end -->
+<section class="serv-cont-section pt-5">
+	<div class="container-fluid">
+		<div class="col-md-12 col-sm-12 col-xs-12 px-0 pb-3">
+			<h3>
+				<span>Car Service and Maintenance Packages</span>
+			</h3>
+			<p>Do you think? Your car’s next service will be an experienced technician while short listing them from a wide range of car services maintenance packages that fits according to you requirements.</p>
+		</div>
+	</div>
+</section>
+<section class="filter-section pt-3">
+<div class="container-fluid">
+		<form method="post" action="https://www.garage.movemycar.in/form-submit-new"> 
+		<div class="row filter-grp">
+			<input type="hidden" name="serviceIn" id="serviceIn" value="images">
+			<input type="hidden" name="city" id="city" value="assets">
+			<input type="hidden" name="number" value="">
+			<div class="col-md-10 col-sm-10 col-12">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
+						<select required class="select1" id="brand_new_search1" name="brand">
+							<option  value="">Select Car Brand</option>
+							 <option value="1">HONDA</option><option value="2">HYUNDAI</option><option value="3">MARUTI SUZUKI</option><option value="4">MAHINDRA</option><option value="5">TATA</option>						</select>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
+						<select required class="select1" id="model" name="model">
+							<option value="">Select Car Model</option>
+						</select>
+					</div>
+					<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
+						<select required class="select1" id="fuel" name="fuel">
+							<option value="">Select Car Fuel Type</option>
+							<option value="1">Petrol</option>
+							<option value="2">Diesel</option>
+							<option value="3">CNG</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-2 col-12">
+				<button type="submit" name="submit" class="search-btn">Search</button>
+			</div>
+		</div>
+	</form>
+
+	</div>
+</section>
+<section class="service-list-section pt-4">
+	<div class="container-fluid">		
+		<div class="row">	
+		<div class="checkout-btn-section">
+						</div>
+		<div class="col-md-3 col-sm-3 col-12 m-padding-lr">
+				<aside>
+	      			<div class="filter">
+	      				<h5>Our Top Services:</h5>
+	      				<div id="accordionfilter">
+					      	<div class="filter-box">
+						        <div class="filter-heading" role="tab" id="heading1">
+						          	<a data-toggle="collapse" data-parent="#accordionfilter" href="#collapse1" aria-expanded="true" aria-controls="collapse1" class="">
+							            <h6 class="">Service Type</h6>
+							            <span><i class="fa fa-chevron-up"></i></span>
+						          	</a>
+						        </div>
+						        <ul id="collapse1" class="collapse show scroll" role="" aria-labelledby="heading1" data-parent="#accordionfilter">
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/periodic-services/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/periodicservices/periodicservices1.jpg" alt="Periodic maintenance service near me">
+									    	<span>Periodic Services</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/denting-and-painting/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/dentingpainting/dentingpainting2.jpg" alt="Car denting and painting near me">
+									    	<span>Denting And Painting</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/batteries/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/batteries/batteries3.jpg" alt="Car battery service near me">
+									    	<span>Batteries</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/car-spa-and-cleaning/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/carspacleaning/carspacleaning4.jpg" alt="Car washing near me">
+									    	<span>Car Spa And Cleaning</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/ac-service-and-repair/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/acservicerepair/acservicerepair5.jpg" alt="Car AC Services Near Me">
+									    	<span>AC Service And Repair</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/tyres-and-wheels/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/tyreswheels/tyreswheels6.jpg" alt="Car Tyre Services ">
+									    	<span>Tyres And Wheels</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/detailing-services/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/detailingservices/detailingservices8.jpg" alt="Car Detailing Services Near Me">
+									    	<span>Detailing Services</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/custom-services/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/customservices/customservices9.jpg" alt="Car Custom Services">
+									    	<span>Custom Services</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/windshield-and-glass/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/windshieldglass/windshieldglass10.jpg" alt="Car Windscreen Glass Replacement Services in Delhi">
+									    	<span>Windshield And Glass</span>
+									    </a>									    
+									</li>
+																        <li class="form-check">
+									<a href="https://www.garage.movemycar.in/gurgaon/lights-and-fitments/doc/prem-motors6/6_pan_prem-motors.pdf">
+									    	<img width="10%" src="https://www.garage.movemycar.in/admin/public/assets/uploads/uplode/services/lightsfitments/lightsfitments11.jpg" alt="car light fitting near me">
+									    	<span>Lights And Fitments</span>
+									    </a>									    
+									</li>
+																       								
+								</ul>
+					      	</div>
+					    </div>
+	      			</div>	      			
+				</aside>
+			</div>		
+			
+			<div class="col-md-9 col-sm-9 col-12 m-padding-lr">
+				<a href="javascript:void(0)" class="float-right btn-edit">Search Again <i class="fas fa-arrow-circle-right"></i></a>
+									<h1>No Records Found! </h1>
+										<div class="checkout-btn-section">
+						</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- service-list-section  end -->
+
+<section class="pt-5 pb-5">
+	<div class="container-fluid">		
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-12 m-padding-lr">
+				<div class="faq wow fadeInUp" data-wow-delay=".2s">
+					<div class="col-md-12 col-sm-12 col-12 m-padding-lr">
+						<h3><span>Frequently Asked</span> <span class="text-danger">Questions</span></h3>
+						<div class="row justify-content-center">
+						  	<div class="col-md-12 col-sm-12 co-12 m-padding-lr">
+						        <div class="accordion md-accordion accordion-2" id="accordionEx7" role="tablist" multiselectable="true">
+							      	<div class="card">
+								        <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading1">
+								          	<a data-toggle="collapse" data-parent="#accordionEx7" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+								          		<span><i class="fa fa-angle-double-right fa-minus"></i></span>
+									            <h5 class="mb-0 font-thin">
+									                Does MMC Garage provide car service at doorstep?
+									            </h5>
+								          	</a>
+								        </div>
+								        <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1"
+								          data-parent="#accordionEx7">
+								          	<div class="card-body mb-1 rgba-grey-light white-text">
+								            	<p>We suggest our customers to schedule a service at MMC Garage instead of doorstep services because to experience unmatched car repair services, it should be carried out at a place which is fully equipped with the right tools and equipment’s.</p>
+								          	</div>
+								        </div>	
+							      	</div>
+						      		<div class="card">
+								        <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading2">
+								          	<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse2"
+								            aria-expanded="false" aria-controls="collapse2">
+								            	<span><i class="fa fa-angle-double-right fa-plus"></i></span>
+									            <h5 class="mb-0 font-thin">
+									                How to book car service on MMC Garage?
+									            </h5>
+								          	</a>
+								        </div>
+							        	<div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2"
+							          	data-parent="#accordionEx7">
+								          	<div class="card-body mb-1 rgba-grey-light white-text">
+									            <p>Booking a car service at MMC Garage is a hassle-free process. Just fill up a form mentioning about the convenient date, time and location that works best for you and leave the rest to us. Moreover, you will also get the timely updates on your entire car service process. </p>
+								          	</div>
+							        	</div>
+						      		</div>
+						      		<div class="card">
+							        	<div class="card-header rgba-stylish-strong z-depth-1 mb-0" role="tab" id="heading3">
+							          		<a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+							          			<span><i class="fa fa-angle-double-right fa-plus"></i></span>
+							            		<h5 class="mb-0 font-thin">
+							               		 How long does a car service take? 
+							            		</h5>
+							          		</a>
+							        	</div>
+								        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3"
+								          data-parent="#accordionEx7">
+								          	<div class="card-body mb-1 rgba-grey-light white-text">
+								            	<p>If you opt for a full service, then it may take approximately 3 to 5 hours. Depending upon your car repair work, our experts will tell you in advance on how long a service will take on the day.</p>
+								          	</div>
+								        </div>
+							      	</div>
+						    	</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="testimonial-section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container">
+				<div class="col-md-12 col-sm-12 col-xs-12 px-0 pb-3">
+					<h3 class="text-center">
+						<span>What Our Customers Say About Us</span>
+					</h3>
+				</div>
+			</div>	
+			<div class="col-md-12 col-sm-12 col-12 m-padding-lr">
+				<div class="testimonial-slide">
+					<div class="slide-box">
+						<div class="fdb-icon">
+							<img src="https://www.garage.movemycar.in/assets/images/fdb-profile.jpg" alt="" class="">
+						</div>
+						<div class="fdb-cont">
+							<p>Quality and professional services. The prices are affordable and quality of work done on my car is simply unmatched. The professionals at MMC Garage are highly skilled and go extra mile to provide best services beyond your expectations. Definitely worth recommending.
+							</p>
+							<h4><a href="">Ravi Ranjan</a></h4>
+							<h5><a href="">Gurgaon</a></h5>
+						</div>							
+					</div>
+					<div class="slide-box">
+						<div class="fdb-icon">
+							<img src="https://www.garage.movemycar.in/assets/images/fdb-profile.jpg" alt="" class="">
+						</div>
+						<div class="fdb-cont">
+							<p>First time used the car engine replacement services of MMC Garage and I has a very hassle-free experience. The mechanics were experienced and did an excellent work. I did not find even a single fault in their work. Will certainly use their services again!
+							</p>
+							<h4><a href="">Amit Kumar</a></h4>
+							<h5><a href="">Gurgaon</a></h5>
+						</div>							
+					</div>
+					<div class="slide-box">
+						<div class="fdb-icon">
+							<img src="https://www.garage.movemycar.in/assets/images/fdb-profile.jpg" alt="" class="">
+						</div>
+						<div class="fdb-cont">
+							<p>Great experience. I got the regular updates about my entire car repairing and maintenance process. The windshield replacement work was done in a timely manner. Would definitely recommend them. Thank you again.
+							</p>
+							<h4><a href="">Rajesh singh</a></h4>
+							<h5><a href="">Gurgaon</a></h5>
+						</div>							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- TESTIMONIALS  end -->
+﻿</div>
+<footer>
+	<span class="footerplus f-toggle"><i class="fa fa-plus"></i> </span>
+	<div class="container-fluid m-footer">		
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-12 m-padding-lr">
+				<div class="footer-contant">
+					<h3>Contact Information <span></span></h3>
+					<p>Ready to book your car repair and maintenance service with MMC Garage? If yes, then get ready to experience the quality car repair solutions at affordable prices. We are just one click away if you are looking for excellence in car servicing and maintenance.<a href="https://www.garage.movemycar.in/about-us">read more..</a></p>
+				</div>				
+			</div>
+			<div class="col-md-2 col-sm-2 col-12 m-padding-lr">
+				<div class="footer-contant">
+					<h3>Quick Link <span></span></h3>
+					<ul class="">
+						<li>
+							<a href="https://www.garage.movemycar.in/about-us">About us</a>
+						</li>
+						<li>
+							<a href="https://www.garage.movemycar.in/contact-us">Contact Us</a>
+						</li>
+						<li>
+							<a href="https://www.garage.movemycar.in/faq">FAQ</a>
+						</li>
+						<li>
+							<a href="https://www.garage.movemycar.in/privacypolicy">Privacy Policy</a>
+						</li>
+						<li>
+							<a href="https://www.garage.movemycar.in/term-and-conditions">Terms and Conditions</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
+				<div class="footer-contant">
+					<h3>Services <span></span></h3>
+					<div class="row">
+					<ul class="col-md-5 col-sm-5 col-12 mr-1">
+						<li><a href="https://www.garage.movemycar.in/gurgaon/periodic-services">Periodic Services</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/denting-and-painting">Denting And Painting</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/batteries">Batteries</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/car-spa-and-cleaning">Car Spa And Cleaning</a></li>
+					</ul>
+					<ul class="col-md-6 col-sm-6 col-12">
+					   <li><a href="https://www.garage.movemycar.in/gurgaon/ac-service-and-repair">AC Service And Repair</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/tyres-and-wheels">Tyres And Wheels</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/insurance-claims">Insurance Claims</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/detailing-services">Detailing Services</a></li>
+					</ul>
+</div>
+				</div>
+			</div>
+			<!-- <div class="col-md-2 col-sm-2 col-6">
+				<div class="footer-contant">
+					<h3></h3>
+					<div></div>
+					<ul>
+					   <li><a href="https://www.garage.movemycar.in/gurgaon/ac-service-and-repair">AC Service And Repair</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/tyres-and-wheels">Tyres And Wheels</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/insurance-claims">Insurance Claims</a></li>
+						<li><a href="https://www.garage.movemycar.in/gurgaon/detailing-services">Detailing Services</a></li>
+					</ul>
+				</div>
+			</div> -->
+			<div class="col-md-3 col-sm-3 col-12 m-padding-lr">
+				<div class="footer-contant">
+					<h3>Quick Contact <span></span></h3>
+					<ul>
+						<li><a href="tel:8800538189">Call Us: +91-880-053-8189</a></li>
+						<!-- <li><a href="#">info@abc.com</a></li> -->
+						<li><a href="#"> 309, 3rd Floor, Vipul Agora, MG Road, Sector 28, Gurgaon, Haryana 122002, India </a></li>						
+					</ul>
+					<!-- <div class="social mb-2">
+						<h5>Connect us <span></span></h5>
+						<a href="#"><img src="https://www.garage.movemycar.in/assets/images/fb.png"></a>
+						<a href="#"><img src="https://www.garage.movemycar.in/assets/images/g-plus.png"></a>
+						<a href="#"><img src="https://www.garage.movemycar.in/assets/images/tweeter.png"></a>
+					</div> -->
+					<div>
+						<a href="https://play.google.com/store/apps/details?id=com.mmcgarage.customer" target="_blank" class="footer-app-download">
+						<img src="https://www.garage.movemycar.in/assets/images/android-app-store.png"></a>
+					</div>
+				</div>
+			</div>			
+		</div>			    	
+	</div>
+	<div class="all-right">
+		<a href="#"> Copyright 2021 All rights Reserved MoveMyCar.In A Product Of R-IMS.</a>
+		<p style="font-size: 11px;color:#73706b;">Disclaimer - The information, services, and products, accessed through this website own is owned and operated by MMC Garage. The representatives of the company are liable to make any changes to the data and can make additional changes to the website wherever required. Our company’s representative disclaims any information and services provided on our website and are subject to the law of infringement.</p>
+	</div>
+</footer>
+
+
+<div id="top-scroll" class="scroll-top">
+	<img width="40px" src="https://www.garage.movemycar.in/assets/images/to_top_icon.png" alt="Scroll Up">
+</div>
+
+</body>
+
+<div id="pop_service_form" class="common-modal">
+	<div class="modal-content animate">
+		<div class="">
+	      	<span onclick="document.getElementById('pop_service_form').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+	    <div class="justify-content-center mt-0">
+	        <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center m-padding-lr">
+	            <div class="card-popup">
+	                <h2>Book Car Service with Approved Garages</h2>
+	                <!-- <p>Fill all form field to go to next step</p> -->
+	                <div class="row">
+	                    <div class="col-md-12 mx-0 m-padding-lr">	                       
+                            <fieldset>
+							    <div class="mt-3">
+							    	<!-- <div class="row">
+										<div class="col-md-12 col-sm-12 col-12">
+										    <div class="form-group">
+											<input id="name" required="required" type="text" name="name" placeholder="Enter Name" minlength="3">
+										    </div>
+									    </div>
+								  	</div> -->
+								 	<div class="row">
+										<div class="col-md-6 col-sm-6 col-12">
+										    <div class="form-group">
+											<span id="error-brand" style="display:none;color:red;"><small>Select a Brand*</small></span>
+									  			<select class="branded" required name="brand">
+                                            	<option value="">Select a Brands...</option>
+		                                        <option value="1">HONDA</option><option value="2">HYUNDAI</option><option value="3">MARUTI SUZUKI</option><option value="4">MAHINDRA</option><option value="5">TATA</option>											  				
+												</select>
+										    </div>
+									    </div>
+									    <div class="col-md-6 col-sm-6 col-12">
+										    <div class="form-group">
+											<span id="error-model" style="display:none;color:red;"><small>Select a Model*</small></span>
+										  		<select required name="model" id="form_model" onchange="$('#error-model').hide();$('#form_model').css('border-color','black')">
+										  			<option>Select Car Model</option>
+										  			
+										  		</select>
+										    </div>
+									    </div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-6 col-12">
+										    <div class="form-group">
+											<span id="error-name" style="display:none;color:red;"><small>Enter a Valid Name*</small></span>
+											<input id="name" required="required" type="text" name="name" placeholder="Enter Name" minlength="3" onkeyup="document.getElementById('error-name').style.display='none';$('#name').css('border-color','black');">
+										    </div>
+									    </div>						    
+									    <div class="col-md-6 col-sm-6 col-12">
+										    <div class="form-group">
+												<span id="error-number" style="display:none;color:red;"><small> Enter Valid 10 Digit Mobile Number*</small></span>
+											  		<input id="number" required="required" type="text" name="number" placeholder="Contact Number" maxlength="10" onkeyup="document.getElementById('error-number').style.display='none';$('#number').css('border-color','black');">
+												
+										    </div>
+									    </div>
+									  	<div class="col-md-6 col-sm-6 col-6">
+										    <div class="form-group user_otp">
+												<input id="otp" required="required" type="text" name="otp" placeholder="Enter OTP" minlength="6" maxlength="6"><!-- <a href="javascript:void();"><i id="resendotp" class="fas fa-sync"></i></a> -->
+										    </div>
+									    </div>
+									    <div class="col">
+										    <div class="form-group user_otp text-left">
+										    	<a href="javascript:void();" class="btn btn-smbtn-success re-sendotp"><i id="resendotp" class="fas fa-sync"></i></a>
+										    	Re-send OTP
+										    </div>
+									    </div>
+								  	</div>
+							    </div>
+							    <div class="row mt-3">
+									<div class="col-md-12 col-sm-12 col-12">
+									    <div class="form-group">
+							    			<button id="submitnumber" type="button" name="submit" class="btn btn-success" value="button">Submit</button>&nbsp;&nbsp;
+
+											<button id="submitotp" type="button" name="submitotp" class="btn btn-success" >Verify Otp</button>&nbsp;&nbsp;
+
+											<!-- <button id="resendotp" type="button" name="resendotp" class="btn btn-success" value="button">Resend Otp</button> -->
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+                    </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>   	
+</div>
+
+<div id="package_details_popup" class="common-modal">
+	<div class="modal-content animate">
+		<div class="">
+	      	<span onclick="document.getElementById('package_details_popup').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+	    <div class="justify-content-center mt-4">
+	        <div class="col-12 col-sm-12 col-md-12 col-lg-12 m-padding-lr">
+                <form>
+		          	<fieldset>
+						<div class="service-details-box">
+							<div class="row">
+								<div class="col-12 m-padding-lr"  id="desc_details">
+									
+								</div>
+							</div>
+							<!-- <div class="add-to-cart">
+								<span class="float-left"><strong>Rs 5000</strong></span>
+								<a href="javascript:void(0)" class="btn btn-sm btn-outline-success cart-btn"><i class="fas fa-plus-circle"></i> Add to Cart</a>
+							</div>		 -->
+						</div>
+						<h1 class="text-center">
+
+						<a href="javascript:void(0)" onclick="document.getElementById('package_details_popup').style.display='none';document.getElementById('pop_service_form').style.display='block'" class="get-stared btn-color-primary">Book an Appointment </a>
+						</h1> <br> 
+		          	</fieldset>
+                </form>
+	        </div>
+	    </div>
+	</div>   	
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">var base_url = 'https://www.garage.movemycar.in/';</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://www.garage.movemycar.in/assets/js/bootstrap.min.js"></script>
+<script src="https://www.garage.movemycar.in/assets/js/animate.js" type=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.garage.movemycar.in/assets/js/customjs.js?v=1" type=""></script>
+<script src="https://www.garage.movemycar.in/assets/js/marq.js" type=""></script>
+
+<!-- for tab animate-->
+<script type='text/javascript' src="https://www.garage.movemycar.in/assets/js/isotope-tab.js"></script>
+<script type='text/javascript' src="https://www.garage.movemycar.in/assets/js/custom-tab.js"></script>
+<!-- for tab animate end-->
+
+<!-- <script src="https://www.garage.movemycar.in/assets/js/lazyloaded.js" type=""></script> -->
+
+<!-- popup steps form scripts -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#submitotp").hide();
+		$(".user_otp").hide();
+		$("#error-number").css("display","none");
+		$("#error-brand").css("display","none");
+		$("#error-model").css("display","none");
+		$("#error-name").css("display","none");
+  
+	});
+        $(".branded").on('change',function(){
+			// var brand = $('#car_brand1').val();
+			var brand = $(".branded").val();
+            // alert(brand);
+            if(brand != '')
+            {
+             $.ajax({
+              url:"https://www.garage.movemycar.in/fetch-model",
+              method:"POST",
+              data:{brand_id:brand},
+              success:function(data)
+              {
+				var res = jQuery.parseJSON(data);
+                $('#form_model').html(res);
+              }
+        });
+    }
+});
+
+
+$("#submitnumber").click(function(){
+var brand = $(".branded").val();
+var model = $("#form_model").val();
+var number = $("#number").val();
+var name = $("#name").val();
+
+if(brand == '' || brand == ' '){
+	$("#branded").css("border-color","red");
+	$("#error-brand").css("display","block");
+	return false;
+}
+if(model == '' || model == ' '){
+	$("#form_model").css("border-color","red");
+	$("#error-model").css("display","block");
+	return false;
+}
+if(name == '' || name == ' '|| $.isNumeric(name)){
+	$("#name").css("border-color","red");
+	$("#error-name").css("display","block");
+	return false;
+}
+if(number == "" || !$.isNumeric(number) || (number == " ") || (number.charAt(0)!=9&&number.charAt(0)!=8&&number.charAt(0)!=7&&number.charAt(0)!=6)){
+	$("#number").css("border-color","red");
+	$("#error-number").css("display","block");
+	return false;
+}
+
+$.ajax({
+	url:"https://www.garage.movemycar.in/save-user-number",
+	method:"POST",
+	data:{brand:brand,model:model,name:name,number:number},
+	   success:function(data)
+	{
+	// alert(data);
+	// console.log(data);
+		if(data == 'exist'){
+			window.location.href = "https://www.garage.movemycar.in/home-form-search";
+		}else{
+			$("#submitnumber").hide();
+			$("#submitotp").show();
+			$(".user_otp").show();
+		}
+	}
+
+});
+
+});
+
+$("#resendotp").click(function(){
+	var number = $("#number").val();
+	// alert(number);
+$.ajax({
+	url:"https://www.garage.movemycar.in/resend-otp",
+	method:"POST",
+	data:{number:number},
+	   success:function(data)
+	{
+	alert("Otp Resent!")
+	return false;
+	
+	} 
+
+
+});
+
+});
+$("#submitotp").click(function(){
+//  var user_otp = $("#user_otp").val();
+ var otp = $("#otp").val();
+ var number = $("#number").val();
+//  alert(otp);
+
+ if(otp == "" || !$.isNumeric(otp)){
+	$("#otp").css("border-color","red");
+	$("#otp").css("display","block");
+	return false;
+}
+$.ajax({
+	url:"https://www.garage.movemycar.in/save-user-otp",
+	method:"POST",
+	data:{otp:otp,number:number},
+	   success:function(data)
+	{
+		// console.log(data);
+		// alert(data);
+		if(data == 'exist'){
+			// setTimeout(function() {
+        swal("ThankYou!","Your Enquiry Has Been Submitted Successfully!","success").then(function() {
+            window.location = "https://www.garage.movemycar.in/home-form-search";
+		});
+       
+    // }, 1000);
+			
+		}else{
+			alert("Invalid OTP!");
+			return false;
+		}
+	}
+
+});
+
+});
+
+
+$(document).on('click','.view_desc_details',function(){
+
+var id = $(this).attr('id'); 
+var name = $(this).attr('name'); 
+var logo = $(this).attr('logo'); 
+// $('#pack_name').val(name);
+$.ajax({
+url:"https://www.garage.movemycar.in/get-package-desc-full",
+method:"POST",
+data:{id:id,name:name,logo:logo},
+success:function(data)
+{
+$('#desc_details').html(data);
+}
+});
+
+
+});
+
+ $(".step_2 .back_2").click(function(){
+            $(".step_1").css({"display": "block"});
+            $(".step_2").css({"display": "none"});
+        });
+
+		$(".step_3 .back_3").click(function(){
+            $(".step_2").css({"display": "block"});
+            $(".step_3").css({"display": "none"});
+        });    
+		$(".step_4 .back_4").click(function(){
+            $(".step_3").css({"display": "block"});
+            $(".step_4").css({"display": "none"});
+        });    
+       
+// }); 
+	
+</script>
+
+</html><script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#added_to_cart').hide();
+		$('#add_to_cart').on('click',function(){
+			$('#added_to_cart').show();
+			$('#add_to_cart').hide();
+			// $("added_to_cart").css("display", "block");
+		});
+
+	// 	if ($(window).width() < 560) {
+	// 	$(".filter-section").addClass("show-filter-section");            
+    //     $(".btn-edit").addClass("show-btn-edit");  
+	// 	$("#brand_new_search1").css("border-color", "red");
+   
+    // }	
+
+	
+});
+
+
+	function get_package_details(){
+		var brand = $('#brand_new_search1').val();
+		// alert(brand);
+		var model = $('#model').val();
+		var fuel = $('#fuel').val();
+
+		if(brand == ''){
+			alert("Please select a brand");
+			 $('#brand_new_search1').focus();
+             $("#brand_new_search1").css("border-color", "red");
+        return false;
+		} else if(model == ''){
+			alert("Please select a model");
+			 $('#model').focus();
+			 $("#model").css("border-color", "red");
+        return false;
+		} else if(fuel == ''){
+alert("Please select a fuel");
+			 $('#fuel').focus();
+			 $("#fuel").css("border-color", "red");
+        return false;
+		} else{
+ $.ajax({
+            type: 'POST',
+            url: "https://www.garage.movemycar.in/search-brand-package",
+            data:{brand:brand,model:model,fuel:fuel},
+             success: function(status) 
+            {
+                alert(status);
+              
+                // $('#pop_service_form').modal("hide");
+                // $('.modal-body').css('opacity', '');
+            },
+            error: function(status) 
+            {
+                alert("Some error, please try again");
+
+            }
+        });
+		}
+	};
+
+	$('#model').change(function(){
+  var model_id = $('#model').val();
+  var model_name = $('#model option:selected').html();
+  if(model_id != '')
+  {
+   $.ajax({
+    url:"https://www.garage.movemycar.in/fetch-fuel",
+    method:"POST",
+    data:{model_id:model_id,model_name:model_name},
+    success:function(data)
+    {
+     $('#fuel').empty().html('<option value="">Select Fuel Type..</option>');
+       $.each(data,function(modelID,engine_name)
+            {
+            var opt = $('<option />');
+                opt.val(modelID);
+                opt.text(engine_name);
+                $('#fuel').append(opt);
+            });
+    }
+   });
+  }
+  else
+  {
+   $('#fuel').html('<option value="">Select Model..</option>');
+  }
+ });
+$('#brand_new_search1').change(function(){
+// alert("hello");	
+		
+  var brand = $('#brand_new_search1').val();
+  if(brand != '')
+  {
+   $.ajax({
+    url:"https://www.garage.movemycar.in/fetch-model-new",
+    method:"POST",
+    data:{brand_id:brand},
+    success:function(data)
+    {
+     $('#model').html(data);
+    }
+   });
+  }
+  else
+  {
+   $('#model').html('<option value="">Select Model..</option>');
+  }
+ });
+	
+</script>
+
+
+
+

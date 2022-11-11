@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from codervent.com/rocker/demo/vertical/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jul 2021 12:03:02 GMT -->
+
+<!-- Mirrored from www.garage.movemycar.in/admin/Welcome/userlogin by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Nov 2022 12:10:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="../../assets/images/logo2.png" type="image/png" />
+	<!--plugins-->
+	<link href="../public/assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="../public/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="../public/assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="../public/assets/css/pace.min.css" rel="stylesheet" />
+	<script src="../public/assets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link href="../public/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+	<link href="../public/assets/css/app.css" rel="stylesheet">
+	<link href="../public/assets/css/icons.css" rel="stylesheet">
+	<title>MMC GARAGE ADMIN</title>
+</head>
+
+<body class="bg-login">
+	<!--wrapper-->
+	<div class="wrapper">
+					   		<div class="section-authentication-signin d-flex align-items-center justify-content-center my-5 my-lg-0">
+			<div class="container-fluid">
+				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+					<div class="col mx-auto">
+						<div class="mb-4 text-center">
+							<img src="assets/images/logo-img.html" width="180" alt="" />
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<div class="border p-4 rounded">
+									<div class="text-center">
+										<h3 class="">Sign in</h3>
+										
+									</div>
+								
+									<div class="form-body">
+										<form class="row g-3" action="https://www.garage.movemycar.in/admin/login" method='post'>
+											<div class="col-12">
+												<label for="name" class="form-label">Username</label>
+												<input type="text" name="name" class="form-control" id="name" placeholder="Enter username..." required>
+											</div>
+											<div class="col-12">
+												<label for="inputChoosePassword" class="form-label">Enter Password</label>
+												<div class="input-group" id="show_hide_password">
+													<input type="password" name ="password" class="form-control border-end-0" id="inputChoosePassword" value="" placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent" required><i class='bx bx-hide'></i></a>
+												</div>
+											</div>
+										
+											
+											<div class="col-12">
+												<div class="d-grid">
+													<button type="submit"  value="submit" class="btn btn-primary"><i class="bx bxs-lock-open"></i>Sign in</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+			</div>
+		</div>
+	</div>
+	<!--end wrapper-->
+	<!-- Bootstrap JS -->
+	<script src="../public/assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="../public/assets/js/jquery.min.js"></script>
+	<script src="../public/assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="../public/assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="../public/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<!--Password show & hide js -->
+	<script>
+		$(document).ready(function () {
+			$("#show_hide_password a").on('click', function (event) {
+				event.preventDefault();
+				if ($('#show_hide_password input').attr("type") == "text") {
+					$('#show_hide_password input').attr('type', 'password');
+					$('#show_hide_password i').addClass("bx-hide");
+					$('#show_hide_password i').removeClass("bx-show");
+				} else if ($('#show_hide_password input').attr("type") == "password") {
+					$('#show_hide_password input').attr('type', 'text');
+					$('#show_hide_password i').removeClass("bx-hide");
+					$('#show_hide_password i').addClass("bx-show");
+				}
+			});
+		});
+	</script>
+	<!--app JS-->
+	<script src="assets/js/app.html"></script>
+</body>
+
+
+<!-- Mirrored from codervent.com/rocker/demo/vertical/authentication-signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jul 2021 12:03:03 GMT -->
+
+<!-- Mirrored from www.garage.movemycar.in/admin/Welcome/userlogin by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Nov 2022 12:10:59 GMT -->
+</html>
