@@ -1,0 +1,2033 @@
+{
+    "1": {
+        "HONDA": {
+            "16": {
+                "Accord": {
+                    "16": "Petrol",
+                    "17": "CNG"
+                }
+            },
+            "32": {
+                "Accord Hybrid": {
+                    "32": "Petrol"
+                }
+            },
+            "3": {
+                "Amaze": {
+                    "3": "Petrol",
+                    "4": "CNG",
+                    "5": "Diesel"
+                }
+            },
+            "9": {
+                "Brio": {
+                    "9": "Petrol",
+                    "10": "CNG"
+                }
+            },
+            "30": {
+                "BRV": {
+                    "30": "Petrol",
+                    "31": "Diesel"
+                }
+            },
+            "6": {
+                "City ": {
+                    "6": "Petrol",
+                    "7": "CNG",
+                    "8": "Diesel"
+                }
+            },
+            "26": {
+                "City IDTEC": {
+                    "26": "Diesel"
+                }
+            },
+            "1": {
+                "City IVTEC ": {
+                    "1": "Petrol",
+                    "2": "CNG"
+                }
+            },
+            "18": {
+                "City ZX": {
+                    "18": "Petrol",
+                    "19": "CNG",
+                    "20": "Diesel"
+                }
+            },
+            "14": {
+                "Civic": {
+                    "14": "Petrol",
+                    "15": "CNG"
+                }
+            },
+            "27": {
+                "CRV": {
+                    "27": "Petrol",
+                    "28": "CNG",
+                    "29": "Diesel"
+                }
+            },
+            "11": {
+                "Jazz": {
+                    "11": "Petrol",
+                    "12": "CNG",
+                    "13": "Diesel"
+                }
+            },
+            "23": {
+                "Mobilio": {
+                    "23": "Petrol",
+                    "24": "CNG",
+                    "25": "Diesel"
+                }
+            },
+            "21": {
+                "WRV": {
+                    "21": "Petrol",
+                    "22": "Diesel"
+                }
+            }
+        }
+    },
+    "2": {
+        "HYUNDAI": {
+            "60": {
+                "Accent ": {
+                    "60": "Petrol",
+                    "61": "CNG",
+                    "62": "Diesel"
+                }
+            },
+            "82": {
+                "Accent Viva": {
+                    "82": "Petrol",
+                    "83": "CNG",
+                    "84": "Diesel"
+                }
+            },
+            "95": {
+                "Aura": {
+                    "95": "Petrol",
+                    "96": "Diesel"
+                }
+            },
+            "51": {
+                "Creta": {
+                    "51": "Petrol",
+                    "52": "CNG",
+                    "53": "Diesel"
+                }
+            },
+            "68": {
+                "Elantra": {
+                    "68": "Petrol",
+                    "69": "CNG",
+                    "70": "Diesel"
+                }
+            },
+            "48": {
+                "Elite i20": {
+                    "48": "Petrol",
+                    "49": "CNG",
+                    "50": "Diesel"
+                }
+            },
+            "43": {
+                "Eon": {
+                    "43": "Petrol",
+                    "44": "CNG"
+                }
+            },
+            "71": {
+                "Getz": {
+                    "71": "Petrol",
+                    "72": "CNG"
+                }
+            },
+            "80": {
+                "Getz Prime": {
+                    "80": "Petrol",
+                    "81": "Diesel"
+                }
+            },
+            "33": {
+                "Grand i10": {
+                    "33": "Petrol",
+                    "34": "CNG",
+                    "35": "Diesel"
+                }
+            },
+            "75": {
+                "Grand i10 Nios": {
+                    "75": "Petrol",
+                    "76": "Diesel"
+                }
+            },
+            "36": {
+                "i10": {
+                    "36": "Petrol",
+                    "37": "CNG"
+                }
+            },
+            "38": {
+                "i20": {
+                    "38": "Petrol",
+                    "39": "CNG",
+                    "40": "Diesel"
+                }
+            },
+            "65": {
+                "i20 Active": {
+                    "65": "Petrol",
+                    "66": "CNG",
+                    "67": "Diesel"
+                }
+            },
+            "85": {
+                "SantaFE": {
+                    "85": "Petrol",
+                    "86": "CNG",
+                    "87": "Diesel"
+                }
+            },
+            "63": {
+                "Santro": {
+                    "63": "Petrol",
+                    "64": "Diesel"
+                }
+            },
+            "41": {
+                "Santro Xing": {
+                    "41": "Petrol",
+                    "42": "CNG"
+                }
+            },
+            "89": {
+                "Sonata": {
+                    "89": "Petrol",
+                    "90": "CNG",
+                    "91": "Diesel"
+                }
+            },
+            "92": {
+                "Sonata Embera": {
+                    "92": "Petrol",
+                    "93": "CNG",
+                    "94": "Diesel"
+                }
+            },
+            "97": {
+                "Sonata Transform": {
+                    "97": "Petrol",
+                    "98": "CNG",
+                    "99": "Diesel"
+                }
+            },
+            "88": {
+                "Tucson": {
+                    "88": "Diesel"
+                }
+            },
+            "73": {
+                "Venue": {
+                    "73": "Petrol",
+                    "74": "Diesel"
+                }
+            },
+            "57": {
+                "Verna": {
+                    "57": "Petrol",
+                    "58": "CNG",
+                    "59": "Diesel"
+                }
+            },
+            "54": {
+                "Verna Fluidic": {
+                    "54": "Petrol",
+                    "55": "CNG",
+                    "56": "Diesel"
+                }
+            },
+            "77": {
+                "Verna Transform": {
+                    "77": "Petrol",
+                    "78": "CNG",
+                    "79": "Diesel"
+                }
+            },
+            "45": {
+                "Xcent": {
+                    "45": "Petrol",
+                    "46": "CNG",
+                    "47": "Diesel"
+                }
+            }
+        }
+    },
+    "3": {
+        "MARUTI SUZUKI": {
+            "136": {
+                "800": {
+                    "136": "Petrol",
+                    "137": "CNG"
+                }
+            },
+            "140": {
+                "A-Star": {
+                    "140": "Petrol",
+                    "141": "CNG"
+                }
+            },
+            "111": {
+                "Alto": {
+                    "111": "Petrol",
+                    "112": "CNG"
+                }
+            },
+            "127": {
+                "Alto 800": {
+                    "127": "Petrol",
+                    "128": "CNG"
+                }
+            },
+            "122": {
+                "Alto K10": {
+                    "122": "Petrol",
+                    "123": "CNG"
+                }
+            },
+            "108": {
+                "Baleno": {
+                    "108": "Petrol",
+                    "109": "CNG",
+                    "110": "Diesel"
+                }
+            },
+            "116": {
+                "Celerio": {
+                    "116": "Petrol",
+                    "117": "CNG",
+                    "118": "Diesel"
+                }
+            },
+            "119": {
+                "Ciaz": {
+                    "119": "Petrol",
+                    "120": "CNG",
+                    "121": "Diesel"
+                }
+            },
+            "148": {
+                "Eeco": {
+                    "148": "Petrol",
+                    "149": "CNG"
+                }
+            },
+            "124": {
+                "Ertiga": {
+                    "124": "Petrol",
+                    "125": "CNG",
+                    "126": "Diesel"
+                }
+            },
+            "150": {
+                "Esteem": {
+                    "150": "Petrol",
+                    "151": "CNG"
+                }
+            },
+            "131": {
+                "Estilo": {
+                    "131": "Petrol",
+                    "132": "CNG"
+                }
+            },
+            "156": {
+                "Grand Vitara": {
+                    "156": "Petrol",
+                    "157": "CNG",
+                    "158": "Diesel"
+                }
+            },
+            "159": {
+                "Gypsy": {
+                    "159": "Petrol",
+                    "160": "CNG",
+                    "161": "Diesel"
+                }
+            },
+            "142": {
+                "Ignis": {
+                    "142": "Petrol",
+                    "143": "CNG",
+                    "144": "Diesel"
+                }
+            },
+            "162": {
+                "Kizashi": {
+                    "162": "Petrol",
+                    "163": "CNG",
+                    "164": "Diesel"
+                }
+            },
+            "152": {
+                "Omni": {
+                    "152": "Petrol",
+                    "153": "CNG"
+                }
+            },
+            "113": {
+                "Ritz": {
+                    "113": "Petrol",
+                    "114": "CNG",
+                    "115": "Diesel"
+                }
+            },
+            "145": {
+                "S-Cross": {
+                    "145": "Petrol",
+                    "146": "CNG",
+                    "147": "Diesel"
+                }
+            },
+            "154": {
+                "S-Presso": {
+                    "154": "Petrol",
+                    "155": "Diesel"
+                }
+            },
+            "100": {
+                "Swift": {
+                    "100": "Petrol",
+                    "101": "CNG",
+                    "102": "Diesel"
+                }
+            },
+            "105": {
+                "Swift Dzire": {
+                    "105": "Petrol",
+                    "106": "CNG",
+                    "107": "Diesel"
+                }
+            },
+            "133": {
+                "SX4": {
+                    "133": "Petrol",
+                    "134": "CNG",
+                    "135": "Diesel"
+                }
+            },
+            "165": {
+                "Versa": {
+                    "165": "Petrol",
+                    "166": "CNG"
+                }
+            },
+            "129": {
+                "Vitara Brezza": {
+                    "129": "Petrol",
+                    "130": "Diesel"
+                }
+            },
+            "103": {
+                "Wagonr": {
+                    "103": "Petrol",
+                    "104": "CNG"
+                }
+            },
+            "167": {
+                "XL6": {
+                    "167": "Petrol",
+                    "168": "CNG",
+                    "169": "Diesel"
+                }
+            },
+            "138": {
+                "Zen": {
+                    "138": "Petrol",
+                    "139": "CNG"
+                }
+            }
+        }
+    },
+    "4": {
+        "MAHINDRA": {
+            "194": {
+                "Alturas G4": {
+                    "194": "Diesel"
+                }
+            },
+            "178": {
+                "Bolero": {
+                    "178": "Diesel"
+                }
+            },
+            "187": {
+                "Bolero Camper": {
+                    "187": "Diesel"
+                }
+            },
+            "192": {
+                "Bolero Pickup": {
+                    "192": "Diesel"
+                }
+            },
+            "195": {
+                "E20 Plus": {
+                    "195": "Diesel"
+                }
+            },
+            "179": {
+                "Imperio": {
+                    "179": "Diesel"
+                }
+            },
+            "173": {
+                "KUV 100": {
+                    "173": "Petrol",
+                    "174": "Diesel"
+                }
+            },
+            "180": {
+                "Logan": {
+                    "180": "Petrol",
+                    "181": "Diesel"
+                }
+            },
+            "190": {
+                "Marazzo": {
+                    "190": "Diesel"
+                }
+            },
+            "188": {
+                "Nuvosport": {
+                    "188": "Petrol",
+                    "189": "Diesel"
+                }
+            },
+            "177": {
+                "Quanto": {
+                    "177": "Diesel"
+                }
+            },
+            "172": {
+                "Scorpio": {
+                    "172": "Diesel"
+                }
+            },
+            "193": {
+                "Scorpio Getaway": {
+                    "193": "Diesel"
+                }
+            },
+            "186": {
+                "Thar": {
+                    "186": "Diesel"
+                }
+            },
+            "176": {
+                "TUV 300": {
+                    "176": "Diesel"
+                }
+            },
+            "182": {
+                "Verito": {
+                    "182": "Petrol",
+                    "183": "Diesel"
+                }
+            },
+            "191": {
+                "Verito Vibe CS": {
+                    "191": "Diesel"
+                }
+            },
+            "184": {
+                "XUV 300": {
+                    "184": "Petrol",
+                    "185": "Diesel"
+                }
+            },
+            "170": {
+                "XUV 500": {
+                    "170": "Petrol",
+                    "171": "Diesel"
+                }
+            },
+            "175": {
+                "Xylo": {
+                    "175": "Diesel"
+                }
+            }
+        }
+    },
+    "5": {
+        "TATA": {
+            "238": {
+                "Altroz": {
+                    "238": "Petrol",
+                    "239": "Diesel"
+                }
+            },
+            "240": {
+                "Aria": {
+                    "240": "Petrol",
+                    "241": "CNG",
+                    "242": "Diesel"
+                }
+            },
+            "226": {
+                "Bolt": {
+                    "226": "Petrol",
+                    "227": "CNG",
+                    "228": "Diesel"
+                }
+            },
+            "243": {
+                "Harrier": {
+                    "243": "Petrol",
+                    "244": "Diesel"
+                }
+            },
+            "245": {
+                "Hexa": {
+                    "245": "Petrol",
+                    "246": "Diesel"
+                }
+            },
+            "213": {
+                "Indica": {
+                    "213": "Petrol",
+                    "214": "CNG",
+                    "215": "Diesel"
+                }
+            },
+            "235": {
+                "Indica eV2": {
+                    "235": "Petrol",
+                    "236": "CNG",
+                    "237": "Diesel"
+                }
+            },
+            "223": {
+                "Indica V2": {
+                    "223": "Petrol",
+                    "224": "CNG",
+                    "225": "Diesel"
+                }
+            },
+            "205": {
+                "Indica Vista": {
+                    "205": "Petrol",
+                    "206": "CNG",
+                    "207": "Diesel"
+                }
+            },
+            "216": {
+                "Indigo": {
+                    "216": "Petrol",
+                    "217": "CNG",
+                    "218": "Diesel"
+                }
+            },
+            "229": {
+                "Indigo CS": {
+                    "229": "Petrol",
+                    "230": "CNG",
+                    "231": "Diesel"
+                }
+            },
+            "220": {
+                "Indigo eCS": {
+                    "220": "Petrol",
+                    "221": "CNG",
+                    "222": "Diesel"
+                }
+            },
+            "248": {
+                "Indigo Marina": {
+                    "248": "Petrol",
+                    "249": "CNG",
+                    "250": "Diesel"
+                }
+            },
+            "254": {
+                "Indigo XL": {
+                    "254": "Petrol",
+                    "255": "CNG",
+                    "256": "Diesel"
+                }
+            },
+            "210": {
+                "Manza": {
+                    "210": "Petrol",
+                    "211": "CNG",
+                    "212": "Diesel"
+                }
+            },
+            "198": {
+                "Nano": {
+                    "198": "Petrol",
+                    "199": "CNG"
+                }
+            },
+            "233": {
+                "Nano Genx": {
+                    "233": "Petrol",
+                    "234": "CNG"
+                }
+            },
+            "203": {
+                "Nexon": {
+                    "203": "Petrol",
+                    "204": "Diesel"
+                }
+            },
+            "219": {
+                "Safari": {
+                    "219": "Diesel"
+                }
+            },
+            "232": {
+                "Safari Storme": {
+                    "232": "Diesel"
+                }
+            },
+            "251": {
+                "Sumo Gold": {
+                    "251": "Diesel"
+                }
+            },
+            "247": {
+                "Sumo Grande": {
+                    "247": "Diesel"
+                }
+            },
+            "252": {
+                "Sumo Grande MK II": {
+                    "252": "Diesel"
+                }
+            },
+            "257": {
+                "Sumo Spacio": {
+                    "257": "Diesel"
+                }
+            },
+            "260": {
+                "Sumo Victa": {
+                    "260": "Diesel"
+                }
+            },
+            "196": {
+                "Tiago": {
+                    "196": "Petrol",
+                    "197": "Diesel"
+                }
+            },
+            "208": {
+                "Tigor": {
+                    "208": "Petrol",
+                    "209": "Diesel"
+                }
+            },
+            "253": {
+                "Venture": {
+                    "253": "Diesel"
+                }
+            },
+            "258": {
+                "Winger": {
+                    "258": "Petrol"
+                }
+            },
+            "259": {
+                "Xenon": {
+                    "259": "Diesel"
+                }
+            },
+            "200": {
+                "Zest": {
+                    "200": "Petrol",
+                    "201": "CNG",
+                    "202": "Diesel"
+                }
+            }
+        }
+    },
+    "6": {
+        "KIA": {
+            "261": {
+                "Carnival": {
+                    "261": "Petrol",
+                    "262": "Diesel"
+                }
+            },
+            "263": {
+                "Seltos": {
+                    "263": "Petrol",
+                    "264": "Diesel"
+                }
+            },
+            "265": {
+                "Sonet": {
+                    "265": "Petrol",
+                    "266": "Diesel"
+                }
+            }
+        }
+    },
+    "7": {
+        "SKODA": {
+            "270": {
+                "Fabia": {
+                    "270": "Petrol",
+                    "271": "CNG",
+                    "272": "Diesel"
+                }
+            },
+            "283": {
+                "Fabia Scout": {
+                    "283": "Petrol",
+                    "284": "CNG",
+                    "285": "Diesel"
+                }
+            },
+            "286": {
+                "Kodiaq": {
+                    "286": "Petrol",
+                    "287": "Diesel"
+                }
+            },
+            "276": {
+                "Laura": {
+                    "276": "Petrol",
+                    "277": "Diesel"
+                }
+            },
+            "278": {
+                "Octavia": {
+                    "278": "Petrol",
+                    "279": "CNG",
+                    "280": "Diesel"
+                }
+            },
+            "267": {
+                "Rapid": {
+                    "267": "Petrol",
+                    "268": "CNG",
+                    "269": "Diesel"
+                }
+            },
+            "273": {
+                "Superb": {
+                    "273": "Petrol",
+                    "274": "CNG",
+                    "275": "Diesel"
+                }
+            },
+            "281": {
+                "Yeti": {
+                    "281": "Petrol",
+                    "282": "Diesel"
+                }
+            }
+        }
+    },
+    "8": {
+        "RENAULT": {
+            "306": {
+                "Captur": {
+                    "306": "Petrol",
+                    "307": "Diesel"
+                }
+            },
+            "291": {
+                "Duster": {
+                    "291": "Petrol",
+                    "292": "Diesel"
+                }
+            },
+            "299": {
+                "Fluence": {
+                    "299": "Petrol",
+                    "300": "CNG",
+                    "301": "Diesel"
+                }
+            },
+            "309": {
+                "Kiger": {
+                    "309": "Petrol"
+                }
+            },
+            "308": {
+                "Koleos": {
+                    "308": "Diesel"
+                }
+            },
+            "288": {
+                "Kwid": {
+                    "288": "Petrol",
+                    "289": "CNG",
+                    "290": "Diesel"
+                }
+            },
+            "305": {
+                "Lodgy": {
+                    "305": "Diesel"
+                }
+            },
+            "296": {
+                "Pulse": {
+                    "296": "Petrol",
+                    "297": "CNG",
+                    "298": "Diesel"
+                }
+            },
+            "293": {
+                "Scala": {
+                    "293": "Petrol",
+                    "294": "CNG",
+                    "295": "Diesel"
+                }
+            },
+            "302": {
+                "Triber": {
+                    "302": "Petrol",
+                    "303": "CNG",
+                    "304": "Diesel"
+                }
+            }
+        }
+    },
+    "9": {
+        "CHEVROLET": {
+            "318": {
+                "Aveo": {
+                    "318": "Petrol",
+                    "319": "CNG",
+                    "320": "Diesel"
+                }
+            },
+            "310": {
+                "Beat": {
+                    "310": "Petrol",
+                    "311": "CNG",
+                    "312": "Diesel"
+                }
+            },
+            "342": {
+                "Captiva": {
+                    "342": "Diesel"
+                }
+            },
+            "315": {
+                "Cruze": {
+                    "315": "Petrol",
+                    "316": "CNG",
+                    "317": "Diesel"
+                }
+            },
+            "324": {
+                "Enjoy": {
+                    "324": "Petrol",
+                    "325": "CNG",
+                    "326": "Diesel"
+                }
+            },
+            "343": {
+                "Forester": {
+                    "343": "CNG",
+                    "344": "Diesel"
+                }
+            },
+            "330": {
+                "Optra": {
+                    "330": "Petrol",
+                    "331": "CNG",
+                    "332": "Diesel"
+                }
+            },
+            "336": {
+                "Optra Magnum": {
+                    "336": "Petrol",
+                    "337": "CNG",
+                    "338": "Diesel"
+                }
+            },
+            "340": {
+                "Optra SRV": {
+                    "340": "Petrol",
+                    "341": "CNG"
+                }
+            },
+            "321": {
+                "Sail": {
+                    "321": "Petrol",
+                    "322": "CNG",
+                    "323": "Diesel"
+                }
+            },
+            "333": {
+                "Sail Hatchback": {
+                    "333": "Petrol",
+                    "334": "CNG",
+                    "335": "Diesel"
+                }
+            },
+            "313": {
+                "Spark": {
+                    "313": "Petrol",
+                    "314": "CNG"
+                }
+            },
+            "339": {
+                "Tavera": {
+                    "339": "Diesel"
+                }
+            },
+            "345": {
+                "Trailblazer": {
+                    "345": "Diesel"
+                }
+            },
+            "327": {
+                "UVA": {
+                    "327": "Petrol",
+                    "328": "CNG",
+                    "329": "Diesel"
+                }
+            }
+        }
+    },
+    "10": {
+        "TOYOTA": {
+            "372": {
+                "Camry": {
+                    "372": "Petrol",
+                    "373": "CNG"
+                }
+            },
+            "362": {
+                "Corolla": {
+                    "362": "Petrol",
+                    "363": "CNG",
+                    "364": "Diesel"
+                }
+            },
+            "352": {
+                "Corolla Altis": {
+                    "352": "Petrol",
+                    "353": "CNG",
+                    "354": "Diesel"
+                }
+            },
+            "347": {
+                "Etios": {
+                    "347": "Petrol",
+                    "348": "CNG",
+                    "349": "Diesel"
+                }
+            },
+            "367": {
+                "Etios Cross": {
+                    "367": "Petrol",
+                    "368": "CNG",
+                    "369": "Diesel"
+                }
+            },
+            "355": {
+                "Etios Liva": {
+                    "355": "Petrol",
+                    "356": "CNG",
+                    "357": "Diesel"
+                }
+            },
+            "358": {
+                "Fortuner": {
+                    "358": "Petrol",
+                    "359": "Diesel"
+                }
+            },
+            "374": {
+                "Glanza": {
+                    "374": "Petrol",
+                    "375": "CNG",
+                    "376": "Diesel"
+                }
+            },
+            "350": {
+                "Innova": {
+                    "350": "Petrol",
+                    "351": "Diesel"
+                }
+            },
+            "360": {
+                "Innova Crysta": {
+                    "360": "Petrol",
+                    "361": "Diesel"
+                }
+            },
+            "377": {
+                "Land Cruiser": {
+                    "377": "Diesel"
+                }
+            },
+            "378": {
+                "Land Cruiser Prado": {
+                    "378": "Diesel"
+                }
+            },
+            "365": {
+                "Qualis": {
+                    "365": "Petrol",
+                    "366": "Diesel"
+                }
+            },
+            "346": {
+                "Sera": {
+                    "346": "Petrol"
+                }
+            },
+            "379": {
+                "Urban Cruiser": {
+                    "379": "Petrol"
+                }
+            },
+            "370": {
+                "Yaris": {
+                    "370": "Petrol",
+                    "371": "CNG"
+                }
+            }
+        }
+    },
+    "11": {
+        "FIAT": {
+            "406": {
+                "Abarth Punto": {
+                    "406": "Petrol",
+                    "407": "Diesel"
+                }
+            },
+            "400": {
+                "Adventure": {
+                    "400": "Petrol",
+                    "401": "CNG",
+                    "402": "Diesel"
+                }
+            },
+            "391": {
+                "Avventura": {
+                    "391": "Petrol",
+                    "392": "CNG",
+                    "393": "Diesel"
+                }
+            },
+            "383": {
+                "Linea": {
+                    "383": "Petrol",
+                    "384": "CNG",
+                    "385": "Diesel"
+                }
+            },
+            "397": {
+                "Linea Classic": {
+                    "397": "Petrol",
+                    "398": "CNG",
+                    "399": "Diesel"
+                }
+            },
+            "388": {
+                "Palio D": {
+                    "388": "Petrol",
+                    "389": "CNG",
+                    "390": "Diesel"
+                }
+            },
+            "403": {
+                "Palio NV": {
+                    "403": "Petrol",
+                    "404": "CNG",
+                    "405": "Diesel"
+                }
+            },
+            "394": {
+                "Palio Stile": {
+                    "394": "Petrol",
+                    "395": "CNG",
+                    "396": "Diesel"
+                }
+            },
+            "413": {
+                "Petra": {
+                    "413": "Petrol",
+                    "414": "CNG",
+                    "415": "Diesel"
+                }
+            },
+            "380": {
+                "Punto": {
+                    "380": "Petrol",
+                    "381": "CNG",
+                    "382": "Diesel"
+                }
+            },
+            "386": {
+                "Punto Evo": {
+                    "386": "Petrol",
+                    "387": "Diesel"
+                }
+            },
+            "410": {
+                "Uno": {
+                    "410": "Petrol",
+                    "411": "CNG",
+                    "412": "Diesel"
+                }
+            },
+            "408": {
+                "Urban Cross": {
+                    "408": "Petrol",
+                    "409": "Diesel"
+                }
+            }
+        }
+    },
+    "12": {
+        "ASTON MARTIN": {
+            "416": {
+                "DB 9": {
+                    "416": "Petrol"
+                }
+            },
+            "417": {
+                "Rapide": {
+                    "417": "Petrol"
+                }
+            },
+            "418": {
+                "Vanquish": {
+                    "418": "Petrol"
+                }
+            },
+            "419": {
+                "Vantage": {
+                    "419": "Petrol"
+                }
+            }
+        }
+    },
+    "13": {
+        "AUDI": {
+            "420": {
+                "A3": {
+                    "420": "Diesel",
+                    "421": "Petrol"
+                }
+            },
+            "422": {
+                "A4": {
+                    "422": "Diesel",
+                    "423": "Petrol"
+                }
+            },
+            "424": {
+                "A5": {
+                    "424": "Diesel",
+                    "425": "Petrol"
+                }
+            },
+            "426": {
+                "A6": {
+                    "426": "Diesel",
+                    "427": "Petrol"
+                }
+            },
+            "428": {
+                "A7": {
+                    "428": "Diesel",
+                    "429": "Petrol"
+                }
+            },
+            "430": {
+                "A8": {
+                    "430": "Diesel",
+                    "431": "Petrol"
+                }
+            },
+            "432": {
+                "A8 L": {
+                    "432": "Diesel",
+                    "433": "Petrol"
+                }
+            },
+            "434": {
+                "Q2": {
+                    "434": "Diesel",
+                    "435": "Petrol"
+                }
+            },
+            "436": {
+                "Q3": {
+                    "436": "Diesel",
+                    "437": "Petrol"
+                }
+            },
+            "438": {
+                "Q5": {
+                    "438": "Diesel",
+                    "439": "Petrol"
+                }
+            },
+            "440": {
+                "Q7": {
+                    "440": "Diesel",
+                    "441": "Petrol"
+                }
+            },
+            "442": {
+                "Q8": {
+                    "442": "Petrol"
+                }
+            },
+            "443": {
+                "R8": {
+                    "443": "Petrol"
+                }
+            },
+            "444": {
+                "RS3": {
+                    "444": "Petrol"
+                }
+            },
+            "445": {
+                "RS5": {
+                    "445": "Petrol"
+                }
+            },
+            "446": {
+                "S4": {
+                    "446": "Petrol"
+                }
+            },
+            "447": {
+                "TT": {
+                    "447": "Petrol"
+                }
+            }
+        }
+    },
+    "14": {
+        "BENTLEY": {
+            "448": {
+                "Continental": {
+                    "448": "Petrol"
+                }
+            },
+            "449": {
+                "Flying Spur": {
+                    "449": "Petrol"
+                }
+            },
+            "450": {
+                "Mulsanne": {
+                    "450": "Petrol"
+                }
+            }
+        }
+    },
+    "15": {
+        "BMW": {
+            "451": {
+                "1 Series": {
+                    "451": "Diesel",
+                    "452": "Petrol"
+                }
+            },
+            "453": {
+                "2 Series": {
+                    "453": "Diesel",
+                    "454": "Petrol"
+                }
+            },
+            "455": {
+                "3 Series": {
+                    "455": "Diesel",
+                    "456": "Petrol"
+                }
+            },
+            "457": {
+                "3 Series GT": {
+                    "457": "Diesel",
+                    "458": "Petrol"
+                }
+            },
+            "459": {
+                "5 Series": {
+                    "459": "Diesel",
+                    "460": "Petrol"
+                }
+            },
+            "461": {
+                "5 Series GT": {
+                    "461": "Diesel",
+                    "462": "Petrol"
+                }
+            },
+            "463": {
+                "6 Series": {
+                    "463": "Diesel",
+                    "464": "Petrol"
+                }
+            },
+            "465": {
+                "6 Series GT": {
+                    "465": "Diesel",
+                    "466": "Petrol"
+                }
+            },
+            "467": {
+                "7 Series": {
+                    "467": "Diesel",
+                    "468": "Petrol"
+                }
+            },
+            "469": {
+                "M3": {
+                    "469": "Petrol"
+                }
+            },
+            "470": {
+                "M5": {
+                    "470": "Petrol"
+                }
+            },
+            "471": {
+                "X1": {
+                    "471": "Diesel",
+                    "472": "Petrol"
+                }
+            },
+            "473": {
+                "X3": {
+                    "473": "Diesel",
+                    "474": "Petrol"
+                }
+            },
+            "475": {
+                "X4": {
+                    "475": "Diesel",
+                    "476": "Petrol"
+                }
+            },
+            "477": {
+                "X5": {
+                    "477": "Diesel",
+                    "478": "Petrol"
+                }
+            },
+            "479": {
+                "X6": {
+                    "479": "Diesel",
+                    "480": "Petrol"
+                }
+            },
+            "481": {
+                "X7": {
+                    "481": "Diesel",
+                    "482": "Petrol"
+                }
+            },
+            "483": {
+                "Z4": {
+                    "483": "Petrol"
+                }
+            }
+        }
+    },
+    "16": {
+        "FERRARI": {
+            "485": {
+                "458 Italia": {
+                    "485": "Petrol"
+                }
+            },
+            "486": {
+                "458 Speciale": {
+                    "486": "Petrol"
+                }
+            },
+            "484": {
+                "488": {
+                    "484": "Petrol"
+                }
+            },
+            "487": {
+                "California": {
+                    "487": "Petrol"
+                }
+            },
+            "488": {
+                "F12 Berlinetta": {
+                    "488": "Petrol"
+                }
+            },
+            "489": {
+                "FF": {
+                    "489": "Petrol"
+                }
+            }
+        }
+    },
+    "17": {
+        "JAGUAR": {
+            "490": {
+                "F Pace": {
+                    "490": "Diesel",
+                    "491": "Petrol"
+                }
+            },
+            "492": {
+                "F Type": {
+                    "492": "Petrol"
+                }
+            },
+            "493": {
+                "XE": {
+                    "493": "Diesel",
+                    "494": "Petrol"
+                }
+            },
+            "495": {
+                "XF": {
+                    "495": "Diesel",
+                    "496": "Petrol"
+                }
+            },
+            "497": {
+                "XJ": {
+                    "497": "Diesel",
+                    "498": "Petrol"
+                }
+            },
+            "499": {
+                "XJR": {
+                    "499": "Petrol"
+                }
+            }
+        }
+    },
+    "18": {
+        "LAMBORGHINI": {
+            "500": {
+                "Aventador": {
+                    "500": "Petrol"
+                }
+            },
+            "501": {
+                "Gallardo": {
+                    "501": "Petrol"
+                }
+            },
+            "502": {
+                "Huracan": {
+                    "502": "Petrol"
+                }
+            }
+        }
+    },
+    "19": {
+        "LEXUS": {
+            "503": {
+                "ES": {
+                    "503": "Petrol"
+                }
+            },
+            "504": {
+                "LC": {
+                    "504": "Petrol"
+                }
+            },
+            "505": {
+                "LS": {
+                    "505": "Petrol"
+                }
+            },
+            "506": {
+                "LX": {
+                    "506": "Diesel",
+                    "507": "Petrol"
+                }
+            },
+            "508": {
+                "NX": {
+                    "508": "Petrol"
+                }
+            },
+            "509": {
+                "RX": {
+                    "509": "Petrol"
+                }
+            }
+        }
+    },
+    "20": {
+        "MASERATI": {
+            "510": {
+                "Ghibli": {
+                    "510": "Diesel",
+                    "511": "Petrol"
+                }
+            },
+            "512": {
+                "GranCabrio": {
+                    "512": "Diesel",
+                    "513": "Petrol"
+                }
+            },
+            "514": {
+                "GranTurismo": {
+                    "514": "Diesel",
+                    "515": "Petrol"
+                }
+            },
+            "516": {
+                "Quattroporte": {
+                    "516": "Diesel",
+                    "517": "Petrol"
+                }
+            }
+        }
+    },
+    "21": {
+        "MERCEDES": {
+            "518": {
+                "A-Class": {
+                    "518": "Diesel",
+                    "519": "Petrol"
+                }
+            },
+            "520": {
+                "AMG GT": {
+                    "520": "Petrol"
+                }
+            },
+            "521": {
+                "B-Class": {
+                    "521": "Diesel",
+                    "522": "Petrol"
+                }
+            },
+            "523": {
+                "C-Class": {
+                    "523": "Diesel",
+                    "524": "Petrol"
+                }
+            },
+            "525": {
+                "CLA Class": {
+                    "525": "Diesel",
+                    "526": "Petrol"
+                }
+            },
+            "527": {
+                "CLS Class": {
+                    "527": "Diesel",
+                    "528": "Petrol"
+                }
+            },
+            "529": {
+                "E-Class": {
+                    "529": "Diesel",
+                    "530": "Petrol"
+                }
+            },
+            "531": {
+                "G63 AMGr": {
+                    "531": "Diesel",
+                    "532": "Petrol"
+                }
+            },
+            "533": {
+                "GL Class": {
+                    "533": "Diesel",
+                    "534": "Petrol"
+                }
+            },
+            "535": {
+                "GLA Class": {
+                    "535": "Diesel",
+                    "536": "Petrol"
+                }
+            },
+            "537": {
+                "GLC": {
+                    "537": "Diesel",
+                    "538": "Petrol"
+                }
+            },
+            "539": {
+                "GLE 43 AMG": {
+                    "539": "Petrol"
+                }
+            },
+            "540": {
+                "GLE Class": {
+                    "540": "Diesel",
+                    "541": "Petrol"
+                }
+            },
+            "542": {
+                "GLS": {
+                    "542": "Diesel",
+                    "543": "Petrol"
+                }
+            },
+            "544": {
+                "ML Class": {
+                    "544": "Diesel",
+                    "545": "Petrol"
+                }
+            },
+            "546": {
+                "R Class": {
+                    "546": "Diesel",
+                    "547": "Petrol"
+                }
+            },
+            "548": {
+                "S-Class": {
+                    "548": "Diesel",
+                    "549": "Petrol"
+                }
+            },
+            "550": {
+                "SL 500 AMG": {
+                    "550": "Petrol"
+                }
+            },
+            "551": {
+                "SLK Class": {
+                    "551": "Petrol"
+                }
+            },
+            "552": {
+                "V-Class": {
+                    "552": "Diesel"
+                }
+            }
+        }
+    },
+    "22": {
+        "MINI": {
+            "553": {
+                "Clubman": {
+                    "553": "Petrol"
+                }
+            },
+            "554": {
+                "Cooper": {
+                    "554": "Diesel",
+                    "555": "Petrol"
+                }
+            },
+            "556": {
+                "Countryman": {
+                    "556": "Diesel",
+                    "557": "Petrol"
+                }
+            }
+        }
+    },
+    "23": {
+        "MITSUBISHI": {
+            "558": {
+                "Cedia": {
+                    "558": "Diesel",
+                    "559": "Petrol"
+                }
+            },
+            "560": {
+                "Lancer": {
+                    "560": "Diesel",
+                    "561": "Petrol"
+                }
+            },
+            "562": {
+                "Montero": {
+                    "562": "Diesel"
+                }
+            },
+            "563": {
+                "Outlander": {
+                    "563": "Diesel",
+                    "564": "Petrol"
+                }
+            },
+            "565": {
+                "Pajero": {
+                    "565": "Diesel"
+                }
+            },
+            "566": {
+                "Pajero Sport": {
+                    "566": "Diesel"
+                }
+            }
+        }
+    },
+    "24": {
+        "PORSCHE": {
+            "567": {
+                "911": {
+                    "567": "Petrol"
+                }
+            },
+            "568": {
+                "Boxter": {
+                    "568": "Petrol"
+                }
+            },
+            "569": {
+                "Cayenne": {
+                    "569": "Diesel",
+                    "570": "Petrol"
+                }
+            },
+            "571": {
+                "Cayman": {
+                    "571": "Diesel",
+                    "572": "Petrol"
+                }
+            },
+            "573": {
+                "Macan": {
+                    "573": "Diesel",
+                    "574": "Petrol"
+                }
+            },
+            "575": {
+                "Panamera": {
+                    "575": "Diesel",
+                    "576": "Petrol"
+                }
+            }
+        }
+    },
+    "25": {
+        "VOLVO": {
+            "577": {
+                "S40": {
+                    "577": "Petrol"
+                }
+            },
+            "578": {
+                "S60": {
+                    "578": "Diesel",
+                    "579": "Petrol"
+                }
+            },
+            "580": {
+                "S60 Cross Country": {
+                    "580": "Diesel",
+                    "581": "Petrol"
+                }
+            },
+            "582": {
+                "S80": {
+                    "582": "Diesel",
+                    "583": "Petrol"
+                }
+            },
+            "584": {
+                "S90": {
+                    "584": "Diesel",
+                    "585": "Petrol"
+                }
+            },
+            "586": {
+                "V40": {
+                    "586": "Diesel",
+                    "587": "Petrol"
+                }
+            },
+            "588": {
+                "V40 Cross Country": {
+                    "588": "Diesel",
+                    "589": "Petrol"
+                }
+            },
+            "590": {
+                "V60": {
+                    "590": "Diesel",
+                    "591": "Petrol"
+                }
+            },
+            "592": {
+                "V90": {
+                    "592": "Diesel",
+                    "593": "Petrol"
+                }
+            },
+            "594": {
+                "XC40": {
+                    "594": "Diesel",
+                    "595": "Petrol"
+                }
+            },
+            "596": {
+                "XC60": {
+                    "596": "Diesel",
+                    "597": "Petrol"
+                }
+            },
+            "598": {
+                "XC90": {
+                    "598": "Diesel",
+                    "599": "Petrol"
+                }
+            }
+        }
+    },
+    "26": {
+        "Volkswagen": {
+            "606": {
+                "Ameo": {
+                    "606": "Petrol",
+                    "607": "Diesel"
+                }
+            },
+            "619": {
+                "Beetel": {
+                    "619": "Petrol"
+                }
+            },
+            "608": {
+                "Cross polo": {
+                    "608": "Petrol",
+                    "609": "CNG",
+                    "610": "Diesel"
+                }
+            },
+            "611": {
+                "Jetta": {
+                    "611": "Petrol",
+                    "612": "CNG",
+                    "613": "Diesel"
+                }
+            },
+            "614": {
+                "Passat": {
+                    "614": "Petrol",
+                    "615": "CNG",
+                    "616": "Diesel"
+                }
+            },
+            "600": {
+                "Polo": {
+                    "600": "Petrol",
+                    "601": "CNG",
+                    "602": "Diesel"
+                }
+            },
+            "617": {
+                "T-Roc": {
+                    "617": "Petrol",
+                    "618": "Diesel"
+                }
+            },
+            "620": {
+                "Tiguan": {
+                    "620": "Diesel"
+                }
+            },
+            "603": {
+                "Vento": {
+                    "603": "Petrol",
+                    "604": "CNG",
+                    "605": "Diesel"
+                }
+            }
+        }
+    },
+    "27": {
+        "Ford": {
+            "624": {
+                "Eco sport": {
+                    "624": "Petrol",
+                    "625": "CNG",
+                    "626": "Diesel"
+                }
+            },
+            "639": {
+                "Endeavour": {
+                    "639": "Diesel"
+                }
+            },
+            "646": {
+                "Escort": {
+                    "646": "Petrol",
+                    "647": "CNG",
+                    "648": "Diesel"
+                }
+            },
+            "630": {
+                "Fiesta": {
+                    "630": "Petrol",
+                    "631": "CNG",
+                    "632": "Diesel"
+                }
+            },
+            "633": {
+                "Fiesta Classic": {
+                    "633": "Petrol",
+                    "634": "CNG",
+                    "635": "Diesel"
+                }
+            },
+            "621": {
+                "Figo": {
+                    "621": "Petrol",
+                    "622": "CNG",
+                    "623": "Diesel"
+                }
+            },
+            "627": {
+                "Figo Aspire ": {
+                    "627": "Petrol",
+                    "628": "CNG",
+                    "629": "Diesel"
+                }
+            },
+            "640": {
+                "Free Style": {
+                    "640": "Petrol",
+                    "641": "CNG",
+                    "642": "Diesel"
+                }
+            },
+            "643": {
+                "Fusion": {
+                    "643": "Petrol",
+                    "644": "CNG",
+                    "645": "Diesel"
+                }
+            },
+            "636": {
+                "Ikon": {
+                    "636": "Petrol",
+                    "637": "CNG",
+                    "638": "Diesel"
+                }
+            },
+            "649": {
+                "Mondeo": {
+                    "649": "Petrol",
+                    "650": "CNG",
+                    "651": "Diesel"
+                }
+            }
+        }
+    }
+}
