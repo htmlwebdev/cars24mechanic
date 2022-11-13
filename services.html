@@ -15,28 +15,41 @@
 	}
 	var url_string = window.location.href; 
 	var url = new URL(url_string);
-	
+	var cars_info={};
+	var service_info = {};
 	const domain = location.protocol + '//' + location.host;
-	console.log(domain);
 	//document.querySelector('link[class="city-select"]').setAttribute("placeholder", _desc);
 	document.title=`Cars24Mechanic | Best Car Repair and Services`;
 
 	var city = url.searchParams.get("city");
+	var brand_id = url.searchParams.get("brand_id");
+	var model_id = url.searchParams.get("model_id");
+	var fuel_id = url.searchParams.get("fuel_id");
 	var loc=`Near you`;
 	var base_url='index.html';
 	if (city!=null && (city=='delhi' || city=='gurgaon' || city=='noida')){
-		console.log(city);
 		loc=`in ${capitalizeFirstLetter(city)}`;
 		base_url+=`?city=${city}`;
-	};
+	}
+	else{
+		city= 'delhi';
+	}
 
 	var service = url.searchParams.get("service");
 		const servies_list=['Periodic Services','Denting And Painting','Batteries','Car Spa And Cleaning','AC Service And Repair','Tyres And Wheels','Accidental Car Repair','Detailing Services','Custom Services','Windshield And Glass','Lights And Fitments','Engine Decarbonization'];
 		const encoded_list=['periodic-services','denting-and-painting','batteries','car-spa-and-cleaning','ac-service-and-repair','tyres-and-wheels','accidental-car-repair','detailing-services','custom-services','windshield-and-glass','lights-and-fitments','engine-decarbonization'];
+		const service_category={0: 'Accidental Repairs', 1: 'Know Your Policy', 2: 'Service Packages', 3: 'AC Fitments', 4: 'Radiator', 5: '3M Services', 6: 'Scheduled Packages', 7: 'Brake Maintenance', 8: 'Revival Package', 9: 'Spa', 10: 'Coating', 11: 'Inspection', 12: 'Inspections', 13: 'Suspension', 14: 'Custom Services', 15: 'Used Car', 16: 'Glasses', 17: 'Custom Issues', 18: 'CEAT', 19: 'Apollo', 20: 'MRF', 21: 'Bridgestone', 22: 'Wheel Care Services', 23: 'Amaron', 24: 'Exide', 25: 'Livguard', 26: 'Alternator', 27: 'Jumpstart', 28: 'Front Side', 29: 'Rear Side', 30: 'Whole Body', 31: 'Left Side', 32: 'Right Side', 33: 'Engine Decarbonization', 34: 'Fitments', 35: 'Stereos'};
+		const service_title={0: 'Doorstep Accidental Inspection', 1: 'Windshield Replacement(Insurance)', 2: 'Towing(Insurance)', 3: 'Tyre Replacement(Insurance)', 4: 'Insurance Claim', 5: 'Know Your Policy', 6: 'Basic AC Service', 7: 'Major AC Service', 8: 'Cooling Coil Replacement', 9: 'Condenser Replacement', 10: 'Compressor Replacement', 11: 'V-Belt Replacement', 12: 'Radiator Replacement', 13: 'Radiator Flush & Clean', 14: '3M"! Ceramic Coating', 15: '3M"! Car Rubbing & Polishing', 16: '3M"! Teflon Coating', 17: '3M"! Anti Rust Underbody Coating', 18: 'Basic Service', 19: 'Normal Service', 20: 'Premium Service', 21: 'Front Brake Discs', 22: 'Front Brake Pads', 23: 'Rear Brake Shoes', 24: 'Disc Turning', 25: 'Brake Drums Turning', 26: 'Monsoon Package', 27: 'Car Interior Dry Cleaning', 28: 'Complete car cleaning service', 29: 'Rat/Pest Repellent Treatment', 30: 'Sunroof Service', 31: 'Avery PPF-Paint Protection Film', 32: 'Silencer Coating', 33: 'Car Inspection/Diagnostics', 34: 'Complete Car Inspection', 35: 'Engine Scanning', 36: 'Complete Suspension Inspection', 37: 'Car Fluids Check', 38: 'Front Shock Absorber Replacement', 39: 'Rear Shock Absorber Replacement', 40: 'Car Waterlog Assistance', 41: 'Car Engine Issues', 42: 'Problem with Car Brakes & Wheels', 43: 'Clutch & Transmission Troubles', 44: 'Noises with Car Suspension & Steering', 45: 'Faulty Electricals', 46: 'Damagaed Car Body or Interiors', 47: 'Front Headlight', 48: 'Rear Taillight', 49: 'Fog Light', 50: 'Front Windshield Replacement', 51: 'Rear Windshield Replacement', 52: 'Door Glass Replacement', 53: 'CEAT Milaze', 54: 'CEAT Milaze X3', 55: 'Apollo Amazer 4G Life', 56: 'Apollo Alnac 4Gs', 57: 'MRF ZTX', 58: 'MRF ZLX', 59: 'MRF ZVTV', 60: 'BRIDGESTONE S248', 61: 'BRIDGESTONE TURANZA AR20', 62: 'Complete Wheel Care', 63: 'Mud Flaps', 64: 'Amaron(55 Months Warranty)', 65: 'Exide(55 Months Warranty)', 66: 'Livguard(60 Months Warranty)', 67: 'Livguard(72 Months Warranty)', 68: 'Alternator Replacement', 69: 'Alternator Repair', 70: 'Battery Jumpstart', 71: 'Front Bumper', 72: 'Bonnet', 73: 'Rear Bumper', 74: 'Boot Paint', 75: 'Full Body Dent Paint', 76: 'Alloy Paint', 77: 'Left Fender Paint', 78: 'Left Front Door Paint', 79: 'Left Rear Door Paint', 80: 'Left Quarter Panel Paint', 81: 'Left Running Board Paint', 82: 'Right Fender Paint', 83: 'Right Front Door Paint', 84: 'Right Rear Door Paint', 85: 'Right Quarter Panel Paint', 86: 'Right Running Board Paint', 87: 'Engine Decarbonization', 88: 'Clutch Set Replacement', 89: 'Clutch Bearing Replacement', 90: 'Flywheel Replacement', 91: 'Clutch Overhaul', 92: 'Front Bumper Replacement', 93: 'Rear Bumper Replacement', 94: 'Engine Mounting Replacement', 95: 'Gear Box Mounting Replacement', 96: 'Dickey Shocker Replacement', 97: 'Starter Motor Repair', 98: 'Horn Replacement'};
+		
+		const desc={0: ['25 points checklist', 'Insurance claim guidance', 'Body damage inspection', 'Policy inspection'], 1: ['Insured cashless service', 'Doorstep available', 'Claim intimation', 'Surveyors estimate approval', 'Co-ordination with insurance company'], 2: ['Free towing', 'Cashless facility', 'Real time claim tracking mechanism', 'Claim intimation', 'Towing reimbursement'], 3: ['Genuine tyres', 'Cashless facility', 'Real time claim tracking mechanism', 'Genuine tyres', 'Claim intimation'], 4: ['Free pick up & drop', 'Dedicated service buddy', 'Real time claim tracking', 'Cashless facility', 'Work status updates on whatsapp'], 5: ['Call within 2 hours', 'Regarding doubts with claim intimation', 'Complete information about your policy', 'Expenditure assessment', 'Suggestion on purchase of new policy'], 6: ['Includes 5 services', 'AC gas top-up', 'Condenser cleaning', 'AC filter cleaning', 'AC vent cleaning'], 7: ['9 services included', 'AC gas replacement(upto 600 grams)', 'Dashboard removing refitting', 'Compressor oil topup (upto 200 ml)', 'Cooling coil cleaning(front +rear)'], 8: ['Spare part price only', 'Better air recirculation', 'Cooling coil replacement(OES)', 'Spare part cost only', 'AC pipe,expansion valve,sensors additional'], 9: ['Spare part price only', 'Condenser replacement(OES)', 'AC pipe,expansion valve,sensors additional', 'AC gas,compressor oil additional', 'Free pickup & drop'], 10: ['FREE AC SERVICE', 'Spare part price only', 'Ccompressor replacement(OES)', 'Spare part cost only', 'AC pipe,expansion valve,sensors additional'], 11: ['Prevents vehicle breakdown', 'V-belt replacement(OES)', 'Opening & fitting of V-belt', 'Pulleys,bearing,timing additional', 'Scanning additional'], 12: ['Spare part price only', 'Prevents engine overheating', 'Radiator replacement(OES)', 'Spare part cost only', 'Radiator hoses,thermostart valves,additional'], 13: ['Prevents engine over heating', 'Coolant draining', 'Radiator flushing', 'Anti-freeze coolant replacement', 'Radiator cleaning'], 14: ['FREE ALL ROUND CLEANING', 'Complete paint correction', 'Complete paint correction', '3M"! 9H nano coating', '3 layers of coating'], 15: ['Pressure washing', 'Rubbing with 3M"! Compound', '3M"! wax polishing', 'Machine rubbing', 'Tyre dressing & alloy polishing'], 16: ['Full body 3M"! teflon paint protection coating', 'Pre-coating rubbing & polishing', '3M"! Exterior anti-rust treatment'], 17: ['Monsoon special', '3M"! underbody teflon coating', '3M"! protective anti-corrosion treatment', 'Insulation & rust protection'], 18: ['Engine oil replacement', 'Oil filter replacement', 'Air filter cleaning', 'Coolant top up', 'Wiper fluid replacement'], 19: ['Engine oil replacement', 'Oil filter replacement', 'Air filter replacement', 'Fuel filter checking', 'Cabin filter/ac filter cleaning'], 20: ['Engine oil replacement', 'Oil filter replacement', 'Air filter replacement', 'Fuel filter checking', 'Cabin filter/ac filter replacement'], 21: ['Complete braking safety', 'Corrosion resistance', 'Materail + labor included', 'Front brake disc replacement(singlr oes unit)', 'Opening & fitting of front brake disc'], 22: ['Opening & fitting of brakes', 'Front brake pads replacement(oes)', 'Front brake disc cleaning'], 23: ['Materail + labor included', 'Opening & fitting of brakes', 'Rear brake shoes replacement(oes)', 'Rear brake disc cleaning'], 24: ['Labour rates only', 'Spare part charges will be extra', 'Opening & fitting +inspection of below items', 'Resurfacing of brake discs/rotors', 'Applicable for set of 2 discs'], 25: ['Improves brake efficiency', 'Spare part charges will be extra', 'Brake drums turning', 'Opening & fitting of brake drums', 'Refacing of brake drums'], 26: ['Free pickup & drop', 'Protects car wiring from pests', 'Anti dust underbody coating', 'Rat/pest repellent treatment & car interior spa', 'Under body anti-corrosion treatment'], 27: ['Interior wet cleaning', 'Interior shampooing', 'Fix and loose carpet cleaning', 'Anti viral & bacterial treatment', 'Interior vacuum cleaning'], 28: ['Dry cleaning included', 'Interior vacuum cleaning', 'Dashboard polishing', 'Interior wet shampooing and detailing', 'Pressure washing'], 29: ['Protects car from pests', 'Rat repellent treatment', 'Sprayed on underbody and engine bay', 'Protects car wiring from pests', 'Prevents pest breeding inside car'], 30: ['Roof opening+refitting', 'Sunroof lubrication', 'Drainage tube clog/debris removal', 'Sunroof cleaning'], 31: ['Ultra shine polish', 'Complete paint correction', 'Avery PPF-paint protection film', 'Protects OEM paint', 'Strain & fade resistance'], 32: ['2 layers of protection', 'Silencer anti rust coating', 'Silencer corrosion protection', '2 layers of protection'], 33: ['Test drive inspection', '25 points checklist', 'Upfront estimate', 'Underbody inspection', '25 points checklist'], 34: ['50% Points checkup', 'Upfront genuine estimate', 'Available at doorstep', 'Takes only 30 minutes'], 35: ['OEM scanning', 'Code reset', 'Scanner report provided', 'Electrical scanning', 'Error code deletion'], 36: ['25 points check', 'Upfront estimate', 'Front shocker check', 'Rear shocker check', 'Shocker mount check'], 37: ['Free pickup included', 'Brake fluid check', 'Coolant check', 'Engine oil check', 'Power steering oil check'], 38: ['Reduces suspension noise', 'Shocker strut/damper OES replacement(single unit)', 'Opening & fitting of front shock absorber', 'Shocker mount,shocker coil spring additional charges'], 39: [], 40: ['Headlight OES(price for single unit)', 'Opening& fitting of bumper/headlight', 'Free pickup & drop', 'Projector/LEDs/DRLs Additional(if applicable)'], 41: ['Taillight OES(price for single unit)', 'Opening& fitting of tailight', 'Free pickup & drop', 'Bulbs/LEDs Additional(if applicable)', 'Taillight price will differ from car model to model'], 42: ['Fog light assembly replacement( single unit)', 'Opening& fitting of bumper+ fog lamp', 'Free pickup & drop', 'Projector/LEDs/DRLs Additional(if applicable)', 'Switch/ harness wiring check'], 43: ['Windshield(AIS Approved)', 'Opening & fitting of new windshield', 'Consumables-sealant/bond/adhesive', 'Free pickup & drop', 'Sensor chargesadditional( if applicable)'], 44: ['Windshield(AIS Approved)', 'Opening & fitting of new windshield', 'Consumables-sealant/bond/adhesive', 'Free pickup & drop', 'Defogger charges additional (if applicable)'], 45: ['Door glass(AIS Approved)', 'Opening & fitting of new door glass', 'Consumables-bond/adhesive', 'Free pickup & drop', 'UV glass charges additional (if applicable)'], 46: ['Tubeless', '2 years warranty', '165/80 R14 85S', 'Free pickup & drop', 'Tyre replacement at service center'], 47: ['Tubeless', '185/65 R15', '4970 rs', 'Free pickup & drop', 'Tyre replacement at service center'], 48: ['Tubeless', '165/65 R15 88T', 'Free pickup & drop', 'Tyre replacement at service center', 'Tyre inspection for tread'], 49: ['Tubeless', '165/65 R15 88H', 'Free pickup & drop', 'Tyre replacement at service center', 'Tyre inspection for tread'], 50: ['Tubeless', '165/80 R14 85 TL', 'Free pickup & drop', 'Tyre replacement at service center', 'Tyre inspection for tread'], 51: ['Tubeless', '165/80 R14 TL', 'Free pickup & drop', 'Tyre replacement at service center', 'Tyre inspection for tread'], 52: ['Tubeless', '165/65 R14 88TL', 'Free pickup & drop', 'Tyre replacement at service center', 'Tyre inspection for tread'], 53: ['Tubeless', '165/80 R14 81S', 'Free pickup & drop', 'Tyre replacement at service center', 'Tyre inspection for tread'], 54: ['Tubeless', '185/65 R15 88V', 'Free pickup & drop', 'Tyre replacement at service center', 'Tyre inspection for tread'], 55: ['Alignment & balancing', 'Automated wheel balancing', 'Weight correction', 'Wheel rigidity inspection', 'Alloy weights additional'], 56: ['Ehanced durability', 'Excellent durability', 'Mud flaps set of 4', 'Prevents soil accumulation', 'Protects car underbody'], 57: ['Free pickup and drop', 'Free installation', 'Existing battery replacement', 'Available at doorstep'], 58: ['Improves battery life', 'Alternator replacement', 'Opening & fitting of alternator', 'Alternator belt additional', 'Free pickup & drop'], 59: ['Improves battery life', 'Alternator repair', 'Opening & fitting of alternator', 'Alternator belt additional', 'Free pickup & drop'], 60: ['Available at Doorstep', 'Takes 20-30 minutes', 'Battery checkup'], 61: ['100% color match', 'Grade a primer', 'Premium DuPont paint', '4 layers of painting', 'Panel rubbing polishing'], 62: ['Alloy preservation', 'Price for 1 tyre only', '100% color match', 'Grade a primer', 'High temperature paint'], 63: ['Increase Mileage Upto 5km', 'Increase engine life span', 'Improve vehicle performance', 'Decrease engine noise and vibration', 'Reduce black smoke'], 64: ['CLUTCH SET REPLACEMENT', 'Free 50 point inspection', 'Labor + spare part rates', 'Clutch set OES(CLUCTH set + pressure plate) replace', 'Opening & fitting of clutch set'], 65: ['Improve gear shifting', 'Spare part price only', 'Clutch bearing OES replacement', 'Clutch cable/wire,release bearing/clutch cylinder', 'Flywheel,slave cylinder in add ons,clutch set'], 66: ['Improves performance', 'Spare part price only', 'Flywheel OES replacement', 'Clutch cable/wire,release bearing/clutch cylinder', 'Flywheel,slave cylinder in add ons,clutch set'], 67: ['Labor rates only', 'Spare part charges will be extra', 'Opening & fitting+ inspection of below items', 'Clutch plate', 'Pressure plate'], 68: ['Bumper spare price only', 'Genuine spare parts', 'Opening & fitting of front bumper', 'Front bumper replacement(black color)', 'Freee pickup & drop'], 69: ['Bumper spare price only', 'Genuine spare parts', 'Opening & fitting of rear bumper', 'Rear bumper replacement(black color)', 'Freee pickup & drop'], 70: ['Prevents engine damage', 'Spare part price only', 'Engine mounting replacement(OES)', 'Single unit only', 'Free pickup & drop'], 71: ['Prevents engine damage', 'Spare part price only', 'Gear box mounting replacement(OES)', 'Single unit only', 'Free pickup & drop'], 72: ['Dickey shocker OES replacement(Set of 2)', 'Opening & fitting of dickey shocker', 'Boot/trunk hinges additional', 'Free pickup & drop'], 73: ['Starter Motor Repair', 'Opening & Fitting of starter motor', 'Free Pickup & Delivery', 'Armature Additional if required'], 74: ['Enhanced durability', 'Mud flaps set of 4', 'Prevents soil accumulation', 'Protects car underbody', 'Easy fitment'], 75: ['Frequency=450 hz', 'Sound intensity=90-110 db', 'Opening & fitting of bumper', 'Horn replacement(set of 2)', 'Relay/couple faults check'], 76: ['Reduces suspension noise', 'Free pickup & drop', 'Shocker strut/damper OES replacement(single unit)', 'Opening & fitting of front shock absorber', 'Shocker mount,shocker coil spring additional charges']}
+
+
 		servies_list.forEach((x) => encoded_list.push(encodeURI(x)));
-		console.log(encoded_list);
 	if (service!=null && encoded_list.includes(service)){
-		console.log(service);
+		
+	}
+	else {
+		service = 'periodic-services';
 	};
 
 
@@ -54,6 +67,24 @@
 		<meta property="og:image" content="${domain}/assets/images/why-img-2.jpg">
 		<meta property="og:image" content="${domain}/assets/images/schedule-apointment.png">`);
 
+
+$.ajax({
+	      url: `${domain}/cars_info_dump.json`,
+	      type: "get",
+	   success:function(data){
+	   console.log(data);
+	   cars_info = data;
+	   }
+	   });
+
+$.ajax({
+	      url: `${domain}/cars_info_dump.json`,
+	      type: "get",
+	   success:function(data){
+	   console.log(data);
+	   cars_info = data;
+	   }
+	   });
 	</script>
 
 	<meta charset="utf-8">
@@ -91,10 +122,6 @@
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCPDR39"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 	<div class="head stricky-fixed stricked-head">
 		<div class="container-fluid">
 			<header>
@@ -379,25 +406,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 <section class="filter-section pt-3">
 	<div class="container-fluid">
-		<form method="post" action="https://www.garage.movemycar.in/form-submit-new" id="car-form">
+		<form method="get" id="car-form">
 			<div class="row filter-grp">
 				<div class="col-md-10 col-sm-10 col-12">
-					<input type="hidden" name="serviceIn" id="serviceIn" value="batteries">
-					<input type="hidden" name="city" id="city" value="gurgaon">
+					<input type="hidden" name="city" id="city" value="">
+					<input type="hidden" name="service" id="service" value="">
 					<div class="row">
 						<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
-							<select required name="brand" class="select1" id="brand_id_car">
-								<option value="">Select Car Brand</option>
-								<option value="1">HONDA</option><option value="2">HYUNDAI</option><option value="3">MARUTI SUZUKI</option><option value="4">MAHINDRA</option><option value="5">TATA</option><option value="6">KIA</option><option value="7">SKODA</option><option value="8">RENAULT</option><option value="9">CHEVROLET</option><option value="10">TOYOTA</option><option value="11">FIAT</option><option value="12">ASTON MARTIN</option><option value="13">AUDI</option><option value="14">BENTLEY</option><option value="15">BMW</option><option value="16">FERRARI</option><option value="17">JAGUAR</option><option value="18">LAMBORGHINI</option><option value="19">LEXUS</option><option value="20">MASERATI</option><option value="21">MERCEDES</option><option value="22">MINI</option><option value="23">MITSUBISHI</option><option value="24">PORSCHE</option><option value="25">VOLVO</option><option value="26">Volkswagen</option><option value="27">Ford</option>							</select>
+							<select required name="brand_id" class="select1" id="brand_id">
+								<option value="">Select Car Brand</option>				
+							</select>
 						</div>
 
 						<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
-							<select required name="model" class="select1" id="model">
+							<select required name="model_id" class="select1" id="model_id">
 								<option value="">Select Car Model</option>
 							</select>
 						</div>
 						<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
-							<select required name='fuel' class="select1" id="fuel">
+							<select required name='fuel_id' class="select1" id="fuel_id">
 								<option value="">Select Car Fuel Type</option>
 								<option value="1">Petrol</option>
 								<option value="2">Diesel</option>
@@ -407,7 +434,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 				<div class="col-md-2 col-sm-2 col-12">
-					<button onclick="get_package_details()" type="submit" name="submit" class="search-btn">Search</button>
+					<button onclick="get_package_details()" type="submit" class="search-btn">Search</button>
 					<!-- <a href="" onclick="get_package_details()" class="search-btn">Search</a> -->
 				</div>
 			</div>
@@ -1381,101 +1408,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>Happy to nurture!</p>
 	</div>
 </section>
-<!-- TESTIMONIALS  end -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- TESTIMONIALS  end -->
+
 <script>
 	$(document).ready(function() {
 
-		$('#brand_id_car').change(function() {
+		$('#brand_id').change(function() {
 
-			var brand = $('#brand_id_car').val();
-			if (brand != '') {
-				$.ajax({
-					url: "https://www.garage.movemycar.in/fetch-model-new",
-					method: "POST",
-					data: {
-						brand_id: brand
-					},
-					success: function(data) {
-						$('#model').html(data);
-					}
-				});
+			brand_id = $('#brand_id').val();
+			if (brand_id != '') {
+				var modeloptions='<option value="">Select Model..</option>';
+				for (modelnum in cars_info[brand_id]['data']){
+					modeloptions+=`<option value="${modelnum}">${(cars_info[brand_id]['data'][modelnum].split('-').slice(0, -1)).join(' ')}</option>`	
+				};
+				$('#model_id').html(modeloptions);
 			} else {
-				$('#model').html('<option value="">Select Model..</option>');
+				$('#model_id').html('<option value="">Select Model..</option>');
 			}
 		});
 
 	});
 
 	function get_package_details() {
-		var brand = $('#brand_id_car').val();
-		// alert(brand);
-		var model = $('#model').val();
-		var fuel = $('#fuel').val();
+		brand_id = $('#brand_id').val();
+		model_id = $('#model_id').val();
+		fuel_id = $('#fuel_id').val();
 
-		if (brand == '') {
+		if (brand_id == '') {
 			alert("Please select a brand");
-			$('#brand_id_car').focus();
-			$("#brand_id_car").css("border-color", "red");
+			$('#brand_id').focus();
+			$("#brand_id").css("border-color", "red");
 			return false;
-		} else if (model == '') {
+		} else if (model_id == '') {
 			alert("Please select a model");
-			$('#model').focus();
-			$("#model").css("border-color", "red");
+			$('#model_id').focus();
+			$("#model_id").css("border-color", "red");
 			return false;
 		} else if (fuel == '') {
 			alert("Please select a fuel");
-			$('#fuel').focus();
-			$("#fuel").css("border-color", "red");
+			$('#fuel_id').focus();
+			$("#fuel_id").css("border-color", "red");
 			return false;
 		} else {
+			document.querySelector('input[id="city"]').setAttribute("value", city);
+			document.querySelector('input[id="service"]').setAttribute("value", service);
 			return true;
 		}
 	};
 
-	function shop_cart() {
-		var package_id = $('#package_id').val();
-		$.ajax({
-			type: 'POST',
-			url: "https://www.garage.movemycar.in/cart-function",
-			data: {
-				package_id: package_id
-			},
-			success: function(status) {
-				alert("Item added to your cart!");
 
-
-			},
-			error: function(status) {
-				alert("Some error, please try again");
-
-			}
-		});
-	}
-	$('#model').change(function() {
-		var model_id = $('#model').val();
-		var model_name = $('#model option:selected').html();
+	$('#model_id').change(function() {
+		model_id = $('#model_id').val();
 		if (model_id != '') {
-			$.ajax({
-				url: "https://www.garage.movemycar.in/fetch-fuel",
-				method: "POST",
-				data: {
-					model_id: model_id,
-					model_name: model_name
-				},
-				success: function(data) {
-					$('#fuel').empty().html('<option value="">Select Fuel Type..</option>');
-					$.each(data, function(modelID, engine_name) {
-						var opt = $('<option />');
-						opt.val(modelID);
-						opt.text(engine_name);
-						$('#fuel').append(opt);
-					});
+				var modeloptions='<option value="">Select Fuel Type..</option>';
+				console.log(cars_info[brand_id]['data'][model_id].split('-').pop());
+				fuel=cars_info[brand_id]['data'][model_id].split('-').pop()
+				num=Number(model_id);
+				for (var i = 0;i<fuel.length;i++) {
+					var ftype='';
+					 if (fuel[i]=='P')
+						ftype='Petrol'
+					else if (fuel[i]=='C')
+						ftype = 'CNG'
+					else if (fuel[i]=='D')
+						ftype = 'Diesel'
+					modeloptions+=`<option value="${num+i}">${ftype}</option>`;
 				}
-			});
+
+				$('#fuel_id').html(modeloptions);
 		} else {
-			$('#fuel').html('<option value="">Select Model..</option>');
+			$('#fuel_id').html('<option value="">Select Fuel Type..</option>');
 		}
 	});
 </script>
@@ -1868,17 +1869,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		for(var i=0;i<12;i++){
 			services_table+=`<li class="form-check">
-											<a href="services.html?city=${default_city}&service=${encoded_list[i]}">
+											<a href="services.html?city=${default_city}&service=${encoded_list[i]}&brand_id=${brand_id}&model_id=${model_id}&fuel_id=${fuel_id}">
 												<img width="10%" src="service_imgs/${i+1}.jpg" alt="${service}">
 												<span>${servies_list[i]}</span>
 											</a>
 										</li>`;
 		};
 		$("#collapse79").html(services_table);
+			var options =  '';
+	for (brandnum in cars_info) {
+	 	options+=`<option value="${brandnum}">${cars_info[brandnum]['name']}</option>`;
+	 } 
+	$("#brand_id").append(options)
+
 
 </script>
 <script src="https://unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
 	var base_url = 'index.html';
 </script>
@@ -2170,3 +2176,4 @@ var email = 'N/A';
 	// });
 </script>
 <!-- header-filter by city end-->
+
