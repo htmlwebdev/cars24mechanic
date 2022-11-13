@@ -758,14 +758,21 @@ imgs = {0: 'packages/57-doorstep-accidental-inspection.jpg', 1: 'packages/58-win
         92: 'packages/104-rear-bumper-replacement.jpg', 93: 'packages/105-engine-mounting-replacement.jpg',
         94: 'packages/106-gear-box-mounting-replacement.jpg', 95: 'packages/107-mud-flaps.jpg',
         96: 'packages/108-horn-replacement.jpg', 97: 'packages/109-front-shock-absorber-replacement.png'}
-service_category={0: 'Accidental Repairs', 1: 'Know Your Policy', 2: 'Service Packages', 3: 'AC Fitments', 4: 'Radiator', 5: '3M Services', 6: 'Scheduled Packages', 7: 'Brake Maintenance', 8: 'Revival Package', 9: 'Spa', 10: 'Coating', 11: 'Inspection', 12: 'Inspections', 13: 'Suspension', 14: 'Custom Services', 15: 'Used Car', 16: 'Glasses', 17: 'Custom Issues', 18: 'CEAT', 19: 'Apollo', 20: 'MRF', 21: 'Bridgestone', 22: 'Wheel Care Services', 23: 'Amaron', 24: 'Exide', 25: 'Livguard', 26: 'Alternator', 27: 'Jumpstart', 28: 'Front Side', 29: 'Rear Side', 30: 'Whole Body', 31: 'Left Side', 32: 'Right Side', 33: 'Engine Decarbonization', 34: 'Fitments', 35: 'Stereos'};
+service_category = {0: 'Accidental Repairs', 1: 'Know Your Policy', 2: 'Service Packages', 3: 'AC Fitments',
+                    4: 'Radiator', 5: '3M Services', 6: 'Scheduled Packages', 7: 'Brake Maintenance',
+                    8: 'Revival Package', 9: 'Spa', 10: 'Coating', 11: 'Inspection', 12: 'Inspections',
+                    13: 'Suspension', 14: 'Custom Services', 15: 'Used Car', 16: 'Glasses', 17: 'Custom Issues',
+                    18: 'CEAT', 19: 'Apollo', 20: 'MRF', 21: 'Bridgestone', 22: 'Wheel Care Services', 23: 'Amaron',
+                    24: 'Exide', 25: 'Livguard', 26: 'Alternator', 27: 'Jumpstart', 28: 'Front Side', 29: 'Rear Side',
+                    30: 'Whole Body', 31: 'Left Side', 32: 'Right Side', 33: 'Engine Decarbonization', 34: 'Fitments',
+                    35: 'Stereos'};
 amt = {v: k for k, v in amt.items()}
 dict_desc = {str(v): k for k, v in dict_desc.items()}
 imgs = {v: k for k, v in imgs.items()}
 service_category = {v: k for k, v in service_category.items()}
 
+
 def fetchinfo():
-    mainlist = []
     conection_ = sqlite3.connect("{}/garage.db".format(BASE_DIR))
     conection_.row_factory = sqlite3.Row
     c = conection_.cursor()
@@ -775,10 +782,13 @@ def fetchinfo():
     count = 0
     for temp in c.execute("SELECT * FROM garage").fetchall():
         fuel_id = f"{temp['fuel_num']}-{listdict[temp['service_type']]}"
+        category = f"{service_category[temp['service_cat']]}"
         if fuel_id not in tempdataframe:
-            tempdataframe[fuel_id] = []
+            tempdataframe[fuel_id] = {}
+        if category not in tempdataframe[fuel_id]:
+            tempdataframe[fuel_id][category] = []
         try:
-            temp_new = {"cat": service_category[temp['service_cat']], "title": title[re.sub(r'[^A-Za-z0-9 /"&!()-]+', '', temp['title'])],
+            temp_new = {"title": title[re.sub(r'[^A-Za-z0-9 /"&!()-]+', '', temp['title'])],
                         "time": time[temp['time']],
                         "amount": amt[temp['amount']], "desc": dict_desc[temp['desc'].replace(r'\x00', "")],
                         "img": imgs[temp['imgurl'].replace("/admin/public/assets/uploads/", "")]}
@@ -789,17 +799,18 @@ def fetchinfo():
             print(error)
             print(temp['desc'].replace(r'\x00', ""))
             print(dict(temp))
-        tempdataframe[fuel_id].append(temp_new)
+        tempdataframe[fuel_id][category].append(temp_new)
     mainlist = [{"fuel_id": k, "data": v} for k, v in tempdataframe.items()]
     df = pd.DataFrame(mainlist)
     df.to_excel('{}/sqlitedata.xlsx'.format(BASE_DIR),
-                header=['fuel_id',"data"],
+                header=['fuel_id', "data"],
                 index=False)
+
 
 
 fetchinfo()
 
-#print({k: v for k, v in enumerate(imgs.split("\n"))})
+# print({k: v for k, v in enumerate(imgs.split("\n"))})
 # dd = {k: v for k, v in enumerate(a.split("\n"))}
 # print({k:eval(a) for k,a in enumerate(abcd.split("\n"))})
 # print(dd)
