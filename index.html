@@ -16,6 +16,32 @@
 	var city = url.searchParams.get("city");
 	const domain = location.protocol + '//' + location.host;
 	var loc=`Near you`;
+			var services_list=[];
+			var encoded_list=[];
+			var service_category={};
+			var service_title={};
+			var desc={}
+			var timevalue={};
+			var imgs = {};
+        	var amt  = {};
+		//services_list.forEach((x) => encoded_list.push(encodeURI(x)));
+        $.ajax({
+	      url: `${domain}/data_raw.json`,
+	      type: "get",
+	   success:function(data){
+	   console.log(data);
+	   cars_info = data['cars_info'];
+	   		services_list=data['services_list'];
+			encoded_list=data['encoded_list'];
+			service_category=data['service_category'];
+			service_title=data['service_title'];
+			desc=data['desc'];
+			timevalue=data['timevalue'];
+			imgs = data['imgs'];
+        	amt  = data['amt'];
+	   }
+	   });
+
 	//document.querySelector('link[class="city-select"]').setAttribute("placeholder", _desc);
 	document.title=`Cars24Mechanic | Best Car Repair and Services`;
 	var base_url='index.html'
@@ -1280,174 +1306,25 @@
 		header=`<h1><strong>  Best Car Repair Services ${loc}</strong></h1><p>Excellent Services Just a Click Away,Instant Quotes Anytime, Anywhere!</p>`;
 		};
 		$('#header_text').html(header);
-		$('#service_box_1').html(`
+		services_table="";
+		for (var i = 0;i<12;i++){
+			services_table+=`
 			<div class="col-md-2 col-sm-2 col-6 px-1">
 				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
 					<figure>
-						<a href="gurgaon/periodic-services.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/periodicservices/periodicservices1.jpg" alt="Periodic maintenance service near me">
+						<a href="services.html?city=${default_city}&service=${encoded_list[i]}" id="service" >
+							<img width="10%" src="service_imgs/${i+1}.jpg" alt="${services_list[i]}">
 						</a>	
 					</figure>
 					<div class="service-details">
-						<input type ="hidden" value="1" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=periodic-services" id="service" >Periodic Services</a></h4>
+						<input type ="hidden" value="${i}" id="service_id">
+						<h4><a href="services.html?city=${default_city}&service=${encoded_list[i]}" id="service" >${services_list[i]}</a></h4>
 					</div>
 				</div>
 			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/denting-and-painting.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/dentingpainting/dentingpainting2.jpg" alt="Car denting and painting near me">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="2" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=denting-and-painting" id="service" >Denting And Painting</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/batteries.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/batteries/batteries3.jpg" alt="Car battery service near me">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="3" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=batteries" id="service" >Batteries</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/car-spa-and-cleaning.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/carspacleaning/carspacleaning4.jpg" alt="Car washing near me">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="4" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=car-spa-and-cleaning" id="service" >Car Spa And Cleaning</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/ac-service-and-repair.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/acservicerepair/acservicerepair5.jpg" alt="Car AC Services Near Me">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="5" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=ac-service-and-repair" id="service" >AC Service And Repair</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/tyres-and-wheels.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/tyreswheels/tyreswheels6.jpg" alt="Car Tyre Services ">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="6" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=tyres-and-wheels" id="service" >Tyres And Wheels</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/accidental-car-repair.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/insuranceclaims/insuranceclaims7.jpg" alt="Accidental Car Repair">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="7" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=accidental-car-repair" id="service" >Accidental Car Repair</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/detailing-services.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/detailingservices/detailingservices8.jpg" alt="Car Detailing Services Near Me">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="8" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=detailing-services" id="service" >Detailing Services</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/custom-services.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/customservices/customservices9.jpg" alt="Car Custom Services">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="9" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=custom-services" id="service" >Custom Services</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/windshield-and-glass.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/windshieldglass/windshieldglass10.jpg" alt="Car Windscreen Glass Replacement Services in Delhi">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="10" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=windshield-and-glass" id="service" >Windshield And Glass</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/lights-and-fitments.html" id="service" >
-							<img src="admin/public/assets/uploads/uplode/services/lightsfitments/lightsfitments11.jpg" alt="car light fitting near me">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="11" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=lights-and-fitments" id="service" >Lights And Fitments</a></h4>
-					</div>
-				
-				</div>
-			</div>
-						<div class="col-md-2 col-sm-2 col-6 px-1">
-				<div class="service-box wow fadeInUp" data-wow-delay=".1s">
-					<figure>
-						<a href="gurgaon/engine-decarbonization.html" id="service" >
-							<img src="admin/public/assets/uploads/Engine_Decarbonization.png" alt="Engine Decarbonization">
-						</a>	
-					</figure>
-					<div class="service-details">
-						<input type ="hidden" value="13" id="service_id">
-						<h4><a href="services.html?city=${default_city}&service=engine-decarbonization" id="service" >Engine Decarbonization</a></h4>
-					</div>
-				</div>
-			</div>
-	`);
+	`
+		}
+		$('#service_box_1').html(services_table);
 
 
 </script>

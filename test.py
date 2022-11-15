@@ -434,11 +434,11 @@ title = {0: 'Doorstep Accidental Inspection', 1: 'Windshield Replacement(Insuran
          91: 'Clutch Overhaul', 92: 'Front Bumper Replacement', 93: 'Rear Bumper Replacement',
          94: 'Engine Mounting Replacement', 95: 'Gear Box Mounting Replacement', 96: 'Dickey Shocker Replacement',
          97: 'Starter Motor Repair', 98: 'Horn Replacement'}
-title = {v: k for k, v in title.items()}
+#title = {v: k for k, v in title.items()}
 time = {0: '4 Hours', 1: '1 Day', 2: '2 Hours', 3: '8 Hours', 4: '6 Hours', 5: '3 Days', 6: '24 Hours', 7: '5 Hours',
         8: '3 Hours', 9: '4 Days', 10: 'Work Time Approx 30 Minutes', 11: '20-30 min', 12: '8 Days', 13: '1 Hour',
         14: ''}
-time = {v: k for k, v in time.items()}
+#time = {v: k for k, v in time.items()}
 amt = {0: '1.00', 1: '2250.00', 2: '3700.00', 3: '4700.00', 4: '4300.00', 5: '20000.00', 6: '650.00', 7: '5000.00',
        8: '900.00', 9: '4290.00', 10: '5300.00', 11: '1700.00', 12: '1800.00', 13: '2000.00', 14: '550.00',
        15: '750.00', 16: '501.00', 17: '1550.00', 18: '2150.00', 19: '1300.00', 20: '55499.00', 21: '1900.00',
@@ -765,13 +765,24 @@ service_category = {0: 'Accidental Repairs', 1: 'Know Your Policy', 2: 'Service 
                     18: 'CEAT', 19: 'Apollo', 20: 'MRF', 21: 'Bridgestone', 22: 'Wheel Care Services', 23: 'Amaron',
                     24: 'Exide', 25: 'Livguard', 26: 'Alternator', 27: 'Jumpstart', 28: 'Front Side', 29: 'Rear Side',
                     30: 'Whole Body', 31: 'Left Side', 32: 'Right Side', 33: 'Engine Decarbonization', 34: 'Fitments',
-                    35: 'Stereos'};
-amt = {v: k for k, v in amt.items()}
-dict_desc = {str(v): k for k, v in dict_desc.items()}
-imgs = {v: k for k, v in imgs.items()}
-service_category = {v: k for k, v in service_category.items()}
+                    35: 'Stereos'}
 
+#amt = {v: k for k, v in amt.items()}
+#dict_desc = {str(v): k for k, v in dict_desc.items()}
+#imgs = {v: k for k, v in imgs.items()}
+#service_category = {v: k for k, v in service_category.items()}
 
+services_list = ['Periodic Services', 'Denting And Painting', 'Batteries', 'Car Spa And Cleaning',
+                'AC Service And Repair', 'Tyres And Wheels', 'Accidental Car Repair', 'Detailing Services',
+                'Custom Services', 'Windshield And Glass', 'Lights And Fitments', 'Engine Decarbonization']
+
+encoded_list = ['periodic-services', 'denting-and-painting', 'batteries', 'car-spa-and-cleaning',
+                'ac-service-and-repair', 'tyres-and-wheels', 'accidental-car-repair', 'detailing-services',
+                'custom-services', 'windshield-and-glass', 'lights-and-fitments', 'engine-decarbonization']
+data_dict={"cars_info":parsed,"service_title":title,"desc":dict_desc,"timevalue":time,"imgs":imgs,"amt":amt,
+           "service_category":service_category,"services_list":services_list,"encoded_list":encoded_list}
+json.dump(fp=open(f"{BASE_DIR}/data_raw.json","w"),obj=data_dict)
+exit()
 def fetchinfo():
     conection_ = sqlite3.connect("{}/garage.db".format(BASE_DIR))
     conection_.row_factory = sqlite3.Row
@@ -808,7 +819,7 @@ def fetchinfo():
 
 
 
-fetchinfo()
+#fetchinfo()
 
 # print({k: v for k, v in enumerate(imgs.split("\n"))})
 # dd = {k: v for k, v in enumerate(a.split("\n"))}
