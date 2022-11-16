@@ -28,7 +28,9 @@
 	var fuel_id = url.searchParams.get("fuel_id");
 	var loc=`Near you`;
 	var base_url='index.html';
-	if (city!=null && (city=='delhi' || city=='gurgaon' || city=='noida')){
+	var city_list = ['delhi','gurgaon','noida'];
+
+	if (city!=null && city_list.includes(city)){
 		loc=`in ${capitalizeFirstLetter(city)}`;
 		base_url+=`?city=${city}`;
 	}
@@ -89,9 +91,6 @@
 
 
 
-
-
-
 	</script>
 
 	<meta charset="utf-8">
@@ -109,9 +108,6 @@
 	<link href="assets/css/custom30dc.css?v=7.9" rel="stylesheet" type="text/css">
 	<link href="assets/css/custom-responsive120a.css?v=7.8" rel="stylesheet" type="text/css">
 	<link href="assets/css/popupeb77.css?v=4.6" rel="stylesheet" type="text/css">
-
-
-
 	<link rel="stylesheet" type="text/css" href="assets/css/marq-style.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animation.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
@@ -146,34 +142,24 @@
 
 						<!-- for mobile login -->
 						<span class="m-contact-no">
-							<a href="tel:8800538189">
+							<a href="tel:9599253469">
 								<span>
 									<img src="assets/images/phone_menu.gif" alt="call-icon">
-								</span> 880-053-8189
+								</span> 9599253469
 							</a>
 						</span>
 						<!-- for mobile login end -->
 						<div class="menu">
 							<ul class="topnav" id="myTopnav">
 								<li><a href="index.html">Home</a></li>
-								<!-- <li class="dpd-menu">
-									<a class="drop-menu" href="#">Service Type</a>
-									<ul class="dropdown-content">
-										<li><a href="#">Delhi 2</a></li>
-										<li><a href="#">Banglore 2</a></li>
-										<li><a href="#">Mumbai 2</a></li>
-										<li><a href="#">Hyderabad 2</a></li>
-										<li><a href="#">Chennai 2</a></li>
-									</ul>
-								</li> -->
-								<!-- <li><a href="#">Blog</a></li> -->
-								<li><a href="contact-us.html">Contact Us</a></li>
-								<li><a href="login.html">Login</a></li>								<li>
+								<li><a href="about-us.html">About us</a></li>
+								<li><a href="contact-us.html">Contact Us</a></li>							
+								<li>
 									<span class="contact_no">
-										<a href="tel:8800538189">
+										<a href="tel:9599253469">
 											<span class="m-display">
 												<img src="assets/images/phone_menu.gif" alt="call-icon">
-											</span> 880-053-8189
+											</span> 9599253469
 										</a>
 									</span>
 								</li>
@@ -478,25 +464,6 @@
 	</div>
 	</div>
 </section>
-<!-- service-list-section  end -->
-<section class="service-videos-section">
-	<div class="container">		
-		<div class="service-videos">
-			<div class="col-md-7 col-sm-6 col-12 m-padding-lr">
-				<h2>
-					MMC GARAGE : 24 Hour Car Breakdown Service Near You					<small>There are many reasons why people need to get car repair in an emergency. The most common reason is a flat tire. People should know that there are some other reasons that can cause a flat tire and there are many situations that require a car repair in an emergency. </small>
-				</h2>
-			</div>
-			<div class="col-md-5 col-sm-6 col-12 m-padding-lr">
-				<div class="video-box">
-				<iframe width="400" height="315" src="https://www.youtube.com/embed/NfrqwDEjLpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
 	<section class="pt-5 pb-5">
 		<div class="container-fluid">
 			<div class="row">
@@ -703,7 +670,8 @@
 		$('#brand_id').change(function() {
 
 			brand_id = $('#brand_id').val();
-			if (brand_id != '') {
+			if (brand_id != '' ) {
+
 				var modeloptions='<option value="">Select Model..</option>';
 				for (modelnum in cars_info[brand_id]['data']){
 					modeloptions+=`<option value="${modelnum}">${(cars_info[brand_id]['data'][modelnum].split('-').slice(0, -1)).join(' ')}</option>`	
@@ -766,17 +734,17 @@
 			$('#fuel_id').html('<option value="">Select Fuel Type..</option>');
 		}
 	});
-	if (fuel_id!=null)
+	if (fuel_id!=null && service_id!=-1)
 		{
+						   	console.log(`https://docs.google.com/a/google.com/spreadsheets/d/1DcOOWweYkmZO9S25rc8dAkFOvnhNhzvXEbWxotZlUl8/gviz/tq?tq=select%20*%20where%20A%20%3D%20%27${fuel_id}-${service_id}%27`);
 			$.ajax({
 			    url: `https://docs.google.com/a/google.com/spreadsheets/d/1DcOOWweYkmZO9S25rc8dAkFOvnhNhzvXEbWxotZlUl8/gviz/tq?tq=select%20*%20where%20A%20%3D%20%27${fuel_id}-${service_id}%27`,
 			    type: "get",
 			   success:function(data){
-			   	console.log(`https://docs.google.com/a/google.com/spreadsheets/d/1DcOOWweYkmZO9S25rc8dAkFOvnhNhzvXEbWxotZlUl8/gviz/tq?tq=select%20*%20where%20A%20%3D%20%27${fuel_id}-${service_id}%27`);
 			   //console.log(service_data);
 			   var service_data = JSON.parse(data.split('(')[1].split(')')[0])['table']['rows'][0]['c'][1]['v'];
 			   	var services_column='';
-			   	var header=`<small>${cars_info[brand_id]['name']} / ${(cars_info[brand_id]['data'][model_id].split('-').slice(0, -1)).join(' ')} / ${cars_info[brand_id]['data'][model_id].split('-').pop()}</small>`;
+			   	var header=`<small>${cars_info[brand_id]['name']} / ${(cars_info[brand_id]['data'][model_id].split('-').slice(0, -1)).join(' ')}</small>`;
 			   	service_data=JSON.parse(service_data.replaceAll("'",'"'));
 			   	console.log(service_data);
 				for (category in service_data){
@@ -806,7 +774,7 @@
 											</ul>
 											<div class="add-to-cart">
 												<span class="float-left"><strong>${amt[service_data[category][subcat]['amount']]}</strong></span>
-												<a onclick="update_values();document.getElementById('pop_service_form').style.display='block';" href="javascript:void(0)" class="btn btn-sm btn-outline-success cart-btn"><i class="fas fa-plus-circle"></i> Book appointment</a>
+												<a onclick="update_values('${service_title[service_data[category][subcat]['title']]}');document.getElementById('pop_service_form').style.display='block';" href="javascript:void(0)" class="btn btn-sm btn-outline-success cart-btn"><i class="fas fa-plus-circle"></i> Book appointment</a>
 											</div>
 										</div>
 									</div>
@@ -817,13 +785,22 @@
 		
 				$("#service-list-section").html(services_column);
 			   }
-			   });}
+			   });
+		}
+	else {
+		if (service_id==-1)
+		$("#service-list-section").html(`<h4>Select Service type</h4>`);
+	else if (fuel_id==null)
+		$("#service-list-section").html(`<h4>Enter Car Details</h4>`);
+	else 
+		$("#service-list-section").html(`<h4>Enter Car Details and Select Service type</h4>`);
+	}
 
 
 
 
 </script>
-﻿</div>
+</div>
 <style>
 	ul.social-network {
 		list-style: none;
@@ -924,15 +901,15 @@
 			<div class="col-md-3 col-sm-3 col-12 m-padding-lr">
 				<div class="footer-contant">
 					<h3>Contact Information <span></span></h3>
-					<p>Ready to book your car repair and maintenance service with MMC Garage? If yes, then get ready to experience the quality car repair solutions at affordable prices. We are just one click away if you are looking for excellence in car servicing and maintenance.<a href="about-us.html">read more..</a></p>
+					<p>Ready to book your car repair and maintenance service with Cars24Mechanic? If yes, then get ready to experience the quality car repair solutions at affordable prices. We are just one click away if you are looking for excellence in car servicing and maintenance.<a href="about-us.html">read more..</a></p>
 				</div>
 				<div class="follobox">
 					<ul class="social-network social-circle">
-						<li><a target="_blank" href="https://www.facebook.com/MMCGarage/" class="icoFacebook fb-bg" title="Facebook" rel="noreferrer"><i class="fab fa-facebook "></i></a></li>
-						<li><a target="_blank" href="https://www.instagram.com/garage.mmc/" class="icoinstra instra-bg" title="instagram" rel="noreferrer"><i class="fab fa-instagram "></i></a></li>
-						<li><a target="_blank" href="https://www.youtube.com/channel/UCh9b6RuKgErIMVojobIkN3A" class="icoyoutub youtube-bg" title="youtube" rel="noreferrer"><i class="fab fa-youtube"></i></a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/company/75668388" class="icoLinkedin lin-bg" title="Linkedin" rel="noreferrer"><i class="fab fa-linkedin "></i></a></li>
-						<li><a target="_blank" href="https://twitter.com/mmcgarage01" class="icoLinkedin tw-bg" title="Twitter" rel="noreferrer"><i class="fab fa-twitter "></i></a></li>
+						<li><a target="_blank" href="#" class="icoFacebook fb-bg" title="Facebook" rel="noreferrer"><i class="fab fa-facebook "></i></a></li>
+						<li><a target="_blank" href="#" class="icoinstra instra-bg" title="instagram" rel="noreferrer"><i class="fab fa-instagram "></i></a></li>
+						<li><a target="_blank" href="#" class="icoyoutub youtube-bg" title="youtube" rel="noreferrer"><i class="fab fa-youtube"></i></a></li>
+						<li><a target="_blank" href="" class="icoLinkedin lin-bg" title="Linkedin" rel="noreferrer"><i class="fab fa-linkedin "></i></a></li>
+						<li><a target="_blank" href="" class="icoLinkedin tw-bg" title="Twitter" rel="noreferrer"><i class="fab fa-twitter "></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -950,73 +927,49 @@
 							<a href="faq.html">FAQ</a>
 						</li>
 						<li>
-							<a href="garage-blog.html">Blog</a>
-						</li>
-						<li>
-							<a href="privacypolicy.html">Privacy Policy</a>
-						</li>
-						<li>
-							<a href="term-and-conditions.html">Terms and Conditions</a>
+							<a href="services.html">Services</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-						<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
+			<div class="col-md-4 col-sm-4 col-12 m-padding-lr">
 				<div class="footer-contant">
-					<h3>Services <span></span></h3>
-					<div class="row">
-						<ul class="col-md-5 col-sm-5 col-12 mr-1">
-							<li><a href="periodic-services.html">Periodic Services</a></li>
-							<li><a href="denting-and-painting.html">Denting And Painting</a></li>
-							<li><a href="batteries.html">Batteries</a></li>
-							<li><a href="car-spa-and-cleaning.html">Car Spa And Cleaning</a></li>
+					<h3>Top Services<span></span></h3>
+					<div class="row" id="footer_row">
+						<ul class="col-md-6 col-sm-6 col-12">
+							<li><a href="services.html?city=gurgaon&service=periodic-services">Periodic Services</a></li>
+							<li><a href="services.html?city=gurgaon&service=denting-and-painting">Denting And Painting</a></li>
+							<li><a href="services.html?city=gurgaon&service=batteries">Batteries</a></li>
+							<li><a href="services.html?city=gurgaon&service=car-spa-and-cleaning">Car Spa And Cleaning</a></li>
+							<li><a href="services.html?city=gurgaon&service=ac-service-and-repair">AC Service And Repair</a></li>
+							<li><a href="services.html?city=gurgaon&service=tyres-and-wheels">Tyres And Wheels</a></li>
 						</ul>
 						<ul class="col-md-6 col-sm-6 col-12">
-							<li><a href="ac-service-and-repair.html">AC Service And Repair</a></li>
-							<li><a href="tyres-and-wheels.html">Tyres And Wheels</a></li>
-							<li><a href="insurance-claims.html">Insurance Claims</a></li>
-							<li><a href="detailing-services.html">Detailing Services</a></li>
+							<li><a href="services.html?city=gurgaon&service=accidental-car-repair">Accidental Car Repair</a></li>
+							<li><a href="services.html?city=gurgaon&service=detailing-services">Detailing Services</a></li>
+							<li><a href="services.html?city=gurgaon&service=custom-services">Custom Services</a></li>
+							<li><a href="services.html?city=gurgaon&service=windshield-and-glass">Windshield And Glass</a></li>
+							<li><a href="services.html?city=gurgaon&service=lights-and-fitments">Lights And Fitments</a></li>
+							<li><a href="services.html?city=gurgaon&service=engine-decarbonization">Engine Decarbonization</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<!-- <div class="col-md-2 col-sm-2 col-6">
-				<div class="footer-contant">
-					<h3></h3>
-					<div></div>
-					<ul>
-					   <li><a href="https://www.garage.movemycar.in/gurgaon/ac-service-and-repair">AC Service And Repair</a></li>
-						<li><a href="https://www.garage.movemycar.in/gurgaon/tyres-and-wheels">Tyres And Wheels</a></li>
-						<li><a href="https://www.garage.movemycar.in/gurgaon/insurance-claims">Insurance Claims</a></li>
-						<li><a href="https://www.garage.movemycar.in/gurgaon/detailing-services">Detailing Services</a></li>
-					</ul>
-				</div>
-			</div> -->
 			<div class="col-md-3 col-sm-3 col-12 m-padding-lr">
 				<div class="footer-contant">
 					<h3>Quick Contact <span></span></h3>
 					<ul>
-						<li><a href="tel:8800538189">Call Us: +91-880-053-8189</a></li>
-						<li><a href="mailto: help@garage.movemycar.in">Email id : help@garage.movemycar.in</a></li>
-						<li><a href="#"> 309, 3rd Floor, Vipul Agora, MG Road, Sector 28, Gurgaon, Haryana 122002, India </a></li>
+						<li><a href="tel:9599253469">Call Us: +91-959-925-3469</a></li>
+						<li><a href="mailto: help@cars24Mechanic.com">Email id : help@cars24Mechanic.com</a></li>
+						<li><a href="#">Office number 698, H block Palam Vihar, Gurgaon- 122017</a></li>
 					</ul>
-					<!-- <div class="social mb-2">
-						<h5>Connect us <span></span></h5>
-						<a href="#"><img src="https://www.garage.movemycar.in/assets/images/fb.png"></a>
-						<a href="#"><img src="https://www.garage.movemycar.in/assets/images/g-plus.png"></a>
-						<a href="#"><img src="https://www.garage.movemycar.in/assets/images/tweeter.png"></a>
-					</div> -->
-					<div>
-						<a href="https://play.google.com/store/apps/details?id=com.mmcgarage.customer" target="_blank" class="footer-app-download">
-							<img src="assets/images/android-app-store.png"></a>
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="all-right">
-		<a href="#"> Copyright 2022 All rights Reserved MoveMyCar.In A Product Of R-IMS.</a>
-		<p style="font-size: 11px;color:#73706b;">Disclaimer - The information, services, and products, accessed through this website own is owned and operated by MMC Garage. The representatives of the company are liable to make any changes to the data and can make additional changes to the website wherever required. Our company’s representative disclaims any information and services provided on our website and are subject to the law of infringement.</p>
+		<a href="#"> Copyright 2022 All rights Reserved Cars24Mechanic.com</a>
+		<p style="font-size: 11px;color:#73706b;">Disclaimer - The information, services, and products, accessed through this website own is owned and operated by Cars24Mechanic. The representatives of the company are liable to make any changes to the data and can make additional changes to the website wherever required. Our company’s representative disclaims any information and services provided on our website and are subject to the law of infringement.</p>
 	</div>
 </footer>
 
@@ -1063,6 +1016,13 @@
 										</div>
 									</div>
 									<div class="row">
+										<div class="col-md-12 col-sm-12 col-12">
+											<div class="form-group">
+												<input id="service_input" required="required" disabled type="text" placeholder="Service">
+											</div>
+										</div>
+									</div>
+									<div class="row">
 										<div class="col-md-6 col-sm-6 col-12">
 											<div class="form-group">
 												<span id="error-name" style="display:none;color:red;"><small>Enter a Valid Name*</small></span>
@@ -1070,35 +1030,24 @@
 											</div>
 										</div>
 										<div class="col-md-6 col-sm-6 col-12">
-											<div class="form-group">
-																					
-											<select class="" id="city" required="" name="city" onchange="$('#error-city').hide();$('#city').css('border-color','#afa9a9')">
-																<option value="">Select City...</option>
-																<option value="1">Delhi</option><option value="2">Gurgaon</option><option value="3">Ghaziabad</option><option value="4">Noida</option><option value="5">Faridabad</option><option value="6">Bangalore</option>															</select>
-															<span id="error-city" style="display:none;color:red;"><small>Select a city*</small></span>
-
+											<div class="form-group">																					
+											<select class="" id="option_city" required="" name="city">
+											</select>
 											</div>
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-md-12 col-sm-12 col-12">
+										<div class="col-md-6 col-sm-6 col-12">
 											<div class="form-group">
 												<span id="error-number" style="display:none;color:red;"><small> Enter Valid 10 Digit Mobile Number*</small></span>
 												<input id="number" required="required" type="text" name="number" placeholder="Contact Number" maxlength="10" onkeyup="document.getElementById('error-number').style.display='none';$('#number').css('border-color','black');">
-
 											</div>
 										</div>
-										<!-- <div class="col-md-6 col-sm-6 col-6">
-											<div class="form-group user_otp">
-												<input id="otp" required="required" type="text" name="otp" placeholder="Enter OTP" minlength="6" maxlength="6">
+										<div class="col-md-6 col-sm-6 col-12">
+											<div class="form-group">
+												<input id="email" required="required" type="email" name="email" placeholder="Enter Email">
 											</div>
 										</div>
-										<div class="col">
-											<div class="form-group user_otp text-left">
-												<a href="javascript:void();" class="btn btn-smbtn-success re-sendotp"><i id="resendotp" class="fas fa-sync"></i></a>
-												Re-send OTP
-											</div>
-										</div> -->
 									</div>
 								</div>
 								<div class="row mt-3">
@@ -1246,6 +1195,7 @@
 		else 
 			fueloptions+=`<option value="${num+i}">${ftype}</option>`;
 		}
+
 	$("#fuel_id").html(fueloptions);
 
 
@@ -1280,6 +1230,45 @@
 
 	});
 
+	function update_values(service_title){
+		var brandoptions = '';
+		for (brandnum in cars_info) {
+			if (brand_id==brandnum){
+		 		brandoptions+=`<option value="${brandnum}" selected = "selected">${cars_info[brandnum]['name']}</option>`;
+				var modeloptions= '';
+				for (modelnum in cars_info[brand_id]['data']){
+					modelname=cars_info[brand_id]['data'][modelnum].split('-').slice(0, -1).join(' ');
+					fuel=cars_info[brand_id]['data'][modelnum].split('-').pop()
+					num=Number(modelnum);
+					for (var i = 0;i<fuel.length;i++) {
+						var ftype='';
+						 if (fuel[i]=='P')
+							ftype='Petrol';
+						else if (fuel[i]=='C')
+							ftype = 'CNG';
+						else if (fuel[i]=='D')
+							ftype = 'Diesel';
+						if (fuel_id==num+i)
+							modeloptions+=`<option value="${num+i}" selected = "selected">${modelname} - ${ftype}</option>`;
+						else 
+							modeloptions+=`<option value="${num+i}">${modelname} - ${ftype}</option>`;
+					};
+					$('#form_model').html(modeloptions);
+				};
+			}
+		 	else 
+		 		brandoptions+=`<option value="${brandnum}">${cars_info[brandnum]['name']}</option>`;
+		 };
+	 $('#form_brand').html(brandoptions);
+
+	 var service_value=`${services_list[service_id]} - ${service_title}`;
+	 console.log(service_value);
+	 document.querySelector('input[id="service_input"]').setAttribute("value", service_value);
+
+
+
+	};
+
 
 	$(".branded").on('change', function() {
 		// var brand = $('#car_brand1').val();
@@ -1309,6 +1298,18 @@
 		};
 	});
 
+	var city_options='<option value="">Select City...</option>';
+	for (cityid in city_list){
+		if (city_list[cityid]==city){
+			city_options+=`<option value="${city_list[cityid]}" selected = 'selected'>${city_list[cityid]}</option>`;
+		}
+		else {
+			city_options+=`<option value="${city_list[cityid]}">${city_list[cityid]}</option>`;
+		};
+	}
+	console.log(city_options);
+	$("#option_city").html(city_options);
+
 
 	$(".step_2 .back_2").click(function() {
 		$(".step_1").css({
@@ -1336,18 +1337,12 @@
 		});
 	});
 
-	// }); 
-</script>
-<script>
+
 	$('#city_search').on('change', function() {
 		var city = $("#city_search option:selected").text();
 		alert(city);
 	});
 </script>
-
-<!-- Mirrored from www.garage.movemycar.in/gurgaon/batteries by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Nov 2022 11:05:58 GMT -->
-</html>
-<!-- header-filter by city -->
 <script type="text/javascript">
 	function myFunction_h() {
 		event.stopPropagation();
@@ -1385,53 +1380,21 @@
 			}
 			document.getElementById("myULx").classList.add("scroll_height");
 		}
-	}
+	};
 
 	function myConClcikFunctionhead() {
 		event.stopPropagation();
 		document.getElementById("myULx").style.display = "block";
-	}
+	};
 	$(document).on("click", function(event) {
 		document.getElementById("myULx").style.display = "none";
 	});
+
+
+
+
 </script>
-<script type="text/javascript">
-	function update_values(){
-		var brandoptions = '';
-	for (brandnum in cars_info) {
-		if (brand_id==brandnum){
-	 		brandoptions+=`<option value="${brandnum}" selected = "selected">${cars_info[brandnum]['name']}</option>`;
-			var modeloptions= '';
-			for (modelnum in cars_info[brand_id]['data']){
-				modelname=cars_info[brand_id]['data'][modelnum].split('-').slice(0, -1).join(' ');
-				fuel=cars_info[brand_id]['data'][modelnum].split('-').pop()
-				num=Number(modelnum);
-				for (var i = 0;i<fuel.length;i++) {
-					var ftype='';
-					 if (fuel[i]=='P')
-						ftype='Petrol';
-					else if (fuel[i]=='C')
-						ftype = 'CNG';
-					else if (fuel[i]=='D')
-						ftype = 'Diesel';
-					if (fuel_id==num+i)
-						modeloptions+=`<option value="${num+i}" selected = "selected">${modelname} - ${ftype}</option>`;
-					else 
-						modeloptions+=`<option value="${num+i}">${modelname} - ${ftype}</option>`;
-				};
-				$('#form_model').html(modeloptions);
-			};
-		}
-	 	else 
-	 		brandoptions+=`<option value="${brandnum}">${cars_info[brandnum]['name']}</option>`;
-	 };
-	 $('#form_brand').html(brandoptions);
 
-
-
-
-
-	};
-</script>
-<!-- header-filter by city end-->
-
+<!-- Mirrored from www.garage.movemycar.in/gurgaon/batteries by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Nov 2022 11:05:58 GMT -->
+</html>
+<!-- header-filter by city -->
