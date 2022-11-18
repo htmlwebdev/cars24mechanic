@@ -3,234 +3,6 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-<style>
-	.whatsapp-footer {
-		position: fixed;
-		bottom: 20px;
-		left: 20px;
-	}
-
-	a {
-		background-color: transparent;
-		color: #337ab7;
-		text-decoration: none;
-	}
-
-	.whatsapp-footer img {
-		width: 50px;
-		height: 50px;
-	}
-
-	.loader {
-		color: red;
-		display: none;
-		position: absolute;
-		top: 60%;
-		left: 69%;
-		padding: 2px;
-		text-align: center;
-		width: 242px;
-	}
-
-	@media only screen and (max-width: 640px) and (min-width: 320px) {
-		.loader {
-			top: 96%;
-			left: 14%;
-			padding: 2px;
-			text-align: center;
-			width: 242px;
-		}
-	}
-				.txt-grp {
-				float: left;
-				max-width: 234px;
-				width: 100%;
-				position: absolute;
-				z-index: 9999;
-				top: 18px;
-				right: 48%;
-			}
-
-			.txt-grp select {
-				width: 40%;
-				font-size: 14px;
-				float: left;
-			}
-
-			.txt-grp input[type=text] {
-				padding: 6px 10px 6px 32px;
-				border-radius: 25px;
-				width: 100%;
-				height: 38px;
-			}
-
-			.button {
-				position: absolute;
-				right: 0px;
-				top: -42px;
-				float: right;
-				padding: 6px 6px;
-			}
-
-			.fa {
-				font-size: 25px;
-			}
-
-
-
-			#myULx {
-				position: absolute;
-				list-style: none;
-				top: 37px;
-				padding: 0px;
-				margin-left: 0px;
-				width: 100%;
-				z-index: 99;
-				border: 1px solid #ccc;
-			}
-
-			#myULx li {
-				padding: 6px 10px;
-				background-color: #f1f1f1;
-				border-bottom: 1px solid #ccc;
-			}
-
-			#myULx li a {
-				text-decoration: none;
-				color: #000;
-				font-size: 14px;
-			}
-
-			#myULx li:nth-child(even) {
-				background-color: #fff;
-			}
-
-			.mycity-search:before {
-				font-family: "Font Awesome 5 Free";
-				font-weight: 600;
-				content: "\f3c5";
-				left: 11px;
-				top: 7px;
-				font-size: 18px;
-				position: absolute;
-				color: #a6aeb7;
-			}
-
-			@media only screen and (max-width: 640px) and (min-width: 320px) {
-				.txt-grp {
-					max-width: 300px;
-					width: 100%;
-					top: 62px;
-					right: 7%;
-					z-index: 998;
-				}
-
-				#myULx {
-					width: 76%;
-					left: 3%;
-					top: 37px;
-				}
-
-				.mycity-search:before {
-					left: 14px;
-					top: 5px;
-					font-size: 20px;
-					color: #4d79a9;
-				}
-			}
-				ul.social-network {
-		list-style: none;
-		display: table;
-		padding: 0;
-	}
-
-	ol,
-	ul {
-		margin-top: 0;
-		margin-bottom: 10px;
-	}
-
-	ul.social-network li {
-		display: inline;
-		margin: 0 5px;
-	}
-
-	.social-circle li a {
-		display: inline-block;
-		-moz-border-radius: 50%;
-		-webkit-border-radius: 50%;
-		border-radius: 50%;
-		text-align: center;
-		width: 40px;
-		height: 40px;
-		font-size: 20px;
-		/* background: #fff; */
-		/* margin: 2px; */
-	}
-
-	.social-circle li i {
-		margin: -3px;
-		line-height: 50px;
-		text-align: center;
-	}
-
-	.social-circle i {
-		color: #fff;
-		-webkit-transition: all .8s;
-		-moz-transition: all .8s;
-		-o-transition: all .8s;
-		-ms-transition: all .8s;
-		transition: all .8s;
-	}
-
-	.fa {
-		display: inline-block;
-		font: normal normal normal 14px/1 FontAwesome;
-		font-size: inherit;
-		text-rendering: auto;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-	.fa {
-		display: inline-block;
-		font: normal normal normal 14px/1 FontAwesome;
-		font-size: inherit;
-		text-rendering: auto;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-	.fa-facebook-f:before,
-	.fa-facebook:before {
-		content: "\f09a";
-	}
-
-	.fa-linkedin:before {
-		content: "\f0e1";
-	}
-
-	.fb-bg {
-		background-color: #3b5998;
-	}
-
-	.tw-bg {
-		background-color: #2f93ff;
-	}
-
-	.lin-bg {
-		background-color: #007bb7;
-	}
-
-	.instra-bg {
-		background-image: linear-gradient(to bottom right, #f93a3a, #ce0f6d);
-	}
-
-	.youtube-bg {
-		background-color: #c00;
-	}
-	
-</style>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -255,7 +27,6 @@
 	      url: `${domain}/data_raw.json`,
 	      type: "get",
 	   success:function(data){
-	   console.log(data);
 	   		cars_info = data['cars_info'];
 	   		services_list=data['services_list'];
 			encoded_list=data['encoded_list'];
@@ -297,51 +68,18 @@
 	<meta charset="utf-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="assets/images/logo2.png" sizes="32x32" type="image/png">
-	<!---font css-->
+	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!-- <link href="css/custom-common.css" rel="stylesheet" type="text/css"> -->
 	<link href="assets/css/nav096a.css?v=4.7" rel="stylesheet" type="text/css">
 	<link href="assets/css/custom30dc.css?v=7.9" rel="stylesheet" type="text/css">
 	<link href="assets/css/custom-responsive120a.css?v=7.8" rel="stylesheet" type="text/css">
 	<link href="assets/css/popupeb77.css?v=4.6" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="assets/css/marq-style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/page.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/custom-animation.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
 	<link href="assets/css/port-tab.css" rel="stylesheet" type="text/css">
-
-
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "FAQPage",
-				"mainEntity": [{
-					"@type": "Question",
-					"name": "Does Cars24Mechanic provides Car Service at Doorstep?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "We suggest our customers to schedule a service at Cars24Mechanic instead of doorstep services because to experience unmatched car repair services, it should be carried out at a place which is fully equipped with the right tools and equipment’s."
-					}
-				}, {
-					"@type": "Question",
-					"name": "How to Book Car Service on Cars24Mechanic?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "Booking a car service at Cars24Mechanic is a hassle-free process. Just fill up a form mentioning about the convenient date, time and location that works best for you and leave the rest to us. Moreover, you will also get the timely updates on your entire car service process."
-					}
-				}, {
-					"@type": "Question",
-					"name": "How Long Does a Car Service Take?",
-					"acceptedAnswer": {
-						"@type": "Answer",
-						"text": "If you opt for a full service, then it may take approximately 3 to 5 hours. Depending upon your car repair work, our experts will tell you in advance on how long a service will take on the day."
-					}
-				}]
-			}
-		</script>
-
 	
 </head>
 
@@ -370,6 +108,8 @@
 							<ul class="topnav" id="myTopnav">
 								<li><a href="index.html">Home</a></li>
 								<li><a href="about-us.html">About us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="faq.html">FAQs</a></li>
 								<li><a href="contact-us.html">Contact Us</a></li>
 								<li>
 									<span class="contact_no">
@@ -446,7 +186,30 @@
 				</div>
 			</div>
 		</section>
-		<!-- form section end -->
+
+		<section class="appointment-section pt-3 pb-3" style="background-color:white;">
+			<div class="container-fluid">		
+				<div class="row">			
+					<div class="col-md-5 col-sm-5 col-12">
+						<figure><img src="assets/images/schedule-apointment.png" alt="Book Appointment Online for Car Services"></figure>
+					</div>
+				<div class="col-md-7 col-sm-7 col-12 enq-form-common">
+			        <form action="javascript:void(0)">        
+			            <h4>Book Car Service with Approved Garages</h4>
+						<span id="error-blog" style="display:none;color:red;"></span>
+			            <select class="form-control mb-3 rounded-0" name="brand" id="blogbrand"><option>Select a Brand</option></select>
+			            <select class="form-control mb-3 rounded-0" name="model" id="blogmodel"><option>Select a Model</option></select>
+			            <select class="form-control mb-3 rounded-0" name="service" id="blogservice"><option >Select Service Type</option></select>
+			            <input type="text" class="form-control mb-3 rounded-0" placeholder="Enter Name" name="name" id="blogname" onkeypress='$("#error-blog").hide();'>
+			            <input type="text" class="form-control mb-3 rounded-0" placeholder="contact number" name="phone" id="blogphone" onkeypress='$("#error-blog").hide();'>
+				        <button class="btn btn-danger btn-block rounded-0" id="blog_form_submit" type="submit" style="background-color:#c82333;">Check Estimate price</button> 
+			        </form>
+			        <div id="submitMessage" style="padding-top:15px"></div>
+	        	</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="service-section pt-5 pb-5">
 			<div class="container-fluid">
 				<h2 style="text-align: center;"><strong> Car Repair & Services</strong></h2>
@@ -584,26 +347,6 @@
 			</div>
 		</section>
 		<!-- how it work setion -->
-
-		<section class="appointment-section pt-3 pb-3">
-			<div class="container-fluid">		
-				<div class="row">			
-					<div class="col-md-5 col-sm-5 col-12">
-						<figure><img src="assets/images/schedule-apointment.png" alt="Book Appointment Online for Car Services"></figure>
-					</div>
-					<div class="col-md-7 col-sm-7 col-12">
-						<div class="appointment-text">
-							<h3><strong>Schedule Your Appointment Today</strong></h3>
-							<h2>Call : 9599253469</h2>
-							<p>Repair Services That Come With Our Commitment to Quality</p>
-							<div class="btn-grp">
-					  		 	<a  href="contact-us.html" class="get-stared btn-color-primary">Contact Us</a>
-						  	</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<section class="pt-5 pb-5">
 			<div class="container-fluid">		
@@ -803,8 +546,8 @@
 </body>
 
 <div class="whatsapp-footer">
-	<a href="https://api.whatsapp.com/send?phone=+91-8800852962&amp;text=Hi" class="tooltipe" target="_blank">
-		<img src="assets/images/whatsapp.gif" alt="Garage Cars24Mechanic whatsapp">
+	<a href="https://api.whatsapp.com/send?phone=+919599253469text=Hi" class="tooltipe" target="_blank">
+		<img src="assets/images/whatsapp.gif" alt="Cars24Mechanic whatsapp">
 	</a>
 </div>
 
@@ -820,6 +563,7 @@
 		$('#header_text').html(header);
 		services_table="";
 		var footer_services = "";
+		var service_options='<option value="-1">Select Service Type</option>';
 		for (var i = 0;i<12;i++){
 			services_table+=`
 			<div class="col-md-2 col-sm-2 col-6 px-1">
@@ -836,13 +580,16 @@
 				</div>
 			</div>
 	`;
-
+		service_options+=`<option value="${i}">${services_list[i]}</option>`;
 		footer_services+=`<li><a href="services.html?city=${default_city}&service=${encoded_list[i]}">${services_list[i]}</a></li>`;
 		if (i==5){
 			$('#footer_row').append(`<ul class="col-md-6 col-sm-6 col-12">`+footer_services+`<ul>`);
 			footer_services='';
 		};
-		}
+
+
+		};
+		$('#blogservice').html(service_options);
 		$('#footer_row').append(`<ul class="col-md-6 col-sm-6 col-12">`+footer_services+`<ul>`);
 		$('#service_box_1').html(services_table);
 
@@ -850,6 +597,41 @@
 		var city = $("#city_search option:selected").text();
 		alert(city);
 	});
+
+	$(document).on("click", function(event) {
+		document.getElementById("myULx").style.display = "none";
+	});
+	var options='<option value="0">Select a Brand</option>';
+	for (brandnum in cars_info) {
+	 		options+=`<option value="${brandnum}">${cars_info[brandnum]['name']}</option>`;	
+	 };
+	$("#blogbrand").html(options);
+    $('#blogbrand').on('change', function(){
+    	var modeloptions='<option value="0">Select a Model</option>';
+        var brandID = $(this).val();
+		$("#error-blog").hide();
+        if(brandID)
+        {
+        		for (modelnum in cars_info[brandID]['data']){
+					modelname=cars_info[brandID]['data'][modelnum].split('-').slice(0, -1).join(' ');
+					fuel=cars_info[brandID]['data'][modelnum].split('-').pop()
+					num=Number(modelnum);
+					for (var i = 0;i<fuel.length;i++) {
+						var ftype='';
+						 if (fuel[i]=='P')
+							ftype='Petrol';
+						else if (fuel[i]=='C')
+							ftype = 'CNG';
+						else if (fuel[i]=='D')
+							ftype = 'Diesel';
+						modeloptions+=`<option value="${num+i}">${modelname} - ${ftype}</option>`;
+					};
+					$('#blogmodel').html(modeloptions);
+					//modeloptions+=`<option value="${modelnum}">${}</option>`	
+			};
+
+        }
+    });
 		function myFunction_h() {
 		event.stopPropagation();
 		var li_size = 1;
@@ -886,16 +668,158 @@
 			}
 			document.getElementById("myULx").classList.add("scroll_height");
 		}
-	}
+	};
 
 	function myConClcikFunctionhead() {
 		event.stopPropagation();
 		document.getElementById("myULx").style.display = "block";
-	}
-	$(document).on("click", function(event) {
-		document.getElementById("myULx").style.display = "none";
+	};
+
+	$('#blogmodel').on('change', function(){
+		$("#error-blog").hide();
+	});
+
+	$("#blog_form_submit").click(function() {
+		var brand = $("#blogbrand").val();
+		var model = $("#blogmodel").find('option:selected').text();
+		var service = $("#blogservice").find('option:selected').text();
+		var number = $("#blogphone").val();
+		var name = $("#blogname").val();
+		var fuel_id=$("#blogmodel").val();
+		var service_id = $("#blogservice").val();
+		if (brand == '' || brand == '0') {
+			$("#blogbrand").css("border-color", "red");
+			$("#error-blog").css("display", "block");
+			$("#error-blog").html("Select a brand*");
+			return false;
+		}
+		else {
+			$("#blogbrand").css("border-color", "green");
+
+		}
+		if (fuel_id == '' || fuel_id == '0') {
+			$("#blogmodel").css("border-color", "red");
+			$("#error-blog").css("display", "block");
+			$("#error-blog").html("Select a model*");
+			return false;
+		}
+		else {
+			$("#blogmodel").css("border-color", "green");
+
+		}
+		if (service_id == '' || service_id == '-1') {
+			$("#blogservice").css("border-color", "red");
+			$("#error-blog").css("display", "block");
+			$("#error-blog").html("Select a service*");
+			return false;
+		}
+		else {
+			$("#blogservice").css("border-color", "green");
+
+		}
+		if (name == '' || name == ' ' || $.isNumeric(name)) {
+			$("#blogname").css("border-color", "red");
+			$("#error-blog").css("display", "block");
+			$("#error-blog").html("Please Enter Your Name*");
+			return false;
+		}
+				else {
+			$("#blogname").css("border-color", "green");
+
+		}
+		if (number == "" || !$.isNumeric(number) || (number == " ") || (number.charAt(0) != 9 && number.charAt(0) != 8 && number.charAt(0) != 7 && number.charAt(0) != 6)) {
+			$("#blogphone").css("border-color", "red");
+			$("#error-blog").css("display", "block");
+			$("#error-blog").html("Please enter valid contact number*");
+			return false;
+		}
+		else {
+			$("#blogphone").css("border-color", "green");
+
+		};
+		var modelname=model.split('-').slice(0, -1).join(' ');
+		var fuel=model.split('-').pop();
+		$.ajax({
+			url: "https://script.google.com/macros/s/AKfycbwomnLv6mzxZ0dn9xNzxqf9MY-iXgOs76NZU9wq6oGLtfZROqtHvAL9oi4axXR0Qwpq/exec",
+			method: "POST",
+			data: {
+				'Brand': cars_info[brand]['name'],
+				'Model': modelname,
+				'Fuel': fuel,
+				'Service':service,
+				'Name': name,
+				'Number': number,
+			},
+		beforeSend: function() {
+          $("#submitMessage").html(`
+                <div class="d-flex justify-content-center">
+                   <div class="spinner-border" role="status">
+                       <span class="sr-only">Loading...</span>
+                   </div>
+               </div>
+               `);
+   
+       },
+			success: function(data) {
+					$("#blogbrand").html(options);
+					$("#blogbrand").css("border-color", "black");
+					$('#blogmodel').html('<option value="0">Select a Model</option');
+					$("#blogmodel").css("border-color", "black");
+					$("#blogservice").html(service_options);
+					$("#blogservice").css("border-color", "black");
+					$("#blogname").val("");
+					$("#blogname").css("border-color", "black");
+					$("#blogphone").val("");
+					$("#blogphone").css("border-color", "black");
+
+
+				console.log(data);
+				if (data['result']=='success'){
+					var max=0;
+					var min=100000;
+					$.ajax({
+					    url: `https://docs.google.com/a/google.com/spreadsheets/d/1DcOOWweYkmZO9S25rc8dAkFOvnhNhzvXEbWxotZlUl8/gviz/tq?tq=select%20*%20where%20A%20%3D%20%27${fuel_id}-${service_id}%27`,
+					    type: "get",
+					   success:function(data){
+
+					   	var service_data=JSON.parse(JSON.parse(data.split('(')[1].split(')')[0])['table']['rows'][0]['c'][1]['v'].replaceAll("'",'"'));
+					   	for (category in service_data){
+					   		for (subcat in service_data[category]){
+					   			amount=Number(amt[service_data[category][subcat]['amount']]);
+					   			if (amount>max){
+					   				max=amount;
+					   			}
+					   			else if (amount<min){
+					   				min=amount
+					   			}
+					   		};
+					   	};
+					   		$("#submitMessage").html(`<div role="alert" class="alert alert-success alert-dismissible" ><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button><strong><i class="icon-check-circle"></i>Estimated amount between ₹${min} - ₹${max}</strong>`);
+					   }});
+
+				}
+
+			},
+
+	    error:function (jqXHR, exception) {
+            $("#submitMessage").html(`<div role="alert" class="alert alert-danger alert-dismissible" >
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span> </button>
+                  <strong><i class="icon-alert-circle"></i>Something went wrong....Try again</strong>`);
+	   },
+	   complete:function(data){
+	   
+	   }
+	   });
+		//$('#blogbrand').html('<option value="0">Select a Brand</option>');
+
+
+
+		//$("#blogphone").val("");
+
 	});
 </script>
+
+
 <script src="https://unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>

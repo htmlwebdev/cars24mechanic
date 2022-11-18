@@ -1,0 +1,231 @@
+.active,
+	.btn:hover {
+		background-color: #f7f7f7;
+		color: white;
+	}
+	
+	ul.social-network {
+		list-style: none;
+		display: table;
+		padding: 0;
+	}
+
+	ol,
+	ul {
+		margin-top: 0;
+		margin-bottom: 10px;
+	}
+
+	ul.social-network li {
+		display: inline;
+		margin: 0 5px;
+	}
+			.txt-grp {
+				float: left;
+				max-width: 234px;
+				width: 100%;
+				position: absolute;
+				z-index: 9999;
+				top: 18px;
+				right: 48%;
+			}
+
+			.txt-grp select {
+				width: 40%;
+				font-size: 14px;
+				float: left;
+			}
+
+			.txt-grp input[type=text] {
+				padding: 6px 10px 6px 32px;
+				border-radius: 25px;
+				width: 100%;
+				height: 38px;
+			}
+
+			.button {
+				position: absolute;
+				right: 0px;
+				top: -42px;
+				float: right;
+				padding: 6px 6px;
+			}
+
+			.fa {
+				font-size: 25px;
+			}
+
+
+
+			#myULx {
+				position: absolute;
+				list-style: none;
+				top: 37px;
+				padding: 0px;
+				margin-left: 0px;
+				width: 100%;
+				z-index: 99;
+				border: 1px solid #ccc;
+			}
+
+			#myULx li {
+				padding: 6px 10px;
+				background-color: #f1f1f1;
+				border-bottom: 1px solid #ccc;
+			}
+
+			#myULx li a {
+				text-decoration: none;
+				color: #000;
+				font-size: 14px;
+			}
+
+			#myULx li:nth-child(even) {
+				background-color: #fff;
+			}
+
+			.mycity-search:before {
+				font-family: "Font Awesome 5 Free";
+				font-weight: 600;
+				content: "\f3c5";
+				left: 11px;
+				top: 7px;
+				font-size: 18px;
+				position: absolute;
+				color: #a6aeb7;
+			}
+
+			@media only screen and (max-width: 640px) and (min-width: 320px) {
+				.txt-grp {
+					max-width: 300px;
+					width: 100%;
+					top: 62px;
+					right: 7%;
+					z-index: 998;
+				}
+
+				#myULx {
+					width: 76%;
+					left: 3%;
+					top: 37px;
+				}
+
+				.mycity-search:before {
+					left: 14px;
+					top: 5px;
+					font-size: 20px;
+					color: #4d79a9;
+				}
+			}
+			
+	.social-circle li a {
+		display: inline-block;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		text-align: center;
+		width: 40px;
+		height: 40px;
+		font-size: 20px;
+		/* background: #fff; */
+		/* margin: 2px; */
+	}
+
+	.social-circle li i {
+		margin: -3px;
+		line-height: 50px;
+		text-align: center;
+	}
+
+	.social-circle i {
+		color: #fff;
+		-webkit-transition: all .8s;
+		-moz-transition: all .8s;
+		-o-transition: all .8s;
+		-ms-transition: all .8s;
+		transition: all .8s;
+	}
+
+	.fa {
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: inherit;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.fa {
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: inherit;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.fa-facebook-f:before,
+	.fa-facebook:before {
+		content: "\f09a";
+	}
+
+	.fa-linkedin:before {
+		content: "\f0e1";
+	}
+
+	.fb-bg {
+		background-color: #3b5998;
+	}
+
+	.tw-bg {
+		background-color: #2f93ff;
+	}
+
+	.lin-bg {
+		background-color: #007bb7;
+	}
+
+	.instra-bg {
+		background-image: linear-gradient(to bottom right, #f93a3a, #ce0f6d);
+	}
+
+	.youtube-bg {
+		background-color: #c00;
+	}
+	.whatsapp-footer {
+		position: fixed;
+		bottom: 20px;
+		left: 20px;
+	}
+
+	a {
+		background-color: transparent;
+		color: #337ab7;
+		text-decoration: none;
+	}
+
+	.whatsapp-footer img {
+		width: 50px;
+		height: 50px;
+	}
+
+	.loader {
+		color: red;
+		display: none;
+		position: absolute;
+		top: 60%;
+		left: 69%;
+		padding: 2px;
+		text-align: center;
+		width: 242px;
+	}
+
+	@media only screen and (max-width: 640px) and (min-width: 320px) {
+		.loader {
+			top: 96%;
+			left: 14%;
+			padding: 2px;
+			text-align: center;
+			width: 242px;
+		}
+	}
