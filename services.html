@@ -48,32 +48,6 @@
 			var imgs = {};
         	var amt  = {};
         	var service_id = -1;
-        $.ajax({
-	      url: `${domain}/data_raw.json`,
-	      type: "get",
-	   success:function(data){
-	   console.log(data);
-	   cars_info = data['cars_info'];
-	   		services_list=data['services_list'];
-			encoded_list=data['encoded_list'];
-			service_category=data['service_category'];
-			service_title=data['service_title'];
-			desc=data['desc'];
-			timevalue=data['timevalue'];
-			imgs = data['imgs'];
-        	amt  = data['amt'];
-			service_id=encoded_list.indexOf(service);
-			if (service!=null && service_id!=-1){
-				//console.log(service,service_id);
-			}
-			else {
-				service = 'periodic-services';
-			};
-	   }
-	   });
-
-
-
 	document.title+=" "+loc;
 	$('head').append(`<link name="canonical" href="${base_url}" >
 		<meta name="description" content="Are you looking for car repair services ${loc}? Get excellent services at affordable prices. We offer instant quotes anytime, anywhere!"/>
@@ -514,7 +488,8 @@
 		var modeloptions='<option value="">Select Model...</option>';
 		var fueloptions='<option value="">Select Fuel Type..</option>';
 		var ftype='';
-		if (city!=null && city_list.includes(city)){
+        function mainfunc() {
+        			if (city!=null && city_list.includes(city)){
 			default_city=city;
 		document.querySelector('input[class="city-select"]').setAttribute("placeholder", capitalizeFirstLetter(city));
 		header=`<h1><strong>  Best Car Repair Services ${loc}</strong></h1><p>Excellent Services Just a Click Away,Instant Quotes Anytime, Anywhere!</p>`;
@@ -673,6 +648,42 @@
 		});
 
 	});
+        }
+
+        $.ajax({
+	      url: `${domain}/data_raw.json`,
+	      type: "get",
+	      	      beforeSend: function() {
+          $("#service-list-section").html(`
+                <div class="d-flex justify-content-center">
+                   <div class="spinner-border" role="status">
+                       <span class="sr-only">Loading...</span>
+                   </div>
+               </div>
+               `);
+   
+       },
+	   success:function(data){
+	   console.log(data);
+	   cars_info = data['cars_info'];
+	   		services_list=data['services_list'];
+			encoded_list=data['encoded_list'];
+			service_category=data['service_category'];
+			service_title=data['service_title'];
+			desc=data['desc'];
+			timevalue=data['timevalue'];
+			imgs = data['imgs'];
+        	amt  = data['amt'];
+			service_id=encoded_list.indexOf(service);
+			if (service!=null && service_id!=-1){
+				//console.log(service,service_id);
+			}
+			else {
+				service = 'periodic-services';
+			};
+			mainfunc();
+	   }
+	   });
 
 	function get_package_details() {
 		brand_id = $('#brand_id').val();

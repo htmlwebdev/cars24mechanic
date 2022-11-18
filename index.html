@@ -23,21 +23,6 @@
 			var imgs = {};
         	var amt  = {};
 		//services_list.forEach((x) => encoded_list.push(encodeURI(x)));
-        $.ajax({
-	      url: `${domain}/data_raw.json`,
-	      type: "get",
-	   success:function(data){
-	   		cars_info = data['cars_info'];
-	   		services_list=data['services_list'];
-			encoded_list=data['encoded_list'];
-			service_category=data['service_category'];
-			service_title=data['service_title'];
-			desc=data['desc'];
-			timevalue=data['timevalue'];
-			imgs = data['imgs'];
-        	amt  = data['amt'];
-	   }
-	   });
 
 	//document.querySelector('link[class="city-select"]').setAttribute("placeholder", _desc);
 	document.title=`Cars24Mechanic | Best Car Repair and Services`;
@@ -553,7 +538,8 @@
 
 
 <script type="text/javascript">
-	var header="<h1><strong>Best Car Repair & Maintenance</strong><br> <small>One-Click away Services Are Here!</small></h1><p>Get better savings plus trusted car repair mechanics.</p>";
+	function mainfunction() {
+		var header="<h1><strong>Best Car Repair & Maintenance</strong><br> <small>One-Click away Services Are Here!</small></h1><p>Get better savings plus trusted car repair mechanics.</p>";
 		var default_city="gurgaon";
 		if (city!=null && (city=='delhi' || city=='gurgaon' || city=='noida')){
 			default_city=city;
@@ -578,8 +564,7 @@
 						<h4><a href="services.html?city=${default_city}&service=${encoded_list[i]}" id="service" >${services_list[i]}</a></h4>
 					</div>
 				</div>
-			</div>
-	`;
+			</div>`;
 		service_options+=`<option value="${i}">${services_list[i]}</option>`;
 		footer_services+=`<li><a href="services.html?city=${default_city}&service=${encoded_list[i]}">${services_list[i]}</a></li>`;
 		if (i==5){
@@ -593,19 +578,47 @@
 		$('#footer_row').append(`<ul class="col-md-6 col-sm-6 col-12">`+footer_services+`<ul>`);
 		$('#service_box_1').html(services_table);
 
-	$('#city_search').on('change', function() {
-		var city = $("#city_search option:selected").text();
-		alert(city);
-	});
-
-	$(document).on("click", function(event) {
-		document.getElementById("myULx").style.display = "none";
-	});
 	var options='<option value="0">Select a Brand</option>';
 	for (brandnum in cars_info) {
 	 		options+=`<option value="${brandnum}">${cars_info[brandnum]['name']}</option>`;	
 	 };
 	$("#blogbrand").html(options);
+
+	};
+	        $.ajax({
+	      url: `${domain}/data_raw.json`,
+	      type: "get",
+
+	   success:function(data){
+	   		cars_info = data['cars_info'];
+	   		services_list=data['services_list'];
+			encoded_list=data['encoded_list'];
+			service_category=data['service_category'];
+			service_title=data['service_title'];
+			desc=data['desc'];
+			timevalue=data['timevalue'];
+			imgs = data['imgs'];
+        	amt  = data['amt'];
+        	mainfunction();
+	   }
+	   });
+
+
+	$('#city_search').on('change', function() {
+		var city = $("#city_search option:selected").text();
+		alert(city);
+	});
+
+
+
+	$(document).on("click", function(event) {
+		document.getElementById("myULx").style.display = "none";
+	});
+
+
+
+
+
     $('#blogbrand').on('change', function(){
     	var modeloptions='<option value="0">Select a Model</option>';
         var brandID = $(this).val();
@@ -632,6 +645,7 @@
 
         }
     });
+
 		function myFunction_h() {
 		event.stopPropagation();
 		var li_size = 1;
@@ -678,6 +692,8 @@
 	$('#blogmodel').on('change', function(){
 		$("#error-blog").hide();
 	});
+
+
 
 	$("#blog_form_submit").click(function() {
 		var brand = $("#blogbrand").val();
