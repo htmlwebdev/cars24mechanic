@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript">
@@ -534,9 +534,12 @@
 
 
 <script type="text/javascript">
+	var options='<option value="0">Select a Brand</option>';
+	var footer_services = "";
+	var default_city="gurgaon";
+	var header="<h1><strong>Best Car Repair & Maintenance</strong><br> <small>One-Click away Services Are Here!</small></h1><p>Get better savings plus trusted car repair mechanics.</p>";
+	var service_options='<option value="-1">Select Service Type</option>';
 	function mainfunction() {
-		var header="<h1><strong>Best Car Repair & Maintenance</strong><br> <small>One-Click away Services Are Here!</small></h1><p>Get better savings plus trusted car repair mechanics.</p>";
-		var default_city="gurgaon";
 		if (city!=null && (city=='delhi' || city=='gurgaon' || city=='noida')){
 			default_city=city;
 		document.querySelector('input[class="city-select"]').setAttribute("placeholder", capitalizeFirstLetter(city));
@@ -544,8 +547,8 @@
 		};
 		$('#header_text').html(header);
 		services_table="";
-		var footer_services = "";
-		var service_options='<option value="-1">Select Service Type</option>';
+		footer_services = "";
+		service_options='<option value="-1">Select Service Type</option>';
 		for (var i = 0;i<12;i++){
 			services_table+=`
 			<div class="col-md-2 col-sm-2 col-6 px-1">
@@ -574,10 +577,12 @@
 		$('#footer_row').append(`<ul class="col-md-6 col-sm-6 col-12">`+footer_services+`<ul>`);
 		$('#service_box_1').html(services_table);
 
-	var options='<option value="0">Select a Brand</option>';
+	options='<option value="0">Select a Brand</option>';
 	for (brandnum in cars_info) {
 	 		options+=`<option value="${brandnum}">${cars_info[brandnum]['name']}</option>`;	
 	 };
+
+
 	$("#blogbrand").html(options);
 
 	};
@@ -755,6 +760,7 @@
 			url: "https://script.google.com/macros/s/AKfycbwomnLv6mzxZ0dn9xNzxqf9MY-iXgOs76NZU9wq6oGLtfZROqtHvAL9oi4axXR0Qwpq/exec",
 			method: "POST",
 			data: {
+				'Type':"Estimate Enquiry",
 				'Brand': cars_info[brand]['name'],
 				'Model': modelname,
 				'Fuel': fuel,

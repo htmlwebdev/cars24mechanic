@@ -399,6 +399,7 @@
 			url: "https://script.google.com/macros/s/AKfycbwomnLv6mzxZ0dn9xNzxqf9MY-iXgOs76NZU9wq6oGLtfZROqtHvAL9oi4axXR0Qwpq/exec",
 			method: "POST",
 			data: {
+				'Type':"Contact-Form",
 				'Brand': cars_info[brand]['name'],
 				'Model': modelname,
 				'Fuel': fuel,
@@ -422,6 +423,7 @@
 					$("#number").val("");
 					$("#name").val("");
 					$("#email").val("");
+					$("#message").val("");
 
 
 				console.log(data);

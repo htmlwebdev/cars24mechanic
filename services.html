@@ -488,6 +488,7 @@
 		var modeloptions='<option value="">Select Model...</option>';
 		var fueloptions='<option value="">Select Fuel Type..</option>';
 		var ftype='';
+
         function mainfunc() {
         			if (city!=null && city_list.includes(city)){
 			default_city=city;
@@ -865,6 +866,7 @@
 			url: "https://script.google.com/macros/s/AKfycbwomnLv6mzxZ0dn9xNzxqf9MY-iXgOs76NZU9wq6oGLtfZROqtHvAL9oi4axXR0Qwpq/exec",
 			method: "POST",
 			data: {
+				'Type':"Service Appointment",
 				'Brand': cars_info[brand_id]['name'],
 				'Model': modelname,
 				'Fuel': fuel,
