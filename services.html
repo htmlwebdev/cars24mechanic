@@ -181,7 +181,7 @@
 								<div class="banner-text">
 
 									<h1><strong>Best Car Battery Repair, Services, and Replacement near you</strong></h1>
-																								<p>Our mechanics look into the issue of faulty battery like a car not starting, battery leaking fluid, battery worn out, etc and replace it immediately according to the requirement.</p>
+																								<p>Our mechanics investigate battery problems like a car that won't start, a battery that's leaking fluid, a battery that's worn out, etc. and replace the battery as soon as it's necessary.</p>
 															</div>
 							</div>
 						</div>
@@ -306,7 +306,7 @@
 			<div class="col-md-3 col-sm-3 col-12 m-padding-lr">
 				<div class="footer-contant">
 					<h3>Contact Information <span></span></h3>
-					<p>Ready to book your car repair and maintenance service with Cars24Mechanic? If yes, then get ready to experience the quality car repair solutions at affordable prices. We are just one click away if you are looking for excellence in car servicing and maintenance.<a href="about-us.html">read more..</a></p>
+										<p>Are you prepared to schedule your vehicle's maintenance and repairs with Cars24Mechanic? If so, be ready to take advantage of high-quality auto repair services at reasonable costs. If you want the best auto service and maintenance, we are only a click away.<a href="about-us.html">read more..</a></p>
 				</div>
 				<div class="follobox">
 					<ul class="social-network social-circle">
@@ -374,7 +374,7 @@
 	</div>
 	<div class="all-right">
 		<a href="#"> Copyright 2022 All rights Reserved Cars24Mechanic.com</a>
-		<p style="font-size: 11px;color:#73706b;">Disclaimer - The information, services, and products, accessed through this website own is owned and operated by Cars24Mechanic. The representatives of the company are liable to make any changes to the data and can make additional changes to the website wherever required. Our company’s representative disclaims any information and services provided on our website and are subject to the law of infringement.</p>
+		<p style="font-size: 11px;color:#73706b;">Disclaimer: Cars24Mechanic owns and operates the information, services, and products that may be accessed through this website. Any updates to the data must be made by corporate officials, who may also add to the website's changes as needed. The representative of our business expressly disclaims any responsibility for any information and services offered on our website that may violate third-party rights.</p>
 	</div>
 </footer>
 
@@ -479,7 +479,7 @@
 </div>
 <div class="whatsapp-footer">
 	<a href="https://api.whatsapp.com/send?phone=+919599253469&text=Hi" class="tooltipe" target="_blank">
-		<img src="assets/images/whatsapp.gif" alt="Cars24Mechanic whatsapp">
+		<img src="assets/images/whatsapp.gif" alt="Cars24Mechanic whatsapp" style="width: 70px;height: 70px;">
 	</a>
 </div>
 <script type="text/javascript">
@@ -564,7 +564,7 @@
 			   	service_data=JSON.parse(service_data.replaceAll("'",'"'));
 			   	console.log(service_data);
 				for (category in service_data){
-					services_column+=`<h2>${service_category[category]} ${header}</h2><div class="row service-list-group wow fadeInUp" data-wow-delay=".1s">`;
+					services_column+=`<h2>${service_category[category]} ${header}</h2><div class="row service-list-group wow " data-wow-delay=".1s">`;
 					for (subcat in service_data[category]){
 						description='';
 						desc[service_data[category][subcat]['desc']].forEach((line)=>description+=`<li>${line}</li>`);
