@@ -24,8 +24,6 @@ def create_sitemap(extras, filenumber):
         'xsi:schemaLocation'] = "http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
     root.attrib['xmlns'] = "http://www.sitemaps.org/schemas/sitemap/0.9"
     root.attrib['xmlns:xsi'] = "http://www.w3.org/2001/XMLSchema-instance"
-    doc = ET.SubElement(root, "url")
-    ET.SubElement(doc, "loc").text = "https://covistan.com/"
     nowtime = (datetime.now(timezone("Asia/Kolkata"))).strftime('%Y-%m-%dT%H:%M:%S+00:00')
     for extra in extras:
         doc = ET.SubElement(root, "url")
@@ -58,6 +56,7 @@ def create_geo_sitemap():
                     strr = f"https://cars24mechanic.com/services.html?service={service}&brand_name={brand_name}&model_name={model_name}&fuel_type={fuel_type}&brand_id={brand_id}&model_id={model_id}&fuel_id={fuel_id}"
                     categorylist.append(strr)
     path = f'{BASE_DIR}/sitemap_.xml'
+    print(len(categorylist))
     create_sitemap(categorylist, path)
     prettyPrintXml(path)
     return print("Geo Sitemap created")
