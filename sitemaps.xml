@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<sitemap>
+  <loc>https://cars24mechanic.com/sitemap1.xml</loc>
+  <lastmod>2022-11-24T20:09:55+00:00</lastmod>
+</sitemap>
+<sitemap>
+  <loc>https://cars24mechanic.com/sitemap2.xml</loc>
+  <lastmod>2022-11-24T20:09:55+00:00</lastmod>
+</sitemap>
+
+</urlset>
