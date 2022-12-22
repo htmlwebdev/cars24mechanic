@@ -1,5 +1,5 @@
 
-body{font-family: Arial; background-color: #fff;}
+body{font-family: serif; background-color: #fff;font-weight: 500}
 
 .head{height: 80px;  position: relative; z-index: 9; width: 100%; background-color:#f5f7f9;}
 .head .container-fluid{padding: 0px; width: 100%;}
@@ -27,7 +27,7 @@ body{font-family: Arial; background-color: #fff;}
 .logo-section{ width: auto; float: left; padding-left: 6%}
 .logo{ width:175px; color:#f00; padding: 5px 15px 5px; border:0px solid #fff; margin-top: 2px; 
 	display: inline-block; float: left; }
-.logo img{ width: 100% }
+.logo img{ width: 120% }
 
 .m-login{display: none;}
 #sideNav {display: none;}
@@ -103,7 +103,7 @@ body{font-family: Arial; background-color: #fff;}
 .dpd-menu:hover .dropdown-content {display: block;}
 
 
-.contact_no a{font-size: 18px !important; color:#e03033 !important; padding-top: 23px !important;}
+.contact_no a{font-size: 18px !important; color:#3c4ea3 !important; padding-top: 23px !important;}
 .contact_no a img{width: 30px;}
 
 .m-contact-no{display: none;}
@@ -117,12 +117,12 @@ body{font-family: Arial; background-color: #fff;}
   .head{width:100%; height: 62px; background-color: #cfd4d6; transition-duration: 0.5s;}
 
   .logo{margin-left: 15%; width:145px; padding: 0px 0px; margin-top: 10px;} 
-  .logo img{width: 90px}
+  .logo img{width: 125px}
 
   .contact_no{ display:none;}
 	
 	.m-contact-no{display: block; margin-top: 10px;float: right; margin-right: 10px;}
-	.m-contact-no a{font-size: 18px !important; color:#e03033 !important; padding-top: 23px !important;}
+	.m-contact-no a{font-size: 18px !important; color:#3c4ea3 !important; padding-top: 23px !important;}
 	.m-contact-no a img{width: 30px; float: left; margin: -3px 5px 0px 0px;}
 	
 .app-download{display:none;}
