@@ -7,7 +7,7 @@ from datetime import datetime
 import unicodedata
 from lxml import etree
 from pytz import timezone
-
+import urllib.parse
 BASE_DIR = os.path.dirname((os.path.abspath(__file__))).replace("\\", "/")
 
 
@@ -24,10 +24,11 @@ def create_sitemap(extras, filenumber):
         'xsi:schemaLocation'] = "http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
     root.attrib['xmlns'] = "http://www.sitemaps.org/schemas/sitemap/0.9"
     root.attrib['xmlns:xsi'] = "http://www.w3.org/2001/XMLSchema-instance"
+    root.attrib['encoding'] = "UTF-8"
     nowtime = (datetime.now(timezone("Asia/Kolkata"))).strftime('%Y-%m-%dT%H:%M:%S+00:00')
     for extra in extras:
         doc = ET.SubElement(root, "url")
-        ET.SubElement(doc, "loc").text = extra
+        ET.SubElement(doc, "loc").text = urllib.parse.quote_plus(extra)
         ET.SubElement(doc, "lastmod").text = nowtime
     tree = ET.ElementTree(root)
     tree.write(filenumber, encoding='utf-8', xml_declaration=True)
@@ -58,6 +59,7 @@ def create_geo_sitemap():
     path = f'{BASE_DIR}/sitemap_.xml'
     print(len(categorylist))
     create_sitemap(categorylist, path)
+    print(len(categorylist))
     prettyPrintXml(path)
     return print("Geo Sitemap created")
 
