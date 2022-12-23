@@ -1,11 +1,11 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <sitemap>
-  <loc>https://cars24mechanic.com/sitemap1.xml</loc>
+  <loc>https://cars24mechanic.com/sitemap_pages.xml</loc>
   <lastmod>2022-11-24T20:09:55+00:00</lastmod>
 </sitemap>
 <sitemap>
-  <loc>https://cars24mechanic.com/sitemap2.xml</loc>
+  <loc>https://cars24mechanic.com/sitemap_services.xml</loc>
   <lastmod>2022-11-24T20:09:55+00:00</lastmod>
 </sitemap>
 
