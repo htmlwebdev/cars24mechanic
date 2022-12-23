@@ -28,7 +28,7 @@ def create_sitemap(extras, filenumber):
     nowtime = (datetime.now(timezone("Asia/Kolkata"))).strftime('%Y-%m-%dT%H:%M:%S+00:00')
     for extra in extras:
         doc = ET.SubElement(root, "url")
-        ET.SubElement(doc, "loc").text = urllib.parse.quote_plus(extra)
+        ET.SubElement(doc, "loc").text = extra
         ET.SubElement(doc, "lastmod").text = nowtime
     tree = ET.ElementTree(root)
     tree.write(filenumber, encoding='utf-8', xml_declaration=True)
