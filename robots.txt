@@ -1,4 +1,4 @@
 User-agent: *
 Allow: *
 Sitemap: https://cars24mechanic.com/sitemap_pages.xml
-Sitemap: https://cars24mechanic.com/sitemap_services.xml
+Sitemap: https://cars24mechanic.com/sitemap_allservices.txt

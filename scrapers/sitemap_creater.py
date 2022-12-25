@@ -58,7 +58,9 @@ def create_geo_sitemap():
                     categorylist.append(strr)
     path = f'{BASE_DIR}/sitemap_.xml'
     print(len(categorylist))
-    create_sitemap(categorylist, path)
+    with open("sitemap_.txt","w+") as file:
+        file.write("\n".join(categorylist))
+    #create_sitemap(categorylist, path)
     print(len(categorylist))
     prettyPrintXml(path)
     return print("Geo Sitemap created")
