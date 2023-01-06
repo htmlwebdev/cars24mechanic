@@ -1,12 +1,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
 <sitemap>
   <loc>https://cars24mechanic.com/sitemap_pages.xml</loc>
   <lastmod>2022-11-24T20:09:55+00:00</lastmod>
 </sitemap>
 <sitemap>
-  <loc>https://cars24mechanic.com/sitemap_allservices.txt</loc>
+  <loc>https://cars24mechanic.com/sitemap_0.xml</loc>
   <lastmod>2022-11-24T20:09:55+00:00</lastmod>
 </sitemap>
-
+<sitemap>
+  <loc>https://cars24mechanic.com/sitemap_1.xml</loc>
+  <lastmod>2022-11-24T20:09:55+00:00</lastmod>
+</sitemap>
+<sitemap>
+  <loc>https://cars24mechanic.com/sitemap_2.xml</loc>
+  <lastmod>2022-11-24T20:09:55+00:00</lastmod>
+</sitemap>
+<sitemap>
+  <loc>https://cars24mechanic.com/sitemap_3.xml</loc>
+  <lastmod>2022-11-24T20:09:55+00:00</lastmod>
+</sitemap>
 </sitemapindex>

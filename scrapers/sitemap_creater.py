@@ -56,13 +56,16 @@ def create_geo_sitemap():
                 for service in services:
                     strr = f"https://cars24mechanic.com/services.html?service={service}&brand_name={brand_name}&model_name={model_name}&fuel_type={fuel_type}&brand_id={brand_id}&model_id={model_id}&fuel_id={fuel_id}"
                     categorylist.append(strr)
-    path = f'{BASE_DIR}/sitemap_.xml'
-    print(len(categorylist))
-    with open("sitemap_.txt","w+") as file:
-        file.write("\n".join(categorylist))
-    #create_sitemap(categorylist, path)
-    print(len(categorylist))
-    prettyPrintXml(path)
+
+    total=len(categorylist)
+    #with open("sitemap_.txt","w+") as file:
+    #    file.write("\n".join(categorylist))
+    breaks=4
+    for i in range(breaks):
+        print((total//breaks)*i,(total//breaks)*(i+1))
+        path = f'{BASE_DIR}/sitemap_{i}.xml'
+        create_sitemap(categorylist[(total//breaks)*i:(total//breaks)*(i+1)], path)
+        prettyPrintXml(path)
     return print("Geo Sitemap created")
 
 
