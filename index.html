@@ -13,7 +13,7 @@
 	var url = new URL(url_string);
 	var city = url.searchParams.get("city");
 	const domain = location.protocol + '//' + location.host;
-	var loc=`Near you`;
+	var loc=` Near you`;
 			var services_list=[];
 			var encoded_list=[];
 			var service_category={};
@@ -93,7 +93,7 @@
 </head>
 
 <body>
-	<div class="head stricky-fixed stricked-head">
+	<div class="head stricky-fixed stricked-head" style="background-color:white;">
 		<div class="container-fluid">
 			<header>
 				<div id="sideNav" href="#" class="toggle">
@@ -114,9 +114,9 @@
 					</span>
 					<div class="menu">
 						<ul class="topnav" id="myTopnav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="contact-us.html">Contact Us</a></li>
+							<li><a href="index.html" style="font-size: 16px;font-weight: 600;">Home</a></li>
+							<li><a href="services.html" style="font-size: 16px;font-weight: 600;">Services</a></li>
+							<li><a href="contact-us.html" style="font-size: 16px;font-weight: 600;">Contact Us</a></li>
 							<li>
 								<span class="contact_no">
 									<a href="tel:9599253469" style="font-weight: 700;">
@@ -143,13 +143,13 @@
 	</div>
 	<div class="content-section top-scroll">
 
-		<section class="banner-section">
+		<section class="banner-section" style="background-image: url('cover.jpg');background-size:cover ;">
 			<div class="container">
 				<div class="form-position">
 					<div class="row">
 						<div class="col-md-5 col-sm-5 col-12 px-0">
 							<div class="banner-image">
-								<div class="banner-text" id='header_text'><h1><strong>Best Car Repair & Maintenance</strong><br> <small>One-Click away Services Are Here!</small></h1><p>Get better savings plus trusted car repair mechanics.</p>	  		
+								<div class="banner-text" id='header_text'><h1><strong>Best Car Repair & Maintenance</strong><br> <small>One-Click away Services Are Here!</small></h1>
 							  	</div>
 							  	<div class="btn-grp wow " data-wow-delay=".2s">
 							  		 <a href="contact-us.html"  class="get-stared btn-color-primary" style="border-radius: 3px;">Contact Us</a>					  		 
@@ -158,12 +158,12 @@
 						</div>
 						<div class="col-md-7 col-sm-7 col-12">
 												<div class="banner-image animated  slowest go" data-wow-delay=".2s">
-								<img src="assets/images/content-image-2.png" alt="car assets">
+								<!-- <img src="assets/images/content-image-2.png" alt="car assets"> -->
 							</div>
 												</div>
 					</div>
 				</div>
-				<div class="banner-bottom">
+<!-- 				<div class="banner-bottom">
 					<div class="col-md-4 border-r">
 						<h6><i class="fas fa-users"></i> 
 							<span>
@@ -188,7 +188,7 @@
 							</span>
 						</h6>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</section>
 
