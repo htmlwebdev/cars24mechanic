@@ -14,6 +14,7 @@
 	var service_name = '';
 	const domain = location.protocol + '//' + location.host;
 	//document.querySelector('link[class="city-select"]').setAttribute("placeholder", _desc);
+	
 	document.title=`Cars24Mechanic | Best Car Repair and Services`;
 
 	var city = url.searchParams.get("city");
@@ -21,6 +22,9 @@
 	var model_id = url.searchParams.get("model_id");
 	var fuel_id = url.searchParams.get("fuel_id");
 	var service = url.searchParams.get("service");
+	var brand_name = url.searchParams.get("brand_name");
+	var model_name = url.searchParams.get("model_name");
+	var fuel_type = url.searchParams.get("fuel_type");
 	if (service=='null')
 		service=null;
 	if (brand_id=='null')
@@ -29,6 +33,13 @@
 		model_id=null;
 	if (fuel_id=='null')
 		fuel_id=null;
+	if (brand_name=='null')
+		brand_name=null;
+	if (model_name=='null')
+		model_name=null;
+	if (fuel_type=='null')
+		fuel_type=null;
+
 	var loc=`Near you`;
 	var base_url='services.html';
 	var city_list = ['delhi','gurgaon','noida'];
